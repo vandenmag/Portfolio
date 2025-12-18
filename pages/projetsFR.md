@@ -6,7 +6,7 @@ La data et le reporting dans 2 exemples de mes projets opérations
 
 > NB : Visuels indicatifs de développement, à titre d'illustration
 
-##Contexte 
+## Contexte 
 Projet de mise en place d'une solution de dématéralisation de courrier entrant pour un cabinet d'audit et de conseil, puis maintenance de la solution.
 
 ### Le process en ultra-bref
@@ -83,5 +83,6 @@ License pic usage monitoring- par année, mois, jour, utilisateurs uniques
 * Ajustement des volumes de licenses et prévisions d'accroissement au fil du déploiement
 * Identification, analyse et résolution d'une sauvergarde tierce de DB qui interrompait certains jobs
 * Réactivité et reprise en cas d'incident réseau quand les envois auto d'emails ou les dépôts de pdf par la solution étaient affectés
+
 
 
