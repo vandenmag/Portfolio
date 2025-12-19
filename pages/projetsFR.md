@@ -53,12 +53,12 @@ Ces logs sont ensuite exploités comme des objets de la solution et consultables
 
 * Actions stats
 Statistiques par action utilisateur une fois le document validé (e.g. : Paper version request, PDF export, etc.), par utilisateur et groupe d'utilisateurs
-![Exemple web Actions stats](//P1_action_stats.png "Exemple reporting web 'Action stats'")
-![Exemple web Actions stats-date picker](//P1_action_stats_parameters.png "Exemple date picker web 'Action stats'")
+![Exemple web Actions stats](P1_action_stats.png "Exemple reporting web 'Action stats'")
+![Exemple web Actions stats-date picker](P1_action_stats_parameters.png "Exemple date picker web 'Action stats'")
 * Control stats
 Statistiques par action utilisateur en phase de contrôle du document (Qualify and Send, or Forward back to mailroom, and reason for forwarding back), by user and user group
 Détail raisons de refus/renvoi du document après numérisation
-![Exemple web Actions stats-date picker](//P1_back2mr.png "Exempe Nombre de renvois par motif de refus")
+![Exemple web Actions stats-date picker](P1_back2mr.png "Exempe Nombre de renvois par motif de refus")
 * Import stats - month details
 Imports de documents par Service et par mois (importés via scanners tiers)
 * Indexing stats - month details 
@@ -83,6 +83,7 @@ License pic usage monitoring- par année, mois, jour, utilisateurs uniques
 * Ajustement des volumes de licenses et prévisions d'accroissement au fil du déploiement
 * Identification, analyse et résolution d'une sauvergarde tierce de DB qui interrompait certains jobs
 * Réactivité et reprise en cas d'incident réseau quand les envois auto d'emails ou les dépôts de pdf par la solution étaient affectés
+
 
 
 
