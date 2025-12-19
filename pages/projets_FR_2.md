@@ -6,40 +6,44 @@
 > Projet de groupe retravaillé
 
 ## Contexte 
-** « L’utilisation répétée et inadaptée des antibiotiques a favorisé l’apparition de bactéries résistantes à ces
-médicaments. Résultat : certaines infections deviennent de plus en plus difficiles à soigner. » **1
+_« L’utilisation répétée et inadaptée des antibiotiques a favorisé l’apparition de bactéries résistantes à ces
+médicaments. Résultat : certaines infections deviennent de plus en plus difficiles à soigner. »_ [Source](https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/lantibioresistance)
 
-Ainsi la surveillance et la compréhension de la prescription et et délivrance des antibiotiques en France est un
-des moyens de contribuer à des actions de prévention et d' appuyer les politiques de santé publique sur
-l'usage raisonné des antibiotiques.
+Ainsi la surveillance et la compréhension de la prescription et et délivrance des antibiotiques en France est un des moyens de contribuer à des actions de prévention et d' appuyer les politiques de santé publique sur l'usage raisonné des antibiotiques.
+<figure>
+<p align="center" width="100%">
+  <img src="assets/stratégie_nationale.png" alt="Visuel bon usage des antibiotiques" style="width:50%">
+  <figcaption><h6 align="center">Antibiotiques et antibiorésistance</h6></figcaption>
+  </p>
+</figure>
 
-### Le process en ultra-bref
+[Source image](https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf)
 
-:incoming_envelope: > scan :page_facing_up: > import :open_file_folder:> indexation :label: :desktop_computer: > traitement business :gear: :briefcase: > export pour archivage :file_cabinet:
+### Problématique
+
+Selon les axes prescripteurs, bénéficiaire, sous-groupes pharmacologiques : 
+* Quels critères, situations ou territoires présenteraient un risque ou une tendance de consommation qui pourrait favoriser l’antibiorésistance?
+* Quelles sont les tendances sur la période étudiée?
+* Quelles sont les relations entre les différents critères?
+
 
 ### Stack
-Windows server-IIS/SQL Server/MS Azure/O365
-Hyland OnBase - C# et SQL
+Python, PowerBI
 
-## Cherchez la data
-La data est partout et capitale dans ce type de projet qui semble centré sur le document mais repose surtout sur une base de données structurée, des workflows bien calibrés, des classes bien organisées :
-* Données métier (décrivant pour un objet courrier le client, la mission, le type de document, d'affranchissement, les destinataires, le courrier en lui-même, etc.)
-* Données techniques (identifiants de batch, de machines, horadatage, statuts de workflows, de jobs, données de paramétrage, etc.)
-* Données issues de référentiels (ici utilisateurs, clients, missions)
-qu'il faut:
-* identifier
-* formater
-* contrôler
-* organiser dans un modèle de données 
-* faire fonctionner
-* documenter
-* maintenir
+## Data Processing
 
+### Données utilisées
+* Jeu de données Open Medic mis à disposition librement par l’État sur la plate-forme [data.gouv.fr](https://www.data.gouv.fr/datasets/open-medic-base-complete-sur-les-depenses-de-medicaments-interregimes)
+  - Mise à disposition annuelle
+  - Utilisation de la base principale pour les années 2019 à 2024 : open_medic_AAAA.csv
+  - Antibiotiques identifiés par le code ATC2 : J01-ANTIBACTERIENS A USAGE SYSTEMIQUE.
 <!--
 Source - https://stackoverflow.com/a
 Posted by bim, modified by community. See post 'Timeline' for change history
 Retrieved 2025-12-19, License - CC BY-SA 4.0
 -->
+## Etapes de traitement
+
 
 <figure>
 <p align="center" width="100%">
