@@ -43,13 +43,14 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
   </p>
 </figure>
 
-## Focus Besoin de reporting 
+## :bar_chart: Focus Besoin de reporting 
 Au sein de la solution même,
 > Mettre à disposition le monitoring de la solution, du point de vue de l'éxécution automatique (imports de documents, workflows de traitements, exports)
 mais aussi des actions utlisateurs au sein des workflows fontionnels.
+
 > Monitorer la mise à jour automatisée quotidienne des données utiles issues de 3 référentiels client
 
-### Actions mises en place 
+### :hammer_and_wrench: Actions mises en place 
 > Monitoring de la solution : 
 * Utilisation du module Reporting Dashboards du progiciel utilisé OnBase (Hyland)
 * Accès via client lourd ou via le client web directement par URL, déjà exploités par les utilisateurs métier pour les workflows fonctionnels comme services et techniques pour les worflows de traitement.
@@ -109,6 +110,7 @@ License pic usage monitoring- par année, mois, jour, utilisateurs uniques
 * Ajustement des volumes de licenses et prévisions d'accroissement au fil du déploiement
 * Identification, analyse et résolution d'une sauvergarde tierce de DB qui interrompait certains jobs
 * Réactivité et reprise en cas d'incident réseau quand les envois auto d'emails ou les dépôts de pdf par la solution étaient affectés
+
 
 
 
