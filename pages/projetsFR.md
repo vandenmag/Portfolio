@@ -31,7 +31,7 @@ qu'il faut:
 * documenter
 * maintenir
 
-![Version de travail Modèle de données P1](//P1_data_model.png "Version de travail du modèle de données")
+![Version de travail Modèle de données P1](P1_data_model.png "Version de travail du modèle de données")
 
 ## Focus Besoin de reporting 
 Au sein de la solution même,
@@ -83,6 +83,7 @@ License pic usage monitoring- par année, mois, jour, utilisateurs uniques
 * Ajustement des volumes de licenses et prévisions d'accroissement au fil du déploiement
 * Identification, analyse et résolution d'une sauvergarde tierce de DB qui interrompait certains jobs
 * Réactivité et reprise en cas d'incident réseau quand les envois auto d'emails ou les dépôts de pdf par la solution étaient affectés
+
 
 
 
