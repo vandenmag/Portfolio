@@ -73,7 +73,7 @@ Python, PowerBI
 2. Filtrage
 * Filtrage du dataframe sur ATC2='J01' de façon à ne conserver que le périmètre des antibiotiques
 * Contrôle des volumes
- 
+<figure> 
   <p align="center" width="100%">
   <img src="assets/P2_volumeJ01.png" alt="Volumes J01" style="width:60%">
   <figcaption><h6 align="center">Volumes après filtrage</h6></figcaption>
@@ -88,7 +88,13 @@ Python, PowerBI
 
 4. Gestion des valeurs négatives
 * Identifiées via describe et documentées sur la discussion Open Medic (il s'agit de régularisations de remboursements)
-  
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_Valeurs_neg.png" alt="Volumes J01" style="width:60%">
+  <figcaption><h6 align="center">Valeurs négatives</h6></figcaption>
+  </p>
+</figure>
+
 6. Gestion des valeurs inconnues
 ### Featuring
 * Liste PRIMO https://medqualville.antibioresistance.fr/resistances/synthese
