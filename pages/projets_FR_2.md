@@ -49,7 +49,21 @@ Python, PowerBI
   - Population par région de France, sexe et grandes classes d'âge (1975-2025) (INSEE via [INED - Institut national des études démographiques](https://www.ined.fr/fichier/s_rubrique/159/estim.pop.nreg.sexe.gca.1975.2025.fr.xlsx)
 
 ### Méthodologie - Etapes de traitement
-
+* Analyse des variables et listes de valeurs, déficnition des formats et listes cibles
+* Import des 6 fichiers zips csv (Python)
+* Gestion de l'encodage
+* Gestion des formats de variables (colonnes)
+* Ajout et valorisation d'une colonne année
+* Normalisation des noms de colonnes
+* Concaténation des 6 fichiers
+* Contrôle des doublons
+* Contrôle des volumétries et valeurs manquantes
+  <figure>
+<p align="center" width="100%">
+  <img src="P2_volumes_avt_nettoyage.png" alt="Volumes et valeurs manquantes - état initial" style="width:60%">
+  <figcaption><h6 align="center">Volumes et valeurs manquantes après concaténation - état initial</h6></figcaption>
+  </p>
+</figure>
 
 ### Featuring
 * Liste PRIMO https://medqualville.antibioresistance.fr/resistances/synthese
