@@ -106,11 +106,13 @@ Python, PowerBI
   * Contrôle de la proportion de lignes concernées
 
 <figure> 
-  <p align="center" width="100%">
-  <img src="assets/P2_inconnues.png" alt="Volumes J01" style="width:60%">
-  <figcaption><h6 align="center">Valeurs inconnues</h6></figcaption>
+  <p align="center" width="50%">
+  <img src="assets/P2_inconnues.png" alt="Valeurs inconnues" style="width:60%">
+  <figcaption><h6 align="center">Pourcentages des valeurs inconnues</h6></figcaption>
   </p>
 </figure>
+
+
 7. 
 ### Featuring
 * Liste PRIMO https://medqualville.antibioresistance.fr/resistances/synthese
