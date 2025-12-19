@@ -33,10 +33,13 @@ Python, PowerBI
 ## Traitement des données
 
 ### Sources de données utilisées
-* Base Open Medic mis à disposition librement par l’État sur la plate-forme [data.gouv.fr](https://www.data.gouv.fr/datasets/open-medic-base-complete-sur-les-depenses-de-medicaments-interregimes)
+* Base Open Medic (données SNDS) mis à disposition librement par l’État sur la plate-forme [data.gouv.fr](https://www.data.gouv.fr/datasets/open-medic-base-complete-sur-les-depenses-de-medicaments-interregimes)
+  - Dépenses de médicaments/remboursements délivrés en pharmacies de ville, selon des groupes d’éléments descriptifs bénéficiaires (tranche d'âge, sexe, région de résidence), spécialité prescripteur, type de médicament, par année.
+  - Structuré selon la classification hiérarchique ATC (Anatomique, Thérapeutique et Chimique) des médicaments
   - Mise à disposition annuelle
   - Utilisation de la base principale pour les années 2019 à 2024 : 6 fichiers open_medic_AAAA.csv
-  - Antibiotiques identifiés par le code ATC2 : J01-ANTIBACTERIENS A USAGE SYSTEMIQUE.
+  - Antibiotiques identifiés par le code ATC2 : J01-ANTIBACTERIENS A USAGE SYSTEMIQUE
+  - Documentation des variables.
 
 <figure>
 <p align="center" width="100%">
@@ -77,6 +80,16 @@ Python, PowerBI
   </p>
 </figure>
 
+3. Adaptation des variables
+* Suppression des variables non pertinentes
+* Renommage plus explicite des variables
+* Ajout de variables libellés en vue de la gestion des visualisations d'exploration
+* Transcodage de valeurs catégorielles
+
+4. Gestion des valeurs négatives
+* Identifiées via describe et documentées sur la discussion Open Medic (il s'agit de régularisations de remboursements)
+  
+6. Gestion des valeurs inconnues
 ### Featuring
 * Liste PRIMO https://medqualville.antibioresistance.fr/resistances/synthese
 <figure>
@@ -85,6 +98,8 @@ Python, PowerBI
   <figcaption><h6 align="center">Version de travail du modèle de données</h6></figcaption>
   </p>
 </figure>
+7. Vérification finale des doublons et valeurs manquantes
+
 
 ## :bar_chart: Focus Besoin de reporting 
 Au sein de la solution même,
