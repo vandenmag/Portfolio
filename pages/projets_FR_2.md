@@ -128,15 +128,10 @@ Python, PowerBI
 7. 
 ### Featuring
 * Liste PRIMO https://medqualville.antibioresistance.fr/resistances/synthese
-<figure>
-<p align="center" width="100%">
-  <img src="P1_data_model.png" alt="Version de travail Modèle de données P1" style="width:60%">
-  <figcaption><h6 align="center">Version de travail du modèle de données</h6></figcaption>
-  </p>
-</figure>
 
 
-7. Vérification finale des doublons et valeurs manquantes
+
+8. Vérification finale des doublons et valeurs manquantes
 
 
 
