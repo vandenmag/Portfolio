@@ -139,7 +139,24 @@ Python, PowerBI
   </p>
 </figure>   
 
-
+### Méthodologie - Etapes de traitement des données de contexte
+* Fichier INSEE
+  - Regroupement chiffres régions PACA et Corse pour aligner sur la répartition Open Medic
+  - Regroupement chiffres pour aligner sur la répartition par tranches d'âge Open Medic
+  - Concaténation des 6 onglets (1 par année) en un seul avec ajout de la colonne année
+  - Normalisation des valeurs Régions, sexe et tranche d'âge
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_INSEE_avant.png" alt="Aperçu des données INSEE brutes" style="width:50%">
+  <figcaption><h6 align="center">Aperçu des données INSEE brutes</h6></figcaption>
+  </p>
+</figure>
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_INSEE_après.png" alt="Aperçu des données INSEE après traitement" style="width:50%">
+  <figcaption><h6 align="center">Aperçu des données INSEE après traitement</h6></figcaption>
+  </p>
+</figure>   
 
 
 
