@@ -152,7 +152,8 @@ Python, PowerBI
   </p>
 </figure>
 
-
+</br>   
+      
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_INSEE_après.png" alt="Aperçu des données INSEE après traitement" style="width:50%">
