@@ -161,7 +161,16 @@ Python, PowerBI
   </p>
 </figure>   
 
-
+* Liste PRIMO
+  - Récupération des codes ATC5 pour les ATC3 J01
+  - Valorisation d'un booléen à True si la substance ATC5 est surveillée
+ 
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_PRIMO.png" alt="Aperçu des données Liste Primo après traitement" style="width:50%">
+  <figcaption><h6 align="center">Aperçu des données Liste Primo après traitement</h6></figcaption>
+  </p>
+</figure>   
 
 
 
