@@ -111,7 +111,7 @@ Python, PowerBI
 </figure>
 
 
-6. Gestion des valeurs inconnues
+5. Gestion des valeurs inconnues
   * Le jeu de données ne comporte pas de NA mais des valeurs renseignées à "Inconnu".
   * Les valeurs inconnues (catégorielles) des différents critères sont introduites pour préserver le secret statistique lors qu'un groupe concerne moins de 10 bénéficiaires.
   * Le remplacement par le mode par exemple créerait beaucoup d'approximation, notamment lorsqu'une ligne/un groupe présente plusieurs critères inconnus.
@@ -125,7 +125,7 @@ Python, PowerBI
 </figure>
 
 
-7. 
+6. 
 ### Featuring
 * Liste PRIMO https://medqualville.antibioresistance.fr/resistances/synthese
 
