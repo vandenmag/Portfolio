@@ -147,10 +147,12 @@ Python, PowerBI
   - Normalisation des valeurs Régions, sexe et tranche d'âge
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_INSEE_avant.png" alt="Aperçu des données INSEE brutes" style="width:50%">
+  <img src="assets/P2_INSEE_avant.png" alt="Aperçu des données INSEE brutes" style="width:90%">
   <figcaption><h6 align="center">Aperçu des données INSEE brutes</h6></figcaption>
   </p>
 </figure>
+
+
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_INSEE_après.png" alt="Aperçu des données INSEE après traitement" style="width:50%">
