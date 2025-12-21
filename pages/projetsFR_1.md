@@ -13,7 +13,7 @@ Projet de mise en place d'une solution de dématéralisation de courrier entrant
 :incoming_envelope: > scan :page_facing_up: > import :open_file_folder:> indexation :label: :desktop_computer: > traitement business :gear: :briefcase: > export pour archivage :file_cabinet:
 
 ### Stack
-Windows server-IIS/SQL Server/MS Azure/O365
+Windows server-IIS | SQL Server | MS Azure | O365
 Hyland OnBase - C# et SQL
 
 ## Cherchez la data
@@ -116,6 +116,7 @@ License pic usage monitoring- par année, mois, jour, utilisateurs uniques
 * Identification, analyse et résolution d'une sauvergarde tierce de DB qui interrompait certains jobs
 * Réactivité et reprise en cas d'incident réseau quand les envois auto d'emails ou les dépôts de pdf par la solution étaient affectés
   Etc. etc.
+
 
 
 
