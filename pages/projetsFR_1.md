@@ -43,7 +43,7 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
   </p>
 </figure>
 
-## :bar_chart: Focus Besoin de reporting 
+## :bar_chart: Focus problématique de surveillance 
 Au sein de la solution même,
 > Mettre à disposition le monitoring de la solution, du point de vue de l'éxécution automatique (imports de documents, workflows de traitements, exports)
 mais aussi des actions utlisateurs au sein des workflows fontionnels.
@@ -116,6 +116,7 @@ License pic usage monitoring- par année, mois, jour, utilisateurs uniques
 * Identification, analyse et résolution d'une sauvergarde tierce de DB qui interrompait certains jobs
 * Réactivité et reprise en cas d'incident réseau quand les envois auto d'emails ou les dépôts de pdf par la solution étaient affectés
   Etc. etc.
+
 
 
 
