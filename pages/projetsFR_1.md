@@ -16,7 +16,7 @@ Projet de mise en place d'une solution de dématéralisation de courrier entrant
 Windows server-IIS | SQL Server | MS Azure | O365
 Hyland OnBase - C# et SQL
 
-## Cherchez la data
+### Cherchez la data
 La data est partout et capitale dans ce type de projet qui semble centré sur le document mais repose surtout sur une base de données structurée, des workflows bien calibrés, des classes bien organisées :
 * Données métier (décrivant pour un objet courrier le client, la mission, le type de document, d'affranchissement, les destinataires, le courrier en lui-même, etc.)
 * Données techniques (identifiants de batch, de machines, horadatage, statuts de workflows, de jobs, données de paramétrage, etc.)
@@ -52,7 +52,7 @@ mais aussi des actions utlisateurs au sein des workflows fontionnels.
 
 > Notifier les erreurs aux administrateurs pour action corrective 
 
-### :hammer_and_wrench: Actions mises en place 
+## :hammer_and_wrench: Actions mises en place 
 > Monitoring de la solution : 
 * Utilisation du module Reporting Dashboards du progiciel utilisé OnBase (Hyland)
 * Accès via client lourd ou via le client web directement par URL, déjà exploités par les utilisateurs métier pour les workflows fonctionnels comme services et techniques pour les worflows de traitement.
@@ -65,7 +65,7 @@ mais aussi des actions utlisateurs au sein des workflows fontionnels.
 > Notifications :
 * Selon la nature de l'erreur et sa source, un email de notification est envoyé en temps réel avec toutes les informations de tracking et la description de l'erreur au groupe d'utiliateurs administrateurs concernés
  
-#### Liste des rapports dynamiques mis en place
+### Liste des rapports dynamiques mis en place
 
 * Actions stats
 Statistiques par action utilisateur une fois le document validé (e.g. : Paper version request, PDF export, etc.), par utilisateur et groupe d'utilisateurs
@@ -110,12 +110,13 @@ Nombre et statut des emails en envoi automatique avec PDF attaché (seulement po
 * __License usage monitoring__ : 
 License pic usage monitoring- par année, mois, jour, utilisateurs uniques
 
-### :dart: Exemples d'améliorations identifiées grâce à ces rapports, et de résolutions d'incidents auxquelles ils ont contribué
+## :dart: Exemples d'améliorations identifiées grâce à ces rapports, et de résolutions d'incidents auxquelles ils ont contribué
 * Ajustement de la résolution des scanners pour équilibrer volumes de fichiers et confort d'exploitation du document numérisé par l'utilisateur
 * Ajustement des volumes de licenses et prévisions d'accroissement au fil du déploiement
 * Identification, analyse et résolution d'une sauvergarde tierce de DB qui interrompait certains jobs
 * Réactivité et reprise en cas d'incident réseau quand les envois auto d'emails ou les dépôts de pdf par la solution étaient affectés
   Etc. etc.
+
 
 
 
