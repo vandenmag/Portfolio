@@ -1,6 +1,6 @@
 
 
-# Example Projet : Dématérialisation de courrier entrant  - Monitoring des opérations
+# Tableaux de bord : Dématérialisation de courrier entrant  - Monitoring des opérations
 
 > [!NOTE]
 > Visuels indicatifs de développement, à titre d'illustration
@@ -50,6 +50,8 @@ mais aussi des actions utlisateurs au sein des workflows fontionnels.
 
 > Monitorer la mise à jour automatisée quotidienne des données utiles issues de 3 référentiels client
 
+> Notifier les erreurs aux administrateurs pour action corrective 
+
 ### :hammer_and_wrench: Actions mises en place 
 > Monitoring de la solution : 
 * Utilisation du module Reporting Dashboards du progiciel utilisé OnBase (Hyland)
@@ -59,6 +61,9 @@ mais aussi des actions utlisateurs au sein des workflows fontionnels.
 > Monitoring de la mise à jour automatisée quotidienne des données utiles issues de 3 référentiels client :  
 * Logs spécifiques créés directement via le script d'import en C#.
 * Ces logs sont ensuite exploités comme des objets de la solution et consultables dans une vue dédiée aux administrateurs.
+
+> Notifications :
+* Selon la nature de l'erreur et sa source, un email de notification est envoyé en temps réel avec toutes les informations de tracking et la description de l'erreur au groupe d'utiliateurs administrateurs concernés
  
 #### Liste des rapports dynamiques mis en place
 
@@ -110,6 +115,8 @@ License pic usage monitoring- par année, mois, jour, utilisateurs uniques
 * Ajustement des volumes de licenses et prévisions d'accroissement au fil du déploiement
 * Identification, analyse et résolution d'une sauvergarde tierce de DB qui interrompait certains jobs
 * Réactivité et reprise en cas d'incident réseau quand les envois auto d'emails ou les dépôts de pdf par la solution étaient affectés
+  Etc. etc.
+
 
 
 
