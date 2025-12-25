@@ -235,7 +235,8 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
 <details>
 <summary> :dart: Principaux résultats et visualisations 📊</summary>
 
-## Exploration préalable
+## Exploration préalable - exemples
+
 * Le montant remboursé et la base de remboursement ont une relation linéaire (coefficient taux de remboursement).
 <figure> 
   <p align="center" width="100%">
@@ -243,7 +244,8 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
   <figcaption><h6 align="center">Relation linéaire Montant remboursé/Base de remboursement</h6></figcaption>
   </p>
 </figure>  
-* Le montant remboursé (ou la bade de remboursement) et le nombre de boîtes délivrées ont une corrélation statistique positive forte mais n'ont pas une relation linéaire. Il est donc intéressant d'observer les comportements de ces 2 variables sur les mêmes critères.
+
+* Le montant remboursé (ou la base de remboursement) et le nombre de boîtes délivrées ont une corrélation statistique positive forte mais n'ont pas une relation linéaire. Il est donc intéressant/complémentaire d'observer les comportements de ces 2 variables sur les mêmes critères.
   <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_correlations.png" alt="correlations" style="width:50%">
@@ -256,6 +258,7 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
   <figcaption><h6 align="center">Relation non linéaire Montant remboursé/Nombre de boîtes délivrées</h6></figcaption>
   </p>
 </figure>  
+
 ## Tendance globale
 ## Remboursements et prix des antibiotiques
 ## Prescripteurs
