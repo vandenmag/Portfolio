@@ -232,7 +232,18 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
    
 
 </details>
+
 <details>
+<summary> :gear: Modélisation Power BI</summary>
+<details>
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_modele_PBI.png" alt="modèle" style="width:30%">
+  <figcaption><h6 align="center">Modèle Power BI</h6></figcaption>
+  </p>
+</figure> 
+</details>
+  
 <summary> :dart: Principaux résultats et visualisations 📊</summary>
 
 ## Exploration préalable - exemples
@@ -240,7 +251,7 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
 * Le montant remboursé et la base de remboursement ont une relation linéaire (coefficient taux de remboursement).
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_lineaire.png" alt="relation linéaire" style="width:50%">
+  <img src="assets/P2_lineaire.png" alt="relation linéaire" style="width:30%">
   <figcaption><h6 align="center">Relation linéaire Montant remboursé/Base de remboursement</h6></figcaption>
   </p>
 </figure>  
@@ -248,18 +259,20 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
 * Le montant remboursé (ou la base de remboursement) et le nombre de boîtes délivrées ont une corrélation statistique positive forte mais n'ont pas une relation linéaire. Il est donc intéressant/complémentaire d'observer les comportements de ces 2 variables sur les mêmes critères.
   <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_correlations.png" alt="correlations" style="width:50%">
+  <img src="assets/P2_correlations.png" alt="correlations" style="width:30%">
   <figcaption><h6 align="center">Matrice de corrélations</h6></figcaption>
   </p>
 </figure>  
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_non_lineaire.png" alt="non linéaire" style="width:50%">
+  <img src="assets/P2_non_lineaire.png" alt="non linéaire" style="width:30%">
   <figcaption><h6 align="center">Relation non linéaire Montant remboursé/Nombre de boîtes délivrées</h6></figcaption>
   </p>
 </figure>  
 
 ## Tendance globale
+
+
 ## Remboursements et prix des antibiotiques
 ## Prescripteurs
 ## Familles consommées et part des substances surveillées
