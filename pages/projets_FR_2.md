@@ -160,13 +160,24 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
 </figure>
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_montants_neg.png" alt="traitement montants négatifs res" style="width:40%">
+  <img src="assets/P2_montants_nega.png" alt="traitement montants négatifs res" style="width:40%">
   <figcaption><h6 align="center">Traitement montants négatifs-résultat</h6></figcaption>
   </p>
 </figure>
 
+   * Supprimées car proportion très petite et non pertinentes pour nos visualisations
 
-6. Gestion des valeurs inconnues
+6. Vérifiaction des outliers
+  * On constate une grande dispersion à droite des données quantitatives : on étudie les outliers et la proportion qu'ils représentent. Ce ne sont pas des valeurs aberrantes; ils doivent être concservés.
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_outliers.png" alt="outliers" style="width:40%">
+  <figcaption><h6 align="center">Etude des outliers</h6></figcaption>
+  </p>
+</figure>
+    
+    
+8. Gestion des valeurs inconnues
   * Le jeu de données ne comporte pas de NA mais des valeurs renseignées à "Inconnu".
   * Les valeurs inconnues (catégorielles) des différents critères sont introduites pour préserver le secret statistique lors qu'un groupe concerne moins de 10 bénéficiaires.
   * Le remplacement par le mode par exemple créerait beaucoup d'approximation, notamment lorsqu'une ligne/un groupe présente plusieurs critères inconnus.
