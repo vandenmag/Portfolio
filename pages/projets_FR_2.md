@@ -142,7 +142,9 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
   <figcaption><h6 align="center">Gestion NA liste Primo</h6></figcaption>
   </p>
 </figure>
-4. Gestion des valeurs négatives
+
+5. Gestion des valeurs négatives
+   
   * Identifiées via describe et documentées sur la discussion Open Medic (il s'agit de régularisations de remboursements)
 <figure> 
   <p align="center" width="100%">
@@ -152,11 +154,11 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
 </figure>
 
 
-5. Gestion des valeurs inconnues
+6. Gestion des valeurs inconnues
   * Le jeu de données ne comporte pas de NA mais des valeurs renseignées à "Inconnu".
   * Les valeurs inconnues (catégorielles) des différents critères sont introduites pour préserver le secret statistique lors qu'un groupe concerne moins de 10 bénéficiaires.
   * Le remplacement par le mode par exemple créerait beaucoup d'approximation, notamment lorsqu'une ligne/un groupe présente plusieurs critères inconnus.
-  * Contrôle de la proportion de lignes concernées
+  * Contrôle de la proportion de lignes concernées : on conserve les lignes qui seront filtrées au besoin pour les visualisations
 
 <figure> 
   <p align="center" width="50%">
@@ -166,9 +168,9 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
 </figure>
 
 
-6. Vérification finale des doublons et valeurs manquantes
+7. Vérification finale des doublons et valeurs manquantes
    
-7. Résultats du traitement
+8. Résultats du traitement
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_infos_post_traitement.png" alt="Informations du jeu de données après traitements" style="width:50%">
