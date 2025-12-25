@@ -196,7 +196,7 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
 8. Résultats du traitement
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_infos_post_traitement.png" alt="Informations du jeu de données après traitements" style="width:50%">
+  <img src="assets/P2_infos_post_traitements.png" alt="Informations du jeu de données après traitements" style="width:50%">
   <figcaption><h6 align="center">Informations du jeu de données après traitements</h6></figcaption>
   </p>
 </figure>   
@@ -204,6 +204,7 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
 <details>
 
 <summary>:hammer_and_wrench: Méthodologie - Etapes de traitement des données de contexte</summary>
+
 * Fichier INSEE
   - Regroupement chiffres régions PACA et Corse pour aligner sur la répartition Open Medic
   - Regroupement chiffres pour aligner sur la répartition par tranches d'âge Open Medic
@@ -227,14 +228,8 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
 
 * Liste PRIMO
   - Récupération des codes ATC5 pour les ATC3 J01
-  - Valorisation d'un booléen à True si la substance ATC5 est surveillée
- 
-<figure> 
-  <p align="center" width="100%">
-  <img src="assets/P2_PRIMO.png" alt="Aperçu des données Liste Primo après traitement" style="width:50%">
-  <figcaption><h6 align="center">Aperçu des données Liste Primo après traitement</h6></figcaption>
-  </p>
-</figure>   
+  - Valorisation d'un booléen à True si la substance ATC5 est surveillée (voir ci-dessus étape 5 traitement fichier Open medic)
+   
 
 </details>
 <details>
