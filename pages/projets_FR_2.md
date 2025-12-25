@@ -235,7 +235,6 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
 
 <details>
 <summary> :gear: Modélisation Power BI</summary>
-<details>
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_modele_PBI.png" alt="modèle" style="width:30%">
@@ -243,7 +242,7 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
   </p>
 </figure> 
 </details>
-  
+<details>  
 <summary> :dart: Principaux résultats et visualisations 📊</summary>
 
 ## Exploration préalable - exemples
@@ -265,7 +264,7 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
 </figure>  
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_non_lineaire.png" alt="non linéaire" style="width:30%">
+  <img src="assets/P2_non_lineaire.png" alt="non linéaire" style="width:100%">
   <figcaption><h6 align="center">Relation non linéaire Montant remboursé/Nombre de boîtes délivrées</h6></figcaption>
   </p>
 </figure>  
