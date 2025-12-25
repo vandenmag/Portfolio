@@ -148,8 +148,20 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
   * Identifiées via describe et documentées sur la discussion Open Medic (il s'agit de régularisations de remboursements)
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_Valeurs_neg.png" alt="Volumes J01" style="width:60%">
-  <figcaption><h6 align="center">Valeurs négatives</h6></figcaption>
+  <img src="assets/P2_describe.png" alt="describe" style="width:60%">
+  <figcaption><h6 align="center">Describe valeurs quantitatives</h6></figcaption>
+  </p>
+</figure>
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_montants_neg_py.png" alt="traitement montants négatifs" style="width:60%">
+  <figcaption><h6 align="center">Traitement montants négatifs</h6></figcaption>
+  </p>
+</figure>
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_montants_neg.png" alt="traitement montants négatifs res" style="width:60%">
+  <figcaption><h6 align="center">Traitement montants négatifs-résultat</h6></figcaption>
   </p>
 </figure>
 
