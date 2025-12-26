@@ -13,5 +13,8 @@ Bonne visite
 * Tableaux de bord et alertes automatisées > requêtes SQL (SQL Server), traitements C#,  visualisations Hyland OnBase Reporting Dashboards
 
 </br>
+
+[(Re)voir mon CV](CV_Data_Analyst_MVDP.pdf)
+
 </br>
 Last update : 25/12/2025
