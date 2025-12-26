@@ -310,7 +310,7 @@ entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.
 
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_global_non_gen.png" alt="non linéaire" style="width:100%">
+  <img src="assets/P2_global_non_gen.png" alt="PBI_global" style="width:100%">
   <figcaption><h6 align="center">Rapport Vision globale</h6></figcaption>
   </p>
 </figure> 
@@ -319,11 +319,58 @@ entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.
 
 * Si l'Île-de-France est en tête des montants remboursés en valeur sur la période étudiée, c'est globalement les regions PACA-Corse qui remboursent le plus pour 1000 habitants.
 
-
-## Remboursements et prix des antibiotiques
-
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_presriteurs.png" alt="PBI_prescripteurs" style="width:100%">
+  <figcaption><h6 align="center">Rapport Prescripteurs</h6></figcaption>
+  </p>
+</figure> 
 
 ## Prescripteurs
+
+* Ce rapport aborde les indicateurs selon l'axe de la prescription et met en évidence :
+  - la dominance, tant sur le nombre de boîtes délivrées que sur les montants remboursés, de 3 types de prescripteurs avec largement en tête les médecins généralistes libéraux.
+  - des diparités régionales et par tranche d'âge
+
+#### Type de prescripteur et répartition des montants
+
+* Le top 3 des prescripteurs représente plus de 90% des prescriptions, en montant remboursé comme en nombre
+de boîtes délivrées.
+
+* Au sein de ce top 3, les médecins généralistes libéraux dominent largement, quels que soient le critère, la région
+ou l'année. De même le 2ème rang est toujours occupé par les prescripteurs salariés (établissements de santé/hôpitaux) et le 3ème par la chirurgie dentaire (1 exception pour les 0-19 ans avec la Pédiatrie libérale en 3ème position).
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_presriteurs_tooltip_age.png" alt="PBI_prescripteurs_tooltip_age" style="width:40%">
+  <figcaption><h6 align="center">Détail Prescripteurs 0-19 ans</h6></figcaption>
+  </p>
+</figure> 
+
+#### Disparités régionales
+
+* On observe que la répartition sur le territoire en nombre de boîtes pour 1000 habitants varie fortement selon la spécialité du prescripteur, notamment ceux du top 3.
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_presriteurs_MG.png" alt="PBI_prescripteurs" style="width:100%">
+  <figcaption><h6 align="center">Rapport Prescripteurs - détail médecine générale 2024</h6></figcaption>
+  </p>
+</figure> 
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_presriteurs_PS.png" alt="PBI_prescripteurs" style="width:100%">
+  <figcaption><h6 align="center">Rapport Prescripteurs - détail Prescripteurs salariés 2024</h6></figcaption>
+  </p>
+</figure> 
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_presriteurs_DE.png" alt="PBI_prescripteurs" style="width:100%">
+  <figcaption><h6 align="center">Rapport Prescripteurs - détail Chirurgiens dentistes 2024</h6></figcaption>
+  </p>
+</figure> 
+
+## Remboursements et prix des antibiotiques
 
 
 ## Familles consommées et part des substances surveillées
