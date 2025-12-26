@@ -372,6 +372,59 @@ ou l'année. De même le 2ème rang est toujours occupé par les prescripteurs s
 
 ## Remboursements et prix des antibiotiques
 
+* Ce rapport aborde l'axe de la charge financière représentée par les remboursements.
+Il introduit la notion de prix du médicament avec l'indicateur du Montant moyen remboursé par boîte et la valeur moyenne par type de médicament de la base de remboursement.
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_remboursements.png" alt="PBI_remboursements" style="width:100%">
+  <figcaption><h6 align="center">Rapport Remboursements</h6></figcaption>
+  </p>
+</figure> 
+
+#### Impact du type de médicament
+
+* La base de remboursement est toujours plus élevée pour les non-génériques et référents que pour les génériques, comme le montant remboursé moyen (valable sur toute la période comme sur la dernière année 2024).
+
+* La part des médicaments génériques dans les montants remboursés a augmenté sur la période étudiée dans
+son ensemble ainsi que sur la dernière année :
+  - Part génériques 2019 : 56,49%
+  - Part génériques 2023 : 65,51%
+  - Part génériques 2024 : 67,2%
+
+#### Disparités régionales
+
+* Les régions PACA-Corse et d'Outre-mer ont les montants moyens remboursés par boîte les plus élevés, avec cependant une tendance à la baisse (tous types de médicaments confondus) . La région Centre-Val de Loire a le montant le plus bas.
+
+> Pour les non-génériques seuls, la tendance est à la hausse
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_remboursements_non_gen2024.png" alt="PBI_remboursements_ng2024" style="width:100%">
+  <figcaption><h6 align="center">Rapport Remboursements non génériques 2024</h6></figcaption>
+  </p>
+</figure> 
+
+* Les régions PACA-Corse et Hauts-de-France sont celles où le montant remboursé par habitant est le plus élevé. A l'opposé on trouve les régions Auvergne-Rhône-Alpes et Centre-Val de loire.
+
+#### Répartition prescripteurs
+
+* On observe une répartition similaire à celle du nombre de boîtes pour le top 3 prescripteurs, avec le même type d'évolution :
+  - Dominance de la médecine générale libérale sur les prescripteurs salariés et les chirurgiens dentistes (pédiatrie libérale pour les 0-19 ans)
+  - Progression dans le temps de la part des prescripteurs salariés dans le top 3
+
+NB : Les Prescripteurs de ville en 2019 incluent les dentistes, qui en sont isolés à partir de 2020. Leur part est donc relativement stable.
+
+### Sexe bénéficiaire
+
+* Les montants remboursés sont globalement plus élévés par habitant pour le sexe féminin mais de façon plus équilibrée sur les 0-19 ans.
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_remboursements_0-19.png" alt="PBI_remboursements_0-19-2024" style="width:100%">
+  <figcaption><h6 align="center">Rapport Remboursements 0-19 ans 2024</h6></figcaption>
+  </p>
+</figure> 
 
 ## Familles consommées et part des substances surveillées
 
