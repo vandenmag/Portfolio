@@ -342,7 +342,7 @@ ou l'année. De même le 2ème rang est toujours occupé par les prescripteurs s
 
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_presriteurs_tooltip_age.png" alt="PBI_prescripteurs_tooltip_age" style="width:40%">
+  <img src="assets/P2_prescripteurs_tooltip_age.png" alt="PBI_prescripteurs_tooltip_age" style="width:40%">
   <figcaption><h6 align="center">Détail Prescripteurs 0-19 ans</h6></figcaption>
   </p>
 </figure> 
@@ -353,19 +353,19 @@ ou l'année. De même le 2ème rang est toujours occupé par les prescripteurs s
 
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_presriteurs_MG.png" alt="PBI_prescripteurs" style="width:100%">
+  <img src="assets/P2_prescripteurs_MG.png" alt="PBI_prescripteurs" style="width:100%">
   <figcaption><h6 align="center">Rapport Prescripteurs - détail médecine générale 2024</h6></figcaption>
   </p>
 </figure> 
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_presriteurs_PS.png" alt="PBI_prescripteurs" style="width:100%">
+  <img src="assets/P2_prescripteurs_PS.png" alt="PBI_prescripteurs" style="width:100%">
   <figcaption><h6 align="center">Rapport Prescripteurs - détail Prescripteurs salariés 2024</h6></figcaption>
   </p>
 </figure> 
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_presriteurs_DE.png" alt="PBI_prescripteurs" style="width:100%">
+  <img src="assets/P2_prescripteurs_DE.png" alt="PBI_prescripteurs" style="width:100%">
   <figcaption><h6 align="center">Rapport Prescripteurs - détail Chirurgiens dentistes 2024</h6></figcaption>
   </p>
 </figure> 
