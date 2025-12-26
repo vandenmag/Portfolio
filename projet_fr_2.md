@@ -321,7 +321,7 @@ entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.
 
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_presriteurs.png" alt="PBI_prescripteurs" style="width:100%">
+  <img src="assets/P2_prescripteurs.png" alt="PBI_prescripteurs" style="width:100%">
   <figcaption><h6 align="center">Rapport Prescripteurs</h6></figcaption>
   </p>
 </figure> 
@@ -342,7 +342,7 @@ ou l'année. De même le 2ème rang est toujours occupé par les prescripteurs s
 
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_prescripteurs_tooltip_age.png" alt="PBI_prescripteurs_tooltip_age" style="width:40%">
+  <img src="assets/P2_prescripteur_tooltip_age.png" alt="PBI_prescripteurs_tooltip_age" style="width:40%">
   <figcaption><h6 align="center">Détail Prescripteurs 0-19 ans</h6></figcaption>
   </p>
 </figure> 
