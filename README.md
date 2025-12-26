@@ -5,10 +5,5 @@ Vous trouverez ici quelques exemples de problématiques et traitement par la don
 Bonne visite
 
 
-# Welcome to my portfolio!
-
-Here are some samples of problems and data processing from my background.
-
-Enjoy your visit
 
 Last update : 25/12/2025
