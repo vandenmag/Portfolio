@@ -428,6 +428,42 @@ NB : Les Prescripteurs de ville en 2019 incluent les dentistes, qui en sont isol
 
 ## Familles consommées et part des substances surveillées
 
+* Ce rapport aborde les indicateurs selon l'axe des sous-groupes pharmacologiques (famille d'antibiotiques).
+
+#### Familles dominantes
+
+* Le top 3 est dominé tous critères confondus par les Bêtalactamines-Pénicillines, Macrolides et Autres
+bêtalactamines ( ex : céphalosporines), en nombre de boîtes comme en montant remboursé.
+* L'ordre entre les 2 premières familles varie selon les critères ci-après mais la 3ème place ne change pas.
+
+#### Impact de la tanche d'âge du bénéficiaire
+
+* Pour la tranche d'âge des 60 ans et +, la famille des macrolides devance les bêtalactamines en montant
+remboursé. (thérapies plus ciblées)
+
+* Pour la tranche d'âge des 0-19 ans, le top 3 des familles atteint plus de 80% des montants remboursés pour 75 à
+76% sur les autres tranches d'âge.
+
+#### Spécificités régionales
+
+* Pour les régions PACA-Corse et Grand-Est, la famille des macrolides est en tête du top 3 au global en montant
+remboursé (toujours 2ème pour le nombre de boites délivrées), pas seulement pour les plus de 60 ans.
+
+#### Impact du type de médicament et prix moyen par famille
+
+* La base de remboursement moyenne par boîte est toujours plus élevée (environ x3,5) pour la famille des
+macrolides que pour la famille des bêtalactamines-pénicillines.
+
+> C'est un facteur d'explication du fait que l'écart en montant des remboursements entre les bêtalactaminespénicillines
+et macrolides est beaucoup moins grand que l'écart en nombre de boîtes délivrées pour les 2
+familles (visibles sur les barres de top 3).
+
+#### Substances surveillées pour l'antibiorésistance
+
+* L'amoxicilline représente environ __75%__ des boîtes délivrées sur l'ensemble de la période (proportion équivalente pour 2024), atteigant plus de __90%__ pour les 0-19 ans en 2024.
+  
+* Les substances surveillées sont majoritaires (en nombre de boîtes délivrées).
+  
 </details>
 
 
