@@ -1,0 +1,489 @@
+
+layout : page
+title : "Projet Data Antibiotiques"
+permalink : /projet_data_antibotiques
+
+# Analyse ad-hoc : </br> Consommation des antibiotiques en France 2019-2024
+
+> [!NOTE]
+> Projet de groupe retravaillé
+
+## Contexte 
+_« L’utilisation répétée et inadaptée des antibiotiques a favorisé l’apparition de bactéries résistantes à ces
+médicaments. Résultat : certaines infections deviennent de plus en plus difficiles à soigner. »_ [Source](https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/lantibioresistance)
+
+Ainsi la surveillance et la compréhension de la prescription et et délivrance des antibiotiques en France est un des moyens de contribuer à des actions de prévention et d' appuyer les politiques de santé publique sur l'usage raisonné des antibiotiques.
+<figure>
+<p align="center" width="100%">
+  <img src="assets/P2_stratégie_nationale.png" alt="Visuel bon usage des antibiotiques" style="width:50%">
+  <figcaption><h6 align="center">Antibiotiques et antibiorésistance</h6></figcaption>
+  </p>
+</figure>
+
+[Source image](https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf)
+
+### Stack
+Python, PowerBI
+
+</br>
+<details>
+
+<summary> :pill: Problématique  </summary>
+
+En étudiant les données de remboursement (montants remboursés, nombre de boîtes délivrées) selon les axes prescripteur, bénéficiaire, sous-groupes pharmacologique : 
+* Quelles sont les tendances sur la période étudiée, selon les régions, les tranche d'âge, le sexe des bénéficiaires, les types de prescripteurs, les familles prescrites?
+* Quels critères, situations ou territoires présentent une tendance de consommation remarquable?
+* Quelles sont les relations entre les différents critères?
+* Que représentent les subsantances surveillées dans le cadre de l'antibiorésistance par rapport à l'ensemble des antibiotiques délivrés en pharmacies de ville?
+
+> [!NOTE]
+> "_Ces données de remboursement [données SNDS] sont utilisées comme proxy de la consommation française, faisant l’hypothèse d’une part que toutes les prescriptions donnent lieu à remboursement, et d’autre part que l’ensemble des médicaments remboursés par l’Assurance maladie ont été consommés par les patients concernés._"[Synthèse préliminaire des indicateurs disponibles sous Géodes (11-2020)](https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/la-consommation-d-antibiotiques-en-secteur-de-ville-en-france-2009-2019.-synthese-preliminaire-des-indicateurs-disponibles-sous-geodes)</br>
+></br>
+> Pour une approche alignée en unités avec les objectifs posés dans la [stratégie nationale 2022-2025 de prévention des infections et de l'antibioresistance](https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf), exprimés en doses définies journalières (DDJ) pour 1 000 habitants et par jour et en prescriptions pour 1 000 habitants et par an, voir le [Rapport de Santé publique France (11-2025)]( https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/consommation-d-antibiotiques-en-secteur-de-ville-en-france-2014-2024)</br>
+> La notion de proxy induit qu'on devrait pouvoir observer les grandes tendances dès un premier niveau d'étude des données de remboursements, sans pouvoir toutefois s'y limiter pour une analyse appronfondie et complète.</br>
+></br>
+> Dans le cadre du projet, conduit en temps limité, c'est ce premier niveau qui est travaillé pour faire ressortir les tendances et offrir des indicateurs complémentaires à ceux exprimés en DDJ et prescriptions, par exemple relatifs au type et au prix du médicament.
+
+</details>
+<details>
+<summary>:file_cabinet: Sources de données utilisées</summary>
+
+#### Principale
+* Base Open Medic (données SNDS) mis à disposition librement par l’État sur la plate-forme [data.gouv.fr](https://www.data.gouv.fr/datasets/open-medic-base-complete-sur-les-depenses-de-medicaments-interregimes)
+  - Dépenses de médicaments/remboursements délivrés en pharmacies de ville, selon des groupes d’éléments descriptifs bénéficiaires (tranche d'âge, sexe, région de résidence), spécialité prescripteur, type de médicament, par année.
+  - Structuré selon la classification hiérarchique ATC (Anatomique, Thérapeutique et Chimique) des médicaments
+  - Mise à disposition annuelle
+  - Utilisation de la base principale pour les années 2019 à 2024 : 6 fichiers open_medic_AAAA.csv
+  - Antibiotiques identifiés par le code ATC2 : J01-ANTIBACTERIENS A USAGE SYSTEMIQUE
+  - Documentation des variables.
+
+<figure>
+<p align="center" width="100%">
+  <img src="assets/P2_Data_OpenMedic.png" alt="Aperçu données Open Medic" style="width:60%">
+  <figcaption><h6 align="center">Aperçu des données - Base principale Open Medic</h6></figcaption>
+  </p>
+</figure>
+
+#### Complémentaires/Contexte
+* Fichier INSEE (Institut national de la statistique et des études économiques)
+  - Population par région de France, sexe et grandes classes d'âge (1975-2025) (INSEE via [INED - Institut national des études démographiques](https://www.ined.fr/fichier/s_rubrique/159/estim.pop.nreg.sexe.gca.1975.2025.fr.xlsx)
+
+* Liste PRIMO 
+  - Liste des substances antibiotiques surveillées en France dans le cadre de la [mission PRIMO](https://medqualville.antibioresistance.fr/resistances/synthese) sur l'antibiorésistance
+</details>
+<details>
+
+<summary>:hammer_and_wrench: Méthodologie - Etapes de traitement des données Open Medic</summary>
+
+0. Analyse des variables et listes de valeurs, définition des formats et listes cibles
+  
+1. Chargement initial 
+  * Import des 6 fichiers zips csv (Python)
+  * Gestion de l'encodage
+  * Gestion des formats de variables (colonnes)
+  * Ajout et valorisation d'une colonne année
+  * Normalisation des noms de colonnes
+  * Concaténation des 6 fichiers
+  * Contrôle des doublons
+  * Contrôle des volumétries et valeurs manquantes
+  <figure>
+<p align="center" width="100%">
+  <img src="assets/P2_volumes_avt_nettoyage_info.png" alt="Volumes - état initial" style="width:30%">
+  <figcaption><h6 align="center">Volumes après concaténation - état initial</h6></figcaption>
+  </p>
+</figure>
+  <figure>
+<p align="center" width="100%">
+  <img src="assets/P2_volumes_avt_nettoyage.png" alt="Valeurs manquantes - état initial" style="width:30%">
+  <figcaption><h6 align="center">Valeurs manquantes après concaténation - état initial</h6></figcaption>
+  </p>
+</figure>
+
+
+2. Filtrage
+  * Filtrage du dataframe sur ATC2='J01' de façon à ne conserver que le périmètre des antibiotiques
+  * Contrôle des volumétries et valeurs manquantes
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_volumeJ01.png" alt="Volumes J01" style="width:40%">
+  <figcaption><h6 align="center">Volumes et valeurs manquantes après filtrage</h6></figcaption>
+  </p>
+</figure>
+
+
+4. Adaptation des variables
+  * Suppression des variables non pertinentes
+  * Renommage plus explicite des variables
+  * Ajout de variables libellés en vue de la gestion des visualisations d'exploration
+  * Transcodage de valeurs catégorielles
+    - Exemple cas particulier du top générique, dont la codifiaction a changé au cours de la période étudiée
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_topgen_1.png" alt="Codage Top Générique issu de la documentation du jeu de données" style="width:40%">
+  <figcaption><h6 align="center">Codage Top Générique issu de la documentation du jeu de données</h6></figcaption>
+  </p>
+</figure>
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_transco_top-gen.png" alt="Codage Top Générique normalisé" style="width:40%">
+  <figcaption><h6 align="center">Codage Top Générique normalisé</h6></figcaption>
+  </p>
+</figure>
+
+5. Ajout de la variable indiquant si la substance est surveillée ou non pour l'antibiorésistance (merge avec la liste mission PRIMO)
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_ajout_primo.png" alt="Ajout variable PRIMO" style="width:40%">
+  <figcaption><h6 align="center">Ajout variable liste Primo (merge)</h6></figcaption>
+  </p>
+</figure>
+
+  * Valorisation des valeurs manquantes liste primo à false, après vérification des lignes concernées
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_NA_primo.png" alt="Gestion NA liste Primo" style="width:40%">
+  <figcaption><h6 align="center">Gestion NA liste Primo</h6></figcaption>
+  </p>
+</figure>
+
+5. Gestion des valeurs négatives
+   
+  * Identifiées via describe et documentées sur la discussion Open Medic (il s'agit de régularisations de remboursements)
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_describe.png" alt="describe" style="width:30%">
+  <figcaption><h6 align="center">Describe valeurs quantitatives</h6></figcaption>
+  </p>
+</figure>
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_montants_neg_py.png" alt="traitement montants négatifs" style="width:100%">
+  <figcaption><h6 align="center">Traitement montants négatifs</h6></figcaption>
+  </p>
+</figure>
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_montants_nega.png" alt="traitement montants négatifs res" style="width:40%">
+  <figcaption><h6 align="center">Traitement montants négatifs-résultat</h6></figcaption>
+  </p>
+</figure>
+
+   * Supprimées car proportion très petite et non pertinentes pour nos visualisations
+
+6. Vérifiaction des outliers
+  * On constate une grande dispersion à droite des données quantitatives : on étudie les outliers et la proportion qu'ils représentent. Ce ne sont pas des valeurs aberrantes; ils doivent être conservés.
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_outliers.png" alt="outliers" style="width:40%">
+  <figcaption><h6 align="center">Etude des outliers</h6></figcaption>
+  </p>
+</figure>
+    
+    
+8. Gestion des valeurs inconnues
+  * Le jeu de données ne comporte pas de NA mais des valeurs renseignées à "Inconnu".
+  * Les valeurs inconnues (catégorielles) des différents critères sont introduites pour préserver le secret statistique lors qu'un groupe concerne moins de 10 bénéficiaires.
+  * Le remplacement par le mode par exemple créerait beaucoup d'approximation, notamment lorsqu'une ligne/un groupe présente plusieurs critères inconnus.
+  * Contrôle de la proportion de lignes concernées : on conserve les lignes qui seront filtrées au besoin pour les visualisations
+
+<figure> 
+  <p align="center" width="50%">
+  <img src="assets/P2_inconnues.png" alt="Valeurs inconnues" style="width:20%">
+  <figcaption><h6 align="center">Pourcentages des valeurs inconnues</h6></figcaption>
+  </p>
+</figure>
+
+
+7. Vérification finale des doublons et valeurs manquantes
+   
+8. Résultats du traitement
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_infos_post_traitements.png" alt="Informations du jeu de données après traitements" style="width:50%">
+  <figcaption><h6 align="center">Informations du jeu de données après traitements</h6></figcaption>
+  </p>
+</figure>   
+</details>
+<details>
+
+<summary>:hammer_and_wrench: Méthodologie - Etapes de traitement des données de contexte</summary>
+
+* Fichier INSEE
+  - Regroupement chiffres régions PACA et Corse pour aligner sur la répartition Open Medic
+  - Regroupement chiffres pour aligner sur la répartition par tranches d'âge Open Medic
+  - Concaténation des 6 onglets (1 par année) en un seul avec ajout de la colonne année
+  - Normalisation des valeurs Régions, sexe et tranche d'âge
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_INSEE_avant.png" alt="Aperçu des données INSEE brutes" style="width:90%">
+  <figcaption><h6 align="center">Aperçu des données INSEE brutes (exemple année 2024)</h6></figcaption>
+  </p>
+</figure>
+
+</br>   
+      
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_INSEE_après.png" alt="Aperçu des données INSEE après traitement" style="width:50%">
+  <figcaption><h6 align="center">Aperçu des données INSEE après traitement</h6></figcaption>
+  </p>
+</figure>   
+
+* Liste PRIMO
+  - Récupération des codes ATC5 pour les ATC3 J01
+  - Valorisation d'un booléen à True si la substance ATC5 est surveillée (voir ci-dessus étape 5 traitement fichier Open medic)
+   
+
+</details>
+
+<details>
+<summary> :gear: Modélisation Power BI</summary>
+</br>
+  <figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_modele_PBI.png" alt="modèle" style="width:100%">
+  <figcaption><h6 align="center">Modèle Power BI</h6></figcaption>
+  </p>
+</figure> 
+
+  * Table des remboursement : Table de faits
+  * Tables de dimension : Age, sexe, région bénéficiare, Prescripteur, Année, Antibiotique
+  * Table Insee : Traitée comme une table de faits pour appliquer les dimensions région, année, age, sexe.
+  * Table de mesures DAX
+ </br>   
+</details>
+<details>  
+<summary> :dart: Principaux résultats et visualisations 📊</summary>
+
+## Exploration préalable (Python) - exemples
+
+* Le montant remboursé et la base de remboursement ont une relation linéaire (coefficient taux de remboursement).
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_lineaire.png" alt="relation linéaire" style="width:30%">
+  <figcaption><h6 align="center">Relation linéaire Montant remboursé/Base de remboursement</h6></figcaption>
+  </p>
+</figure>  
+
+* Le montant remboursé (ou la base de remboursement) et le nombre de boîtes délivrées ont une corrélation statistique positive forte mais n'ont pas une relation linéaire. Il est donc intéressant/complémentaire d'observer les comportements de ces 2 variables sur les mêmes critères.
+  <figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_correlations.png" alt="correlations" style="width:30%">
+  <figcaption><h6 align="center">Matrice de corrélations</h6></figcaption>
+  </p>
+</figure>  
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_non_lineaire.png" alt="non linéaire" style="width:30%">
+  <figcaption><h6 align="center">Relation non linéaire Montant remboursé/Nombre de boîtes délivrées</h6></figcaption>
+  </p>
+</figure>  
+
+## Tendance globale
+
+* Ce rapport présente les éléments clés et les KPIs généraux qui seront déclinés dans les autres rapports sous les
+axes de prescription, remboursement et familles d'antibiotiques.
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_global.png" alt="non linéaire" style="width:100%">
+  <figcaption><h6 align="center">Rapport Vision globale</h6></figcaption>
+  </p>
+</figure> 
+
+#### Variations
+
+* L'année 2020, avec le Covid,est marqué par une baisse du nombre de boîtes consommées comme pour les
+montants remboursés. Suit une hausse progressive de 2021 à 2022 puis une légère inflexion en 2023.
+
+* Si sur l'ensemble de la période étudiée la tendance globale est à la baisse pour le nombre de boîtes
+consommées comme pour les montants remboursés, la tendance est à la hausse sur ces 2 indicateurs pour la
+dernière année.
+
+> La mise en place en 2022 de la stratégie nationale de prévention des infections et de l'antibiorésistance
+a porté ses fruits au démarrage mais les effets peinent à perdurer sur ces indicateurs.
+
+* On remarque que seuls les non-génériques affichent une réelle baisse sur 2019-2024 avec une nette baisse
+entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.
+
+> Les nouvelles règles relatives au remboursement des non-génériques (indexation sur le prix du générique équivalent, souvent inférieur, sauf si non substituable) entrées en vigueur au 01/01/2021 semblent se traduire par une baisse de consommation des antibiotiques non-génériques.
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_global_non_gen.png" alt="PBI_global" style="width:100%">
+  <figcaption><h6 align="center">Rapport Vision globale</h6></figcaption>
+  </p>
+</figure> 
+
+#### Disparités régionales
+
+* Si l'Île-de-France est en tête des montants remboursés en valeur sur la période étudiée, c'est globalement les regions PACA-Corse qui remboursent le plus pour 1000 habitants.
+
+
+## Prescripteurs
+
+* Ce rapport aborde les indicateurs selon l'axe de la prescription et met en évidence :
+  - la dominance, tant sur le nombre de boîtes délivrées que sur les montants remboursés, de 3 types de prescripteurs avec largement en tête les médecins généralistes libéraux.
+  - des diparités régionales et par tranche d'âge
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_prescripteurs.png" alt="PBI_prescripteurs" style="width:100%">
+  <figcaption><h6 align="center">Rapport Prescripteurs</h6></figcaption>
+  </p>
+</figure> 
+
+#### Type de prescripteur et répartition des montants
+
+* Le top 3 des prescripteurs représente plus de 90% des prescriptions, en montant remboursé comme en nombre
+de boîtes délivrées.
+
+* Au sein de ce top 3, les médecins généralistes libéraux dominent largement, quels que soient le critère, la région
+ou l'année. De même le 2ème rang est toujours occupé par les prescripteurs salariés (établissements de santé/hôpitaux) et le 3ème par la chirurgie dentaire (1 exception pour les 0-19 ans avec la Pédiatrie libérale en 3ème position).
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_prescripteur_tooltip_age.png" alt="PBI_prescripteurs_tooltip_age" style="width:40%">
+  <figcaption><h6 align="center">Détail Prescripteurs 0-19 ans</h6></figcaption>
+  </p>
+</figure> 
+
+#### Disparités régionales
+
+* On observe que la répartition sur le territoire en nombre de boîtes pour 1000 habitants varie fortement selon la spécialité du prescripteur, notamment ceux du top 3.
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_prescripteurs_MG.png" alt="PBI_prescripteurs" style="width:100%">
+  <figcaption><h6 align="center">Rapport Prescripteurs - détail médecine générale 2024</h6></figcaption>
+  </p>
+</figure> 
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_prescripteurs_PS.png" alt="PBI_prescripteurs" style="width:100%">
+  <figcaption><h6 align="center">Rapport Prescripteurs - détail Prescripteurs salariés 2024</h6></figcaption>
+  </p>
+</figure> 
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_prescripteurs_DE.png" alt="PBI_prescripteurs" style="width:100%">
+  <figcaption><h6 align="center">Rapport Prescripteurs - détail Chirurgiens dentistes 2024</h6></figcaption>
+  </p>
+</figure> 
+
+## Remboursements et prix des antibiotiques
+
+* Ce rapport aborde l'axe de la charge financière représentée par les remboursements.
+Il introduit la notion de prix du médicament avec l'indicateur du Montant moyen remboursé par boîte et la valeur moyenne par type de médicament de la base de remboursement.
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_remboursements.png" alt="PBI_remboursements" style="width:100%">
+  <figcaption><h6 align="center">Rapport Remboursements</h6></figcaption>
+  </p>
+</figure> 
+
+#### Impact du type de médicament
+
+* La base de remboursement est toujours plus élevée pour les non-génériques et référents que pour les génériques, comme le montant remboursé moyen (valable sur toute la période comme sur la dernière année 2024).
+
+* La part des médicaments génériques dans les montants remboursés a augmenté sur la période étudiée dans
+son ensemble ainsi que sur la dernière année :
+  - Part génériques 2019 : 56,49%
+  - Part génériques 2023 : 65,51%
+  - Part génériques 2024 : 67,2%
+
+#### Disparités régionales
+
+* Les régions PACA-Corse et d'Outre-mer ont les montants moyens remboursés par boîte les plus élevés, avec cependant une tendance à la baisse (tous types de médicaments confondus) . La région Centre-Val de Loire a le montant le plus bas.
+
+> Pour les non-génériques seuls, la tendance est à la hausse
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_remboursements_non_gen2024.png" alt="PBI_remboursements_ng2024" style="width:100%">
+  <figcaption><h6 align="center">Rapport Remboursements non génériques 2024</h6></figcaption>
+  </p>
+</figure> 
+
+* Les régions PACA-Corse et Hauts-de-France sont celles où le montant remboursé par habitant est le plus élevé. A l'opposé on trouve les régions Auvergne-Rhône-Alpes et Centre-Val de loire.
+
+#### Répartition prescripteurs
+
+* On observe une répartition similaire à celle du nombre de boîtes pour le top 3 prescripteurs, avec le même type d'évolution :
+  - Dominance de la médecine générale libérale sur les prescripteurs salariés et les chirurgiens dentistes (pédiatrie libérale pour les 0-19 ans)
+  - Progression dans le temps de la part des prescripteurs salariés dans le top 3
+
+NB : Les Prescripteurs de ville en 2019 incluent les dentistes, qui en sont isolés à partir de 2020. Leur part est donc relativement stable.
+
+### Sexe bénéficiaire
+
+* Les montants remboursés sont globalement plus élévés par habitant pour le sexe féminin mais de façon plus équilibrée sur les 0-19 ans.
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_remboursements_0-19.png" alt="PBI_remboursements_0-19-2024" style="width:100%">
+  <figcaption><h6 align="center">Rapport Remboursements 0-19 ans 2024</h6></figcaption>
+  </p>
+</figure> 
+
+## Familles consommées et part des substances surveillées
+
+* Ce rapport aborde les indicateurs selon l'axe des sous-groupes pharmacologiques (famille d'antibiotiques).
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_familles.png" alt="PBI_familles_antibio" style="width:100%">
+  <figcaption><h6 align="center">Rapport Sous-groupes pharmacologiques</h6></figcaption>
+  </p>
+</figure> 
+
+#### Familles dominantes
+
+* Le top 3 est dominé tous critères confondus par les Bêtalactamines-Pénicillines, Macrolides et Autres
+bêtalactamines ( ex : céphalosporines), en nombre de boîtes comme en montant remboursé.
+* L'ordre entre les 2 premières familles varie selon les critères ci-après mais la 3ème place ne change pas.
+
+#### Impact de la tanche d'âge du bénéficiaire
+
+* Pour la tranche d'âge des 60 ans et +, la famille des macrolides devance les bêtalactamines en montant
+remboursé. (thérapies plus ciblées)
+
+* Pour la tranche d'âge des 0-19 ans, le top 3 des familles atteint plus de 80% des montants remboursés pour 75 à
+76% sur les autres tranches d'âge.
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_familles_0-19_2024.png" alt="PBI_familles_antibio 0-19 2024" style="width:100%">
+  <figcaption><h6 align="center">Rapport Sous-groupes pharmacologiques - 0-19 ans - 2024</h6></figcaption>
+  </p>
+</figure> 
+
+#### Spécificités régionales
+
+* Pour les régions PACA-Corse et Grand-Est, la famille des macrolides est en tête du top 3 au global en montant
+remboursé (toujours 2ème pour le nombre de boites délivrées), pas seulement pour les plus de 60 ans.
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_familles_PACA.png" alt="PBI_familles_antibio PACA-Corse" style="width:100%">
+  <figcaption><h6 align="center">Rapport Sous-groupes pharmacologiques - PACA-Corse</h6></figcaption>
+  </p>
+</figure> 
+
+#### Impact du type de médicament et prix moyen par famille
+
+* La base de remboursement moyenne par boîte est toujours plus élevée (environ x3,5) pour la famille des
+macrolides que pour la famille des bêtalactamines-pénicillines.
+
+> C'est un facteur d'explication du fait que l'écart en montant des remboursements entre les bêtalactaminespénicillines
+et macrolides est beaucoup moins grand que l'écart en nombre de boîtes délivrées pour les 2
+familles (visibles sur les barres de top 3).
+
+#### Substances surveillées pour l'antibiorésistance
+
+* L'amoxicilline représente environ __75%__ des boîtes délivrées sur l'ensemble de la période (proportion équivalente pour 2024), atteignant plus de __90%__ pour les 0-19 ans en 2024.
+  
+* Les substances surveillées sont majoritaires (en nombre de boîtes délivrées).
+  
+</details>

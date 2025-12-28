@@ -1,13 +1,20 @@
-
 # Bienvenue dans mon portfolio!
 
-Vous trouverez ici quelques exemples de problématiques et traitement par la donnée issus de mon parcours.
+Vous trouverez ici quelques exemples de problématiques et traitements par la donnée issus de mon parcours.
 
 Bonne visite
 
+</br>
 
-# Welcome to my portfolio!
+#### 💊 [Consommation des antibiotiques en france 2019-2024 (Open Medic)](projet_fr_2.md)
+* Analyse ad-hoc > Traitement des données en Python, visualisations PowerBi
 
-Here are some samples of problems and data processing from my background.
+#### 📫 [Monitoring solution de gestion de courrier entrant dématérialisé](projet_fr_1.md) 
+* Tableaux de bord et alertes automatisées > requêtes SQL (SQL Server), traitements C#,  visualisations Hyland OnBase Reporting Dashboards
 
-Enjoy your visit
+</br>
+
+[(Re)voir mon CV](assets/CV_Data_Analyst_MVDP.pdf)
+
+</br>
+Last update : 28/12/2025
