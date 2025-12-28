@@ -3,4 +3,17 @@
 
 // import cayman
 @import "{{ site.theme }}";
+// listes
+ul, ol {
+  list-style: disc outside;
+  padding-left: 2em;
+  margin: 1em 0;
+}
 
+li {
+  margin: 0.5em 0;
+}
+// gestion admonitions
+.note { border-left: 4px solid #007acc; background: #e7f3ff; padding: 1em; margin: 1em 0; }
+.tip { border-left: 4px solid #00a000; background: #e7ffe7; padding: 1em; margin: 1em 0; }
+.warning { border-left: 4px solid #a80000; background: #fff7f7; padding: 1em; margin: 1em 0; }
