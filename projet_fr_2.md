@@ -1,7 +1,8 @@
-
+---
 layout : page
 title : "Projet Data Antibiotiques"
 permalink : /projet_data_antibotiques
+---
 
 # Analyse ad-hoc : </br> Consommation des antibiotiques en France 2019-2024
 
