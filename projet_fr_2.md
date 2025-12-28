@@ -319,18 +319,19 @@ entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.
 
 * Si l'Île-de-France est en tête des montants remboursés en valeur sur la période étudiée, c'est globalement les regions PACA-Corse qui remboursent le plus pour 1000 habitants.
 
-<figure> 
-  <p align="center" width="100%">
-  <img src="assets/P2_prescripteurs.png" alt="PBI_prescripteurs" style="width:100%">
-  <figcaption><h6 align="center">Rapport Prescripteurs</h6></figcaption>
-  </p>
-</figure> 
 
 ## Prescripteurs
 
 * Ce rapport aborde les indicateurs selon l'axe de la prescription et met en évidence :
   - la dominance, tant sur le nombre de boîtes délivrées que sur les montants remboursés, de 3 types de prescripteurs avec largement en tête les médecins généralistes libéraux.
   - des diparités régionales et par tranche d'âge
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_prescripteurs.png" alt="PBI_prescripteurs" style="width:100%">
+  <figcaption><h6 align="center">Rapport Prescripteurs</h6></figcaption>
+  </p>
+</figure> 
 
 #### Type de prescripteur et répartition des montants
 
@@ -430,6 +431,13 @@ NB : Les Prescripteurs de ville en 2019 incluent les dentistes, qui en sont isol
 
 * Ce rapport aborde les indicateurs selon l'axe des sous-groupes pharmacologiques (famille d'antibiotiques).
 
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_familles.png" alt="PBI_familles_antibio" style="width:100%">
+  <figcaption><h6 align="center">Rapport Sous-groupes pharmacologiques</h6></figcaption>
+  </p>
+</figure> 
+
 #### Familles dominantes
 
 * Le top 3 est dominé tous critères confondus par les Bêtalactamines-Pénicillines, Macrolides et Autres
@@ -444,10 +452,24 @@ remboursé. (thérapies plus ciblées)
 * Pour la tranche d'âge des 0-19 ans, le top 3 des familles atteint plus de 80% des montants remboursés pour 75 à
 76% sur les autres tranches d'âge.
 
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_familles_0-19_2024.png" alt="PBI_familles_antibio 0-19 2024" style="width:100%">
+  <figcaption><h6 align="center">Rapport Sous-groupes pharmacologiques - 0-19 ans - 2024</h6></figcaption>
+  </p>
+</figure> 
+
 #### Spécificités régionales
 
 * Pour les régions PACA-Corse et Grand-Est, la famille des macrolides est en tête du top 3 au global en montant
 remboursé (toujours 2ème pour le nombre de boites délivrées), pas seulement pour les plus de 60 ans.
+
+<figure> 
+  <p align="center" width="100%">
+  <img src="assets/P2_familles_PACA.png" alt="PBI_familles_antibio PACA-Corse" style="width:100%">
+  <figcaption><h6 align="center">Rapport Sous-groupes pharmacologiques - PACA-Corse</h6></figcaption>
+  </p>
+</figure> 
 
 #### Impact du type de médicament et prix moyen par famille
 
