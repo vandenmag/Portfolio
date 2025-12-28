@@ -3,20 +3,19 @@
 
 // import cayman
 @import "{{ site.theme }}";
-// listes
-main ul li, 
-main ol li, 
-article ul li, 
-article ol li {
-  list-style-type: disc !important;
-  list-style-position: outside !important;
-  padding-left: 0.5em !important;
-  margin: 0.25em 0 !important;
+// toggle
+.toggle-btn {
+  background: linear-gradient(45deg, #007acc, #28a745);
+  color: white; border: none; padding: 0.8em 1.2em;
+  border-radius: 5px; cursor: pointer; font-weight: bold;
+  margin: 1em 0; width: 100%; text-align: left;
 }
-
-main ul, main ol, article ul, article ol {
-  padding-left: 2em !important;
-  margin: 1em 0 !important;
+.toggle-content {
+  max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+  background: #f8f9fa; padding: 0 1em; border-left: 4px solid #007acc;
+}
+.toggle-content.open {
+  max-height: 800px; padding: 1em; margin-bottom: 1em;
 }
 // gestion admonitions
 .note { border-left: 4px solid #007acc; background: #e7f3ff; padding: 1em; margin: 1em 0; }
