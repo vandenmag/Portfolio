@@ -482,7 +482,7 @@ familles (visibles sur les barres de top 3).
 
 #### Substances surveillées pour l'antibiorésistance
 
-* L'amoxicilline représente environ __75%__ des boîtes délivrées sur l'ensemble de la période (proportion équivalente pour 2024), atteigant plus de __90%__ pour les 0-19 ans en 2024.
+* L'amoxicilline représente environ __75%__ des boîtes délivrées sur l'ensemble de la période (proportion équivalente pour 2024), atteignant plus de __90%__ pour les 0-19 ans en 2024.
   
 * Les substances surveillées sont majoritaires (en nombre de boîtes délivrées).
   
