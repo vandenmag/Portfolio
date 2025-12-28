@@ -24,7 +24,10 @@ Hyland OnBase - C# et SQL
 
 <details>
 
-<summary>🔍Cherchez la data</summary>
+<button class="toggle-btn" onclick="this.nextElementSibling.classList.toggle('open')">
+🔍Cherchez la data
+</button>
+<div class="toggle-content">
 La data est partout et capitale dans ce type de projet qui semble centré sur le document mais repose surtout sur une base de données structurée, des workflows bien calibrés, des classes bien organisées :
 * Données métier (décrivant pour un objet courrier le client, la mission, le type de document, d'affranchissement, les destinataires, le courrier en lui-même, etc.)
 * Données techniques (identifiants de batch, de machines, horadatage, statuts de workflows, de jobs, données de paramétrage, etc.)
@@ -50,10 +53,11 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
   <figcaption><h6 align="center">Version de travail du modèle de données</h6></figcaption>
   </p>
 </figure>
-</details>
-<details>
-
-<summary>:bar_chart: Focus problématique de surveillance</summary>
+</div>
+<button class="toggle-btn" onclick="this.nextElementSibling.classList.toggle('open')">
+:bar_chart: Focus problématique de surveillance
+</button>
+<div class="toggle-content">
 <br>
 Au sein de la solution même,
 
@@ -63,9 +67,12 @@ mais aussi des actions utlisateurs au sein des workflows fontionnels.
 > Monitorer la mise à jour automatisée quotidienne des données utiles issues de 3 référentiels client
 
 > Notifier les erreurs aux administrateurs pour action corrective 
-</details>
-<details>
-<summary>:hammer_and_wrench: Actions mises en place</summary>
+</div>
+
+<button class="toggle-btn" onclick="this.nextElementSibling.classList.toggle('open')">
+:hammer_and_wrench: Actions mises en place
+</button>
+<div class="toggle-content">
 
 ####  Monitoring de la solution  
 * Utilisation du module Reporting Dashboards du progiciel utilisé OnBase (Hyland)
@@ -133,7 +140,7 @@ License pic usage monitoring- par année, mois, jour, utilisateurs uniques
   * Réactivité et reprise en cas d'incident réseau quand les envois auto d'emails ou les dépôts de pdf par la solution étaient affectés
   
   Etc. etc.
-</details>
+</div>
 
 
 
