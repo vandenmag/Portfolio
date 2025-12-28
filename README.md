@@ -1,6 +1,6 @@
 # Bienvenue dans mon portfolio!
 
-Vous trouverez ici quelques exemples de problématiques et traitement par la donnée issus de mon parcours.
+Vous trouverez ici quelques exemples de problématiques et traitements par la donnée issus de mon parcours.
 
 Bonne visite
 
