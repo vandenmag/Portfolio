@@ -1,5 +1,5 @@
 ---
-layout : page
+layout : default
 title : "Projet Data Antibiotiques"
 permalink : /projet_data_antibotiques
 ---
