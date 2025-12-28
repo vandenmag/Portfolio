@@ -22,10 +22,9 @@ Projet de mise en place d'une solution de dématéralisation de courrier entrant
 Windows server-IIS | SQL Server | MS Azure | O365 </br>
 Hyland OnBase - C# et SQL
 
-
-<button class="toggle-btn" onclick="this.nextElementSibling.classList.toggle('open')">
-🔍Cherchez la data
-</button>
+  
+<input type="checkbox" id="toggle1" class="toggle-checkbox">
+<label for="toggle1" class="toggle-label">🔍Cherchez la data</label>
 <div class="toggle-content">
  <br>  
 La data est partout et capitale dans ce type de projet qui semble centré sur le document mais repose surtout sur une base de données structurée, des workflows bien calibrés, des classes bien organisées :
@@ -70,9 +69,8 @@ mais aussi des actions utlisateurs au sein des workflows fontionnels.
 * Notifier les erreurs aux administrateurs pour action corrective 
 </div>
 
-<button class="toggle-btn" onclick="this.nextElementSibling.classList.toggle('open')">
-:hammer_and_wrench: Actions mises en place
-</button>
+<input type="checkbox" id="toggle2" class="toggle-checkbox">
+<label for="toggle1" class="toggle-label">:hammer_and_wrench: Actions mises en place</label>
 <div class="toggle-content">
 
 ####  Monitoring de la solution  
@@ -135,9 +133,8 @@ Nombre et statut des emails en envoi automatique avec PDF attaché (seulement po
 * __License usage monitoring__ : 
 License pic usage monitoring- par année, mois, jour, utilisateurs uniques
 </div>
-<button class="toggle-btn" onclick="this.nextElementSibling.classList.toggle('open')">
-:dart: Exemples d'améliorations identifiées grâce à ces rapports, et de résolutions d'incidents auxquelles ils ont contribué
-</button>
+<input type="checkbox" id="toggle2" class="toggle-checkbox">
+<label for="toggle1" class="toggle-label">:dart: Exemples d'améliorations identifiées grâce à ces rapports, et de résolutions d'incidents auxquelles ils ont contribué</label>
 <div class="toggle-content">
   <br>
   
