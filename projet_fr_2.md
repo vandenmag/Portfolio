@@ -465,10 +465,3 @@ familles (visibles sur les barres de top 3).
 * Les substances surveillées sont majoritaires (en nombre de boîtes délivrées).
   
 </details>
-
-
-
-
-
-
-
