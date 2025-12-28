@@ -17,4 +17,4 @@ Bonne visite
 [(Re)voir mon CV](CV_Data_Analyst_MVDP.pdf)
 
 </br>
-Last update : 25/12/2025
+Last update : 28/12/2025
