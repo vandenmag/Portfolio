@@ -4,7 +4,7 @@ title : "Projet Data Monitoring"
 permalink : /projet_data_monitoring
 ---
 
-# Tableaux de bord : </br> Dématérialisation de courrier entrant  - Monitoring des opérations
+# Tableaux de bord : <br> Dématérialisation de courrier entrant  - Monitoring des opérations
 
 > [!NOTE]
 > Visuels indicatifs de développement, à titre d'illustration
