@@ -52,7 +52,7 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 <details>
 
 <summary>:bar_chart: Focus problématique de surveillance</summary>
-</br>
+<br>
 Au sein de la solution même,
 
 > Mettre à disposition le monitoring de la solution, du point de vue de l'éxécution automatique (imports de documents, workflows de traitements, exports)
