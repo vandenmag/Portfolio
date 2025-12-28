@@ -4,14 +4,19 @@
 // import cayman
 @import "{{ site.theme }}";
 // listes
-ul, ol {
-  list-style: disc outside;
-  padding-left: 2em;
-  margin: 1em 0;
+main ul li, 
+main ol li, 
+article ul li, 
+article ol li {
+  list-style-type: disc !important;
+  list-style-position: outside !important;
+  padding-left: 0.5em !important;
+  margin: 0.25em 0 !important;
 }
 
-li {
-  margin: 0.5em 0;
+main ul, main ol, article ul, article ol {
+  padding-left: 2em !important;
+  margin: 1em 0 !important;
 }
 // gestion admonitions
 .note { border-left: 4px solid #007acc; background: #e7f3ff; padding: 1em; margin: 1em 0; }
