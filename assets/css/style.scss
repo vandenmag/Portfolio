@@ -4,17 +4,17 @@
 // import cayman
 @import "{{ site.theme }}";
 // toggle
-.toggle-btn {
-  background: linear-gradient(45deg, #007acc, #28a745);
-  color: white; border: none; padding: 0.8em 1.2em;
-  border-radius: 5px; cursor: pointer; font-weight: bold;
-  margin: 1em 0; width: 100%; text-align: left;
+.toggle-checkbox { display: none; }
+.toggle-label {
+  display: block; background: linear-gradient(45deg, #007acc, #28a745);
+  color: white; padding: 1em; cursor: pointer; border-radius: 5px;
+  margin: 1em 0; font-weight: bold;
 }
 .toggle-content {
   max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
   background: #f8f9fa; padding: 0 1em; border-left: 4px solid #007acc;
 }
-.toggle-content.open {
+.toggle-checkbox:checked + .toggle-label + .toggle-content {
   max-height: 800px; padding: 1em; margin-bottom: 1em;
 }
 // gestion admonitions
