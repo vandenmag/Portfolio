@@ -1,5 +1,5 @@
 ---
-layout : page
+layout : default
 title : "Projet Data Monitoring"
 permalink : /projet_data_monitoring
 ---
