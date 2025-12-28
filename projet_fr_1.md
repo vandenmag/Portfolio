@@ -6,8 +6,10 @@ permalink : /projet_data_monitoring
 
 # Tableaux de bord : <br> Dématérialisation de courrier entrant  - Monitoring des opérations
 
-> [!NOTE]
-> Visuels indicatifs de développement, à titre d'illustration
+<div class="note">
+  <p class="admonition-title">Note</p>
+  Visuels indicatifs de développement, à titre d'illustration.
+</div>
 
 ## Contexte 
 Projet de mise en place d'une solution de dématéralisation de courrier entrant pour un cabinet d'audit et de conseil, puis maintenance de la solution.
