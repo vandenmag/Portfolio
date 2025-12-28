@@ -54,10 +54,10 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
   </p>
 </figure>
 </div>
-<button class="toggle-btn" onclick="this.nextElementSibling.classList.toggle('open')">
-:bar_chart: Focus problématique de surveillance
-</button>
+<input type="checkbox" id="toggle2" class="toggle-checkbox">
+<label for="toggle2" class="toggle-label">📊Focus besoin de monitoring</label>
 <div class="toggle-content">
+
 <br>
 Au sein de la solution même,
 
@@ -69,8 +69,8 @@ mais aussi des actions utlisateurs au sein des workflows fontionnels.
 * Notifier les erreurs aux administrateurs pour action corrective 
 </div>
 
-<input type="checkbox" id="toggle2" class="toggle-checkbox">
-<label for="toggle1" class="toggle-label">:hammer_and_wrench: Actions mises en place</label>
+<input type="checkbox" id="toggle3" class="toggle-checkbox">
+<label for="toggle3" class="toggle-label">:hammer_and_wrench: Actions mises en place</label>
 <div class="toggle-content">
 
 ####  Monitoring de la solution  
@@ -133,8 +133,9 @@ Nombre et statut des emails en envoi automatique avec PDF attaché (seulement po
 * __License usage monitoring__ : 
 License pic usage monitoring- par année, mois, jour, utilisateurs uniques
 </div>
-<input type="checkbox" id="toggle2" class="toggle-checkbox">
-<label for="toggle1" class="toggle-label">:dart: Exemples d'améliorations identifiées grâce à ces rapports, et de résolutions d'incidents auxquelles ils ont contribué</label>
+
+<input type="checkbox" id="toggle4" class="toggle-checkbox">
+<label for="toggle4" class="toggle-label">:dart: Exemples d'améliorations identifiées grâce à ces rapports, et de résolutions d'incidents auxquelles ils ont contribué</label>
 <div class="toggle-content">
   <br>
   
