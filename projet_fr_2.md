@@ -26,7 +26,7 @@ Ainsi la surveillance et la compréhension de la prescription et et délivrance 
 ### Stack
 Python, PowerBI
 
-</br>
+<br>
 <details>
 
 <summary> :pill: Problématique  </summary>
@@ -38,11 +38,11 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
 * Que représentent les subsantances surveillées dans le cadre de l'antibiorésistance par rapport à l'ensemble des antibiotiques délivrés en pharmacies de ville?
 
 > [!NOTE]
-> "_Ces données de remboursement [données SNDS] sont utilisées comme proxy de la consommation française, faisant l’hypothèse d’une part que toutes les prescriptions donnent lieu à remboursement, et d’autre part que l’ensemble des médicaments remboursés par l’Assurance maladie ont été consommés par les patients concernés._"[Synthèse préliminaire des indicateurs disponibles sous Géodes (11-2020)](https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/la-consommation-d-antibiotiques-en-secteur-de-ville-en-france-2009-2019.-synthese-preliminaire-des-indicateurs-disponibles-sous-geodes)</br>
-></br>
-> Pour une approche alignée en unités avec les objectifs posés dans la [stratégie nationale 2022-2025 de prévention des infections et de l'antibioresistance](https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf), exprimés en doses définies journalières (DDJ) pour 1 000 habitants et par jour et en prescriptions pour 1 000 habitants et par an, voir le [Rapport de Santé publique France (11-2025)]( https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/consommation-d-antibiotiques-en-secteur-de-ville-en-france-2014-2024)</br>
-> La notion de proxy induit qu'on devrait pouvoir observer les grandes tendances dès un premier niveau d'étude des données de remboursements, sans pouvoir toutefois s'y limiter pour une analyse appronfondie et complète.</br>
-></br>
+> "_Ces données de remboursement [données SNDS] sont utilisées comme proxy de la consommation française, faisant l’hypothèse d’une part que toutes les prescriptions donnent lieu à remboursement, et d’autre part que l’ensemble des médicaments remboursés par l’Assurance maladie ont été consommés par les patients concernés._"[Synthèse préliminaire des indicateurs disponibles sous Géodes (11-2020)](https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/la-consommation-d-antibiotiques-en-secteur-de-ville-en-france-2009-2019.-synthese-preliminaire-des-indicateurs-disponibles-sous-geodes)<br>
+><br>
+> Pour une approche alignée en unités avec les objectifs posés dans la [stratégie nationale 2022-2025 de prévention des infections et de l'antibioresistance](https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf), exprimés en doses définies journalières (DDJ) pour 1 000 habitants et par jour et en prescriptions pour 1 000 habitants et par an, voir le [Rapport de Santé publique France (11-2025)]( https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/consommation-d-antibiotiques-en-secteur-de-ville-en-france-2014-2024)<br>
+> La notion de proxy induit qu'on devrait pouvoir observer les grandes tendances dès un premier niveau d'étude des données de remboursements, sans pouvoir toutefois s'y limiter pour une analyse appronfondie et complète.<br>
+><br>
 > Dans le cadre du projet, conduit en temps limité, c'est ce premier niveau qui est travaillé pour faire ressortir les tendances et offrir des indicateurs complémentaires à ceux exprimés en DDJ et prescriptions, par exemple relatifs au type et au prix du médicament.
 
 </details>
@@ -221,7 +221,7 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
   </p>
 </figure>
 
-</br>   
+<br>   
       
 <figure> 
   <p align="center" width="100%">
@@ -239,7 +239,7 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
 
 <details>
 <summary> :gear: Modélisation Power BI</summary>
-</br>
+<br>
   <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_modele_PBI.png" alt="modèle" style="width:100%">
@@ -251,7 +251,7 @@ En étudiant les données de remboursement (montants remboursés, nombre de boî
   * Tables de dimension : Age, sexe, région bénéficiare, Prescripteur, Année, Antibiotique
   * Table Insee : Traitée comme une table de faits pour appliquer les dimensions région, année, age, sexe.
   * Table de mesures DAX
- </br>   
+ <br>   
 </details>
 <details>  
 <summary> :dart: Principaux résultats et visualisations 📊</summary>
