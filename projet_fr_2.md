@@ -7,7 +7,7 @@ permalink : /projet_data_antibotiques
 # Analyse ad-hoc : <br> Consommation des antibiotiques en France 2019-2024
 
 <div class="note">
-  <p class="admonition-title"></p>
+  <p class="admonition-title"><strong>NB</strong></p>
   (Projet de groupe retravaillé)
 </div>
 
@@ -35,22 +35,22 @@ Python, PowerBI
 <button class="accordion">:pill: Problématique</button>
 <div class="panel">
   
-<p>En étudiant les données de remboursement (montants remboursés, nombre de boîtes délivrées) selon les axes prescripteur, bénéficiaire, sous-groupes pharmacologique : </p>
+<p>En étudiant les données de remboursement (montants remboursés, nombre de boîtes délivrées) selon les axes prescripteur, bénéficiaire, sous-groupe pharmacologique, on cherche à répondre aux questions suivantes : </p>
 
 <ul>
 <li>Quelles sont les tendances sur la période étudiée, selon les régions, les tranche d&#39;âge, le sexe des bénéficiaires, les types de prescripteurs, les familles prescrites?</li>
 <li>Quels critères, situations ou territoires présentent une tendance de consommation remarquable?</li>
 <li>Quelles sont les relations entre les différents critères?</li>
-<li>Que représentent les subsantances surveillées dans le cadre de l&#39;antibiorésistance par rapport à l&#39;ensemble des antibiotiques délivrés en pharmacies de ville?</li>
+<li>Que représentent les substances surveillées dans le cadre de l&#39;antibiorésistance par rapport à l&#39;ensemble des antibiotiques délivrés en pharmacies de ville?</li>
 </ul>
 <div class="note">
   <p class="admonition-title">Note</p>
  <p>  &quot;<em>Ces données de remboursement [données SNDS] sont utilisées comme proxy de la consommation française, faisant l’hypothèse d’une part que toutes les prescriptions donnent lieu à remboursement, et d’autre part que l’ensemble des médicaments remboursés par l’Assurance maladie ont été consommés par les patients concernés.</em>&quot;<a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/la-consommation-d-antibiotiques-en-secteur-de-ville-en-france-2009-2019.-synthese-preliminaire-des-indicateurs-disponibles-sous-geodes">Synthèse préliminaire des indicateurs disponibles sous Géodes (11-2020)</a></p>
 
-<p>Pour une approche alignée en unités avec les objectifs posés dans la <a href="https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf">stratégie nationale 2022-2025 de prévention des infections et de l&#39;antibioresistance</a>, exprimés en doses définies journalières (DDJ) pour 1 000 habitants et par jour et en prescriptions pour 1 000 habitants et par an, voir le <a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/consommation-d-antibiotiques-en-secteur-de-ville-en-france-2014-2024">Rapport de Santé publique France (11-2025)</a></p>
-<p>La notion de proxy induit qu&#39;on devrait pouvoir observer les grandes tendances dès un premier niveau d&#39;étude des données de remboursements, sans pouvoir toutefois s&#39;y limiter pour une analyse appronfondie et complète.</p>
+<p>&#9654; Pour une approche alignée en unités avec les objectifs posés dans la <a href="https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf">stratégie nationale 2022-2025 de prévention des infections et de l&#39;antibioresistance</a>, exprimés en doses définies journalières (DDJ) pour 1 000 habitants et par jour et en prescriptions pour 1 000 habitants et par an, voir le <a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/consommation-d-antibiotiques-en-secteur-de-ville-en-france-2014-2024">Rapport de Santé publique France (11-2025)</a></p>
+<p>&#9654; La notion de proxy induit qu&#39;on devrait pouvoir observer les grandes tendances dès un premier niveau d&#39;étude des données de remboursements, sans pouvoir toutefois s&#39;y limiter pour une analyse appronfondie et complète.</p>
 
-<p>Dans le cadre du projet, conduit en temps limité, c'est ce premier niveau qui est travaillé pour faire ressortir les tendances et offrir des indicateurs complémentaires à ceux exprimés en DDJ et prescriptions, par exemple relatifs au type et au prix du médicament.</p>
+<p>&#9654; Dans le cadre du projet, conduit en temps limité, c'est ce premier niveau qui est travaillé pour faire ressortir les tendances et offrir des indicateurs complémentaires à ceux exprimés en DDJ et prescriptions, par exemple relatifs au type et au prix du médicament.</p>
 </div>
 </div>
 
@@ -72,7 +72,7 @@ Python, PowerBI
 </ul>
 <figure>
 <p align="center" width="100%">
-  <img src="assets/P2_Data_OpenMedic.png" alt="Aperçu données Open Medic" style="width:60%">
+  <img src="assets/P2_Data_OpenMedic.png" alt="Aperçu données Open Medic" style="width:90%">
   <figcaption><h6 align="center">Aperçu des données - Base principale Open Medic</h6></figcaption>
   </p>
 </figure>
@@ -107,28 +107,25 @@ Python, PowerBI
 <li>Normalisation des noms de colonnes</li>
 <li>Concaténation des 6 fichiers</li>
 <li>Contrôle des doublons</li>
-<li>Contrôle des volumétries et valeurs manquantes<figure>
+<li>Contrôle des volumétries et valeurs manquantes<br>
+  <figure>
 <p align="center" width="100%">
-<img src="assets/P2_volumes_avt_nettoyage_info.png" alt="Volumes - état initial" style="width:30%">
+<img src="assets/P2_volumes_avt_nettoyage_info.png" alt="Volumes - état initial" style="width:50%">
 <figcaption><h6 align="center">Volumes après concaténation - état initial</h6></figcaption>
 </p>
 </figure>
 <figure>
 <p align="center" width="100%">
-<img src="assets/P2_volumes_avt_nettoyage.png" alt="Valeurs manquantes - état initial" style="width:30%">
+<img src="assets/P2_volumes_avt_nettoyage.png" alt="Valeurs manquantes - état initial" style="width:50%">
 <figcaption><h6 align="center">Valeurs manquantes après concaténation - état initial</h6></figcaption>
 </p>
 </figure>
-
-
 </li>
 </ul>
 </li>
-</ol>
-<ol>
 <li>Filtrage<ul>
 <li>Filtrage du dataframe sur ATC2=&#39;J01&#39; de façon à ne conserver que le périmètre des antibiotiques</li>
-<li>Contrôle des volumétries et valeurs manquantes<figure> 
+<li>Contrôle des volumétries et valeurs manquantes<figure> <br>
 <p align="center" width="100%">
 <img src="assets/P2_volumeJ01.png" alt="Volumes J01" style="width:40%">
 <figcaption><h6 align="center">Volumes et valeurs manquantes après filtrage</h6></figcaption>
@@ -139,8 +136,7 @@ Python, PowerBI
 </li>
 </ul>
 </li>
-</ol>
-<ol>
+
 <li><p>Adaptation des variables</p>
 <ul>
 <li>Suppression des variables non pertinentes</li>
@@ -149,13 +145,13 @@ Python, PowerBI
 <li>Transcodage de valeurs catégorielles<ul>
 <li>Exemple cas particulier du top générique, dont la codifiaction a changé au cours de la période étudiée<figure> 
 <p align="center" width="100%">
-<img src="assets/P2_topgen_1.png" alt="Codage Top Générique issu de la documentation du jeu de données" style="width:40%">
+<img src="assets/P2_topgen_1.png" alt="Codage Top Générique issu de la documentation du jeu de données" style="width:60%">
 <figcaption><h6 align="center">Codage Top Générique issu de la documentation du jeu de données</h6></figcaption>
 </p>
 </figure>
 <figure> 
 <p align="center" width="100%">
-<img src="assets/P2_transco_top-gen.png" alt="Codage Top Générique normalisé" style="width:40%">
+<img src="assets/P2_transco_top-gen.png" alt="Codage Top Générique normalisé" style="width:60%">
 <figcaption><h6 align="center">Codage Top Générique normalisé</h6></figcaption>
 </p>
 </figure>
@@ -167,7 +163,7 @@ Python, PowerBI
 <li><p>Ajout de la variable indiquant si la substance est surveillée ou non pour l&#39;antibiorésistance (merge avec la liste mission PRIMO)</p>
 <figure> 
 <p align="center" width="100%">
-<img src="assets/P2_ajout_primo.png" alt="Ajout variable PRIMO" style="width:40%">
+<img src="assets/P2_ajout_primo.png" alt="Ajout variable PRIMO" style="width:60%">
 <figcaption><h6 align="center">Ajout variable liste Primo (merge)</h6></figcaption>
 </p>
 </figure>
@@ -175,7 +171,7 @@ Python, PowerBI
 <ul>
 <li>Valorisation des valeurs manquantes liste primo à false, après vérification des lignes concernées<figure> 
 <p align="center" width="100%">
-<img src="assets/P2_NA_primo.png" alt="Gestion NA liste Primo" style="width:40%">
+<img src="assets/P2_NA_primo.png" alt="Gestion NA liste Primo" style="width:60%">
 <figcaption><h6 align="center">Gestion NA liste Primo</h6></figcaption>
 </p>
 </figure>
@@ -208,11 +204,11 @@ Python, PowerBI
 </li>
 </ul>
 </li>
-<li><p>Vérifiaction des outliers</p>
+<li><p>Vérification des outliers</p>
 <ul>
 <li>On constate une grande dispersion à droite des données quantitatives : on étudie les outliers et la proportion qu&#39;ils représentent. Ce ne sont pas des valeurs aberrantes; ils doivent être conservés.<figure> 
 <p align="center" width="100%">
-<img src="assets/P2_outliers.png" alt="outliers" style="width:40%">
+<img src="assets/P2_outliers.png" alt="outliers" style="width:60%">
 <figcaption><h6 align="center">Etude des outliers</h6></figcaption>
 </p>
 </figure>
@@ -233,7 +229,7 @@ Python, PowerBI
 
 <figure> 
   <p align="center" width="50%">
-  <img src="assets/P2_inconnues.png" alt="Valeurs inconnues" style="width:20%">
+  <img src="assets/P2_inconnues.png" alt="Valeurs inconnues" style="width:40%">
   <figcaption><h6 align="center">Pourcentages des valeurs inconnues</h6></figcaption>
   </p>
 </figure>
@@ -248,7 +244,7 @@ Python, PowerBI
 
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_infos_post_traitements.png" alt="Informations du jeu de données après traitements" style="width:50%">
+  <img src="assets/P2_infos_post_traitements.png" alt="Informations du jeu de données après traitements" style="width:70%">
   <figcaption><h6 align="center">Informations du jeu de données après traitements</h6></figcaption>
   </p>
 </figure>   
