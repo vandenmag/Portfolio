@@ -26,22 +26,24 @@ Hyland OnBase - C# et SQL
 <div class="toggle-block">
 <button class="accordion">🔍Cherchez la data</button>
 <div class="panel">
- <br>  
-La data est partout et capitale dans ce type de projet qui semble centré sur le document mais repose surtout sur une base de données structurée, des workflows bien calibrés, des classes bien organisées :
-  
-* Données métier (décrivant pour un objet courrier le client, la mission, le type de document, d'affranchissement, les destinataires, le courrier en lui-même, etc.)
-* Données techniques (identifiants de batch, de machines, horadatage, statuts de workflows, de jobs, données de paramétrage, etc.)
-* Données issues de référentiels (ici utilisateurs, clients, missions)
-  
-qu'il faut:
+<br>  
+<p>La data est partout et capitale dans ce type de projet qui semble centré sur le document mais repose surtout sur une base de données structurée, des workflows bien calibrés, des classes bien organisées :</p>
+<ul>
+<li>Données métier (décrivant pour un objet courrier le client, la mission, le type de document, d&#39;affranchissement, les destinataires, le courrier en lui-même, etc.)</li>
+<li>Données techniques (identifiants de batch, de machines, horadatage, statuts de workflows, de jobs, données de paramétrage, etc.)</li>
+<li>Données issues de référentiels (ici utilisateurs, clients, missions)</li>
+</ul>
+<p>qu&#39;il faut:</p>
+<ul>
+<li>identifier</li>
+<li>formater</li>
+<li>contrôler</li>
+<li>organiser dans un modèle de données </li>
+<li>faire fonctionner</li>
+<li>documenter</li>
+<li>maintenir</li>
+</ul>
 
-* identifier
-* formater
-* contrôler
-* organiser dans un modèle de données 
-* faire fonctionner
-* documenter
-* maintenir
 
 <!--
 Source - https://stackoverflow.com/a
