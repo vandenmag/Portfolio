@@ -160,14 +160,17 @@ Python, PowerBI
 </li>
 </ul>
 </li>
-<li><p>Ajout de la variable indiquant si la substance est surveillée ou non pour l&#39;antibiorésistance (merge avec la liste mission PRIMO)</p>
+<li><p>Variable indiquant si la substance est surveillée ou non pour l&#39;antibiorésistance (merge avec la liste mission PRIMO)</p>
+<ul>
+  <li>Ajout
 <figure> 
 <p align="center" width="100%">
 <img src="assets/P2_ajout_primo.png" alt="Ajout variable PRIMO" style="width:60%">
 <figcaption><h6 align="center">Ajout variable liste Primo (merge)</h6></figcaption>
 </p>
 </figure>
-
+  </li>
+</ul> 
 <ul>
 <li>Valorisation des valeurs manquantes liste primo à false, après vérification des lignes concernées<figure> 
 <p align="center" width="100%">
@@ -183,7 +186,7 @@ Python, PowerBI
 <li><p>Identifiées via describe et documentées sur la discussion Open Medic (il s&#39;agit de régularisations de remboursements)</p>
 <figure> 
 <p align="center" width="100%">
-<img src="assets/P2_describe.png" alt="describe" style="width:30%">
+<img src="assets/P2_describe.png" alt="describe" style="width:50%">
 <figcaption><h6 align="center">Describe valeurs quantitatives</h6></figcaption>
 </p>
 </figure>
@@ -195,7 +198,7 @@ Python, PowerBI
 </figure>
 <figure> 
 <p align="center" width="100%">
-<img src="assets/P2_montants_nega.png" alt="traitement montants négatifs res" style="width:40%">
+<img src="assets/P2_montants_nega.png" alt="traitement montants négatifs res" style="width:60%">
 <figcaption><h6 align="center">Traitement montants négatifs-résultat</h6></figcaption>
 </p>
 </figure>
@@ -208,33 +211,30 @@ Python, PowerBI
 <ul>
 <li>On constate une grande dispersion à droite des données quantitatives : on étudie les outliers et la proportion qu&#39;ils représentent. Ce ne sont pas des valeurs aberrantes; ils doivent être conservés.<figure> 
 <p align="center" width="100%">
-<img src="assets/P2_outliers.png" alt="outliers" style="width:60%">
+<img src="assets/P2_outliers.png" alt="outliers" style="width:80%">
 <figcaption><h6 align="center">Etude des outliers</h6></figcaption>
 </p>
 </figure>
 </li>
 </ul>
 </li>
-</ol>
 
-<ol>
-<li>Gestion des valeurs inconnues<ul>
+<li>Gestion des valeurs inconnues
+  <ul>
 <li>Le jeu de données ne comporte pas de NA mais des valeurs renseignées à &quot;Inconnu&quot;.</li>
 <li>Les valeurs inconnues (catégorielles) des différents critères sont introduites pour préserver le secret statistique lors qu&#39;un groupe concerne moins de 10 bénéficiaires.</li>
 <li>Le remplacement par le mode par exemple créerait beaucoup d&#39;approximation, notamment lorsqu&#39;une ligne/un groupe présente plusieurs critères inconnus.</li>
 <li>Contrôle de la proportion de lignes concernées : on conserve les lignes qui seront filtrées au besoin pour les visualisations</li>
 </ul>
 </li>
-</ol>
 
 <figure> 
   <p align="center" width="50%">
-  <img src="assets/P2_inconnues.png" alt="Valeurs inconnues" style="width:40%">
+  <img src="assets/P2_inconnues.png" alt="Valeurs inconnues" style="width:60%">
   <figcaption><h6 align="center">Pourcentages des valeurs inconnues</h6></figcaption>
   </p>
 </figure>
 
-<ol>
 <li><p>Vérification finale des doublons et valeurs manquantes</p>
 </li>
 <li><p>Résultats du traitement</p>
@@ -244,7 +244,7 @@ Python, PowerBI
 
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_infos_post_traitements.png" alt="Informations du jeu de données après traitements" style="width:70%">
+  <img src="assets/P2_infos_post_traitements.png" alt="Informations du jeu de données après traitements" style="width:90%">
   <figcaption><h6 align="center">Informations du jeu de données après traitements</h6></figcaption>
   </p>
 </figure>   
