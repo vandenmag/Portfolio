@@ -3,6 +3,7 @@
 
 // import cayman
 @import "{{ site.theme }}";
+
 // toggle
 .accordion {
   background-color: #159957;
@@ -13,12 +14,17 @@
   width: 100%;
   text-align: left;
   border-radius: 5px;
+  appearance: none;
 }
 
 .panel {
   display: none;
   padding: 10px;
   border: 1px solid #ddd;
+}
+
+.panel.open {
+  display: block;
 }
 
 // gestion admonitions
