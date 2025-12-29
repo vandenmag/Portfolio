@@ -28,11 +28,13 @@ Hyland OnBase - C# et SQL
 <div class="toggle-content">
  <br>  
 La data est partout et capitale dans ce type de projet qui semble centré sur le document mais repose surtout sur une base de données structurée, des workflows bien calibrés, des classes bien organisées :
-* Données métier (décrivant pour un objet courrier le client, la mission, le type de document, d'affranchissement, les destinataires, le courrier en lui-même, etc.)
   
+* Données métier (décrivant pour un objet courrier le client, la mission, le type de document, d'affranchissement, les destinataires, le courrier en lui-même, etc.)
 * Données techniques (identifiants de batch, de machines, horadatage, statuts de workflows, de jobs, données de paramétrage, etc.)
 * Données issues de référentiels (ici utilisateurs, clients, missions)
+  
 qu'il faut:
+
 * identifier
 * formater
 * contrôler
@@ -54,10 +56,10 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
   </p>
 </figure>
 </div>
+
 <input type="checkbox" id="toggle2" class="toggle-checkbox">
 <label for="toggle2" class="toggle-label">📊Focus besoin de monitoring</label>
 <div class="toggle-content">
-
 <br>
 Au sein de la solution même,
 
