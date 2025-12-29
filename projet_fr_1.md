@@ -59,7 +59,7 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 </figure>
 </div>
 </div>
-<br>
+
 <div class="toggle-block">
 <button class="accordion">📊Focus besoin de monitoring</button>
 <div class="panel">
@@ -77,7 +77,7 @@ mais aussi des actions utlisateurs au sein des workflows fontionnels.</p>
 </ul>
 </div>
 </div>
-<br>
+
 <div class="toggle-block">
 <button class="accordion">:hammer_and_wrench: Actions mises en place</button>
 <div class="panel">
@@ -99,8 +99,6 @@ mais aussi des actions utlisateurs au sein des workflows fontionnels.</p>
 </ul>
 <br>
 <h4 id="liste-des-rapports-dynamiques-mis-en-place">Liste des rapports dynamiques mis en place</h4>
-
-</figure>
 <br>
 <ul>
 <li><p><strong>Actions stats</strong> :
@@ -148,7 +146,7 @@ License pic usage monitoring- par année, mois, jour, utilisateurs uniques</li>
 </ul>
 </div>
 </div>
-<br>
+
 <div class="toggle-block">
 <button class="accordion">:dart: Exemples d'améliorations identifiées grâce à ces rapports, et de résolutions d'incidents auxquelles ils ont contribué</button>
 <div class="panel">
