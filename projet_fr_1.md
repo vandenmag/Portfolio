@@ -22,17 +22,17 @@ Projet de mise en place d'une solution de dématéralisation de courrier entrant
 Windows server-IIS | SQL Server | MS Azure | O365 </br>
 Hyland OnBase - C# et SQL
 
-  
-<input type="checkbox" id="toggle1" class="toggle-checkbox">
-<label for="toggle1" class="toggle-label">🔍Cherchez la data</label>
-<div class="toggle-content">
+<button class="accordion">🔍Cherchez la data</button>
+<div class="panel">
  <br>  
 La data est partout et capitale dans ce type de projet qui semble centré sur le document mais repose surtout sur une base de données structurée, des workflows bien calibrés, des classes bien organisées :
-* Données métier (décrivant pour un objet courrier le client, la mission, le type de document, d'affranchissement, les destinataires, le courrier en lui-même, etc.)
   
+* Données métier (décrivant pour un objet courrier le client, la mission, le type de document, d'affranchissement, les destinataires, le courrier en lui-même, etc.)
 * Données techniques (identifiants de batch, de machines, horadatage, statuts de workflows, de jobs, données de paramétrage, etc.)
 * Données issues de référentiels (ici utilisateurs, clients, missions)
+  
 qu'il faut:
+
 * identifier
 * formater
 * contrôler
@@ -54,9 +54,9 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
   </p>
 </figure>
 </div>
-<input type="checkbox" id="toggle2" class="toggle-checkbox">
-<label for="toggle2" class="toggle-label">📊Focus besoin de monitoring</label>
-<div class="toggle-content">
+
+<button class="accordion">📊Focus besoin de monitoring</button>
+<div class="panel">
 
 <br>
 Au sein de la solution même,
@@ -69,9 +69,8 @@ mais aussi des actions utlisateurs au sein des workflows fontionnels.
 * Notifier les erreurs aux administrateurs pour action corrective 
 </div>
 
-<input type="checkbox" id="toggle3" class="toggle-checkbox">
-<label for="toggle3" class="toggle-label">:hammer_and_wrench: Actions mises en place</label>
-<div class="toggle-content">
+<button class="accordion">:hammer_and_wrench: Actions mises en place</button>
+<div class="panel">
 
 ####  Monitoring de la solution  
 
@@ -94,7 +93,7 @@ mais aussi des actions utlisateurs au sein des workflows fontionnels.
 Statistiques par action utilisateur une fois le document validé (e.g. : Paper version request, PDF export, etc.), par utilisateur et groupe d'utilisateurs
 <figure>
 <p align="center" width="100%">
-  <img src="assets/P1_action_stats.png " alt="Exemple web Actions stats" style="width:60%">
+  <img src="assets/P1_action_stats.png" alt="Exemple web Actions stats" style="width:60%">
   <figcaption><h6 align="center">Exemple reporting web 'Action stats'</h6></figcaption>
   </p>
 </figure>
@@ -134,9 +133,8 @@ Nombre et statut des emails en envoi automatique avec PDF attaché (seulement po
 License pic usage monitoring- par année, mois, jour, utilisateurs uniques
 </div>
 
-<input type="checkbox" id="toggle4" class="toggle-checkbox">
-<label for="toggle4" class="toggle-label">:dart: Exemples d'améliorations identifiées grâce à ces rapports, et de résolutions d'incidents auxquelles ils ont contribué</label>
-<div class="toggle-content">
+<button class="accordion">:dart: Exemples d'améliorations identifiées grâce à ces rapports, et de résolutions d'incidents auxquelles ils ont contribué</button>
+<div class="panel">
   <br>
   
   * Ajustement de la résolution des scanners pour équilibrer volumes de fichiers et confort d'exploitation du document numérisé par l'utilisateur
