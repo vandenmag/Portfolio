@@ -154,7 +154,7 @@ License pic usage monitoring- par année, mois, jour, utilisateurs uniques
 </div>
 </div>
 
-<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
 
 
 
