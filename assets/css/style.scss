@@ -26,7 +26,24 @@
 .panel.open {
   display: block;
 }
+/* Listes non ordonnées (ul) */
+.panel ul {
+  list-style-type: disc; /* bullets comme Markdown */
+  padding-left: 2em;     /* indentation classique Markdown */
+  margin: 0.5em 0;       /* espace avant et après la liste */
+}
 
+/* Listes ordonnées (ol) */
+.panel ol {
+  list-style-type: decimal; /* chiffres */
+  padding-left: 2em;        /* indentation */
+  margin: 0.5em 0;          /* espace avant et après */
+}
+
+/* Items de liste */
+.panel li {
+  margin: 0.25em 0; /* espace entre les items */
+}
 // gestion admonitions
 .note { border-left: 4px solid #007acc; background: #e7f3ff; padding: 1em; margin: 1em 0; }
 .tip { border-left: 4px solid #00a000; background: #e7ffe7; padding: 1em; margin: 1em 0; }
