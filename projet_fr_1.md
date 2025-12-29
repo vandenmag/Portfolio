@@ -17,7 +17,7 @@ Projet de mise en place d'une solution de dématéralisation de courrier entrant
 
 ### Le process en ultra-bref
 
-:incoming_envelope: > scan :page_facing_up: > import :open_file_folder:> indexation :label: :desktop_computer: > traitement business :gear: :briefcase: > export pour archivage :file_cabinet:
+:incoming_envelope: &#9654; scan :page_facing_up: &#9654; import :open_file_folder: &#9654; indexation :label: :desktop_computer: &#9654; traitement business :gear: :briefcase: &#9654; export pour archivage :file_cabinet:
 
 ### Stack
 Windows server-IIS | SQL Server | MS Azure | O365 <br>
