@@ -96,7 +96,7 @@ mais aussi des actions utlisateurs au sein des workflows fontionnels.
 Statistiques par action utilisateur une fois le document validé (e.g. : Paper version request, PDF export, etc.), par utilisateur et groupe d'utilisateurs
 <figure>
 <p align="center" width="100%">
-  <img src="assets/P1_action_stats.png " alt="Exemple web Actions stats" style="width:60%">
+  <img src="assets/P1_action_stats.png" alt="Exemple web Actions stats" style="width:60%">
   <figcaption><h6 align="center">Exemple reporting web 'Action stats'</h6></figcaption>
   </p>
 </figure>
