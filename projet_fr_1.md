@@ -53,7 +53,7 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 
 <figure>
 <p align="center" width="100%">
-  <img src="assets/P1_data_model.png" alt="Version de travail Modèle de données P1" style="width:60%">
+  <img src="assets/P1_data_model.png" alt="Version de travail Modèle de données P1" style="width:80%">
   <figcaption><h6 align="center">Version de travail du modèle de données</h6></figcaption>
   </p>
 </figure>
@@ -99,36 +99,34 @@ mais aussi des actions utlisateurs au sein des workflows fontionnels.</p>
 </ul>
 <br>
 <h4 id="liste-des-rapports-dynamiques-mis-en-place">Liste des rapports dynamiques mis en place</h4>
-<ul>
-<li>Actions stats
-Statistiques par action utilisateur une fois le document validé (e.g. : Paper version request, PDF export, etc.), par utilisateur et groupe d&#39;utilisateurs</li>
-</ul>
-<br>
-<figure>
-<p align="center" width="100%">
-  <img src="assets/P1_action_stats.png" alt="Exemple web Actions stats" style="width:60%">
-  <figcaption><h6 align="center">Exemple reporting web 'Action stats'</h6></figcaption>
-  </p>
-</figure>
-<figure>
-<p align="center" width="100%">
-  <img src="assets/P1_action_stats_parameters.png" alt="Exemple web Actions stats-date picker" style="width:40%">
-  <figcaption><h6 align="center">Exemple date picker web 'Action stats'</h6></figcaption>
-  </p>
-</figure>
-<br>
-<ul>
-<li>Control stats
-Statistiques par action utilisateur en phase de contrôle du document (Qualify and Send, or Forward back to mailroom, and reason for forwarding back), by user and user group
-Détail raisons de refus/renvoi du document après numérisation</li>
-</ul>
-<p align="center" width="100%">
-  <img src="assets/P1_back2mr.png" alt="Exemple Nombre de renvois par motif de refus" style="width:60%">
-  <figcaption><h6 align="center">Exemple Nombre de renvois par motif de refus</h6></figcaption>
-  </p>
-</figure>
 
+</figure>
+<br>
 <ul>
+<li><p><strong>Actions stats</strong> :
+Statistiques par action utilisateur une fois le document validé (e.g. : Paper version request, PDF export, etc.), par utilisateur et groupe d&#39;utilisateurs</p>
+<figure>
+<p align="center" width="100%">
+<img src="assets/P1_action_stats.png" alt="Exemple web Actions stats" style="width:80%">
+<figcaption><h6 align="center">Exemple reporting web &#39;Action stats&#39;</h6></figcaption>
+</p>
+</figure>
+<figure>
+<p align="center" width="100%">
+<img src="assets/P1_action_stats_parameters.png" alt="Exemple web Actions stats-date picker" style="width:60%">
+<figcaption><h6 align="center">Exemple date picker web &#39;Action stats&#39;</h6></figcaption>
+</p>
+</figure>
+</li>
+<li><p><strong>Control stats</strong> :
+Statistiques par action utilisateur en phase de contrôle du document (Qualify and Send, or Forward back to mailroom, and reason for forwarding back), by user and user group
+Détail raisons de refus/renvoi du document après numérisation</p>
+<figure>
+<p align="center" width="100%">
+<img src="assets/P1_back2mr.png" alt="Exemple Nombre de renvois par motif de refus" style="width:80%">
+<figcaption><h6 align="center">Exemple Nombre de renvois par motif de refus</h6></figcaption>
+</p>
+</figure></li>
 <li><strong>Import stats - month details</strong> : 
 Imports de documents par Service et par mois (importés via scanners tiers)</li>
 <li><strong>Indexing stats - month details</strong> : 
