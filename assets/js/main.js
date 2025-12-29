@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".accordion").forEach(btn => {
+  document.querySelectorAll(".toggle-block").forEach(block => {
+    const btn = block.querySelector(".accordion");
+    const panel = block.querySelector(".panel");
+
+    if (!btn || !panel) return;
+
     btn.addEventListener("click", () => {
-      const panel = btn.nextElementSibling;
-      if (!panel || !panel.classList.contains("panel")) return;
       panel.classList.toggle("open");
     });
   });
 });
-
-console.log("JS chargé");
