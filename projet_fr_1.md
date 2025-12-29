@@ -17,7 +17,7 @@ Projet de mise en place d'une solution de dématéralisation de courrier entrant
 
 ### Le process en ultra-bref
 
-:incoming_envelope: &#9654; scan :page_facing_up: &#9654; import :open_file_folder: &#9654; indexation :label: :desktop_computer: &#9654; traitement business :gear: :briefcase: &#9654; export pour archivage :file_cabinet:
+:incoming_envelope: &#9654; scan :page_facing_up: &#9654; import :open_file_folder: &#9654; indexation :desktop_computer: &#9654; traitement business :briefcase: &#9654; export pour archivage :file_cabinet:
 
 ### Stack
 Windows server-IIS | SQL Server | MS Azure | O365 <br>
@@ -29,11 +29,11 @@ Hyland OnBase - C# et SQL
 <br>  
 <p>La data est partout et capitale dans ce type de projet qui semble centré sur le document mais repose surtout sur une base de données structurée, des workflows bien calibrés, des classes bien organisées :</p>
 <ul>
-<li>Données métier (décrivant pour un objet courrier le client, la mission, le type de document, d&#39;affranchissement, les destinataires, le courrier en lui-même, etc.)</li>
+<li>Données métier (décrivant pour un objet courrier : le client, la mission, le type de document, d&#39;affranchissement, les destinataires, le courrier en lui-même, etc.)</li>
 <li>Données techniques (identifiants de batch, de machines, horadatage, statuts de workflows, de jobs, données de paramétrage, etc.)</li>
 <li>Données issues de référentiels (ici utilisateurs, clients, missions)</li>
 </ul>
-<p>qu&#39;il faut:</p>
+<p>qu&#39;il faut :</p>
 <ul>
 <li>identifier</li>
 <li>formater</li>
@@ -153,7 +153,7 @@ License pic usage monitoring- par année, mois, jour, utilisateurs uniques</li>
 <br>
 <ul>
 <li>Ajustement de la résolution des scanners pour équilibrer volumes de fichiers et confort d&#39;exploitation du document numérisé par l&#39;utilisateur</li>
-<li>Ajustement des volumes de licenses et prévisions d&#39;accroissement au fil du déploiement</li>
+<li>Ajustement des volumes de licences et prévisions d&#39;accroissement au fil du déploiement</li>
 <li>Identification, analyse et résolution d&#39;une sauvergarde tierce de DB qui interrompait certains jobs</li>
 <li><p>Réactivité et reprise en cas d&#39;incident réseau quand les envois auto d&#39;emails ou les dépôts de pdf par la solution étaient affectés</p>
 <p>Etc. etc.</p>
