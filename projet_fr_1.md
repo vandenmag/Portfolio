@@ -20,7 +20,7 @@ Projet de mise en place d'une solution de dématéralisation de courrier entrant
 :incoming_envelope: > scan :page_facing_up: > import :open_file_folder:> indexation :label: :desktop_computer: > traitement business :gear: :briefcase: > export pour archivage :file_cabinet:
 
 ### Stack
-Windows server-IIS | SQL Server | MS Azure | O365 </br>
+Windows server-IIS | SQL Server | MS Azure | O365 <br>
 Hyland OnBase - C# et SQL
 
 <button class="accordion">🔍Cherchez la data</button>
