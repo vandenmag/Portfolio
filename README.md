@@ -2,7 +2,7 @@
 
 Vous trouverez ici quelques exemples de problématiques et traitements par la donnée issus de mon parcours.
 
-Bonne visite  
+Bonne visite.  
   
  <br> 
 
