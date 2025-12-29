@@ -3,7 +3,7 @@ layout : default
 title : "Projet Data Monitoring"
 permalink : /projet_data_monitoring
 ---
-<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
 
 # Tableaux de bord : <br> Dématérialisation de courrier entrant  - Monitoring des opérations
 
