@@ -5,3 +5,5 @@ document.querySelectorAll(".accordion").forEach(btn => {
       panel.style.display === "block" ? "none" : "block";
   });
 });
+
+console.log("JS chargé");
