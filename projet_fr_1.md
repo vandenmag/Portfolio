@@ -8,7 +8,7 @@ permalink : /projet_data_monitoring
 # Tableaux de bord : <br> Dématérialisation de courrier entrant  - Monitoring des opérations
 
 <div class="note">
-  <p class="admonition-title">Note</p>
+  <p class="admonition-title"></p>
   Visuels indicatifs de développement, à titre d'illustration.
 </div>
 
