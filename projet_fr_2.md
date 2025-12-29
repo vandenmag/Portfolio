@@ -251,24 +251,27 @@ Python, PowerBI
 </div>
 </div>
 
-<details>
+<div class="toggle-block">
+<button class="accordion">:hammer_and_wrench: Méthodologie - Etapes de traitement des données de contexte</button>
+<div class="panel">
 
-<summary>:hammer_and_wrench: Méthodologie - Etapes de traitement des données de contexte</summary>
-
-* Fichier INSEE
-  - Regroupement chiffres régions PACA et Corse pour aligner sur la répartition Open Medic
-  - Regroupement chiffres pour aligner sur la répartition par tranches d'âge Open Medic
-  - Concaténation des 6 onglets (1 par année) en un seul avec ajout de la colonne année
-  - Normalisation des valeurs Régions, sexe et tranche d'âge
-<figure> 
-  <p align="center" width="100%">
-  <img src="assets/P2_INSEE_avant.png" alt="Aperçu des données INSEE brutes" style="width:90%">
-  <figcaption><h6 align="center">Aperçu des données INSEE brutes (exemple année 2024)</h6></figcaption>
-  </p>
+<ul>
+<li>Fichier INSEE<ul>
+<li>Regroupement chiffres régions PACA et Corse pour aligner sur la répartition Open Medic</li>
+<li>Regroupement chiffres pour aligner sur la répartition par tranches d&#39;âge Open Medic</li>
+<li>Concaténation des 6 onglets (1 par année) en un seul avec ajout de la colonne année</li>
+<li>Normalisation des valeurs Régions, sexe et tranche d&#39;âge<figure> 
+<p align="center" width="100%">
+<img src="assets/P2_INSEE_avant.png" alt="Aperçu des données INSEE brutes" style="width:90%">
+<figcaption><h6 align="center">Aperçu des données INSEE brutes (exemple année 2024)</h6></figcaption>
+</p>
 </figure>
 
-<br>   
-      
+</li>
+</ul>
+</li>
+</ul>
+<p><br>   </p>
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_INSEE_après.png" alt="Aperçu des données INSEE après traitement" style="width:50%">
@@ -276,15 +279,19 @@ Python, PowerBI
   </p>
 </figure>   
 
-* Liste PRIMO
-  - Récupération des codes ATC5 pour les ATC3 J01
-  - Valorisation d'un booléen à True si la substance ATC5 est surveillée (voir ci-dessus étape 5 traitement fichier Open medic)
-   
+<ul>
+<li>Liste PRIMO<ul>
+<li>Récupération des codes ATC5 pour les ATC3 J01</li>
+<li>Valorisation d&#39;un booléen à True si la substance ATC5 est surveillée (voir ci-dessus étape 5 traitement fichier Open medic)</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 
-</details>
-
-<details>
-<summary> :gear: Modélisation Power BI</summary>
+<div class="toggle-block">
+<button class="accordion"> :gear: Modélisation Power BI</button>
+<div class="panel">
 <br>
   <figure> 
   <p align="center" width="100%">
@@ -292,45 +299,50 @@ Python, PowerBI
   <figcaption><h6 align="center">Modèle Power BI</h6></figcaption>
   </p>
 </figure> 
-
-  * Table des remboursement : Table de faits
-  * Tables de dimension : Age, sexe, région bénéficiare, Prescripteur, Année, Antibiotique
-  * Table Insee : Traitée comme une table de faits pour appliquer les dimensions région, année, age, sexe.
-  * Table de mesures DAX
+<ul>
+<li>Table des remboursement : Table de faits</li>
+<li>Tables de dimension : Age, sexe, région bénéficiare, Prescripteur, Année, Antibiotique</li>
+<li>Table Insee : Traitée comme une table de faits pour appliquer les dimensions région, année, age, sexe.</li>
+<li>Table de mesures DAX</li>
+</ul>
  <br>   
-</details>
-<details>  
-<summary> :dart: Principaux résultats et visualisations 📊</summary>
+</div>
+</div>
 
-## Exploration préalable (Python) - exemples
-
-* Le montant remboursé et la base de remboursement ont une relation linéaire (coefficient taux de remboursement).
+<div class="toggle-block">
+<button class="accordion"> :dart: Principaux résultats et visualisations 📊</button>
+<div class="panel">
+<br>
+<h2 id="exploration-pr-alable-python-exemples">Exploration préalable (Python) - exemples</h2>
+<ul>
+<li><p>Le montant remboursé et la base de remboursement ont une relation linéaire (coefficient taux de remboursement).</p>
 <figure> 
-  <p align="center" width="100%">
-  <img src="assets/P2_lineaire.png" alt="relation linéaire" style="width:30%">
-  <figcaption><h6 align="center">Relation linéaire Montant remboursé/Base de remboursement</h6></figcaption>
-  </p>
+<p align="center" width="100%">
+<img src="assets/P2_lineaire.png" alt="relation linéaire" style="width:30%">
+<figcaption><h6 align="center">Relation linéaire Montant remboursé/Base de remboursement</h6></figcaption>
+</p>
 </figure>  
-
-* Le montant remboursé (ou la base de remboursement) et le nombre de boîtes délivrées ont une corrélation statistique positive forte mais n'ont pas une relation linéaire. Il est donc intéressant/complémentaire d'observer les comportements de ces 2 variables sur les mêmes critères.
-  <figure> 
-  <p align="center" width="100%">
-  <img src="assets/P2_correlations.png" alt="correlations" style="width:30%">
-  <figcaption><h6 align="center">Matrice de corrélations</h6></figcaption>
-  </p>
-</figure>  
+</li>
+<li><p>Le montant remboursé (ou la base de remboursement) et le nombre de boîtes délivrées ont une corrélation statistique positive forte mais n&#39;ont pas une relation linéaire. Il est donc intéressant/complémentaire d&#39;observer les comportements de ces 2 variables sur les mêmes critères.</p>
 <figure> 
-  <p align="center" width="100%">
-  <img src="assets/P2_non_lineaire.png" alt="non linéaire" style="width:30%">
-  <figcaption><h6 align="center">Relation non linéaire Montant remboursé/Nombre de boîtes délivrées</h6></figcaption>
-  </p>
+<p align="center" width="100%">
+<img src="assets/P2_correlations.png" alt="correlations" style="width:30%">
+<figcaption><h6 align="center">Matrice de corrélations</h6></figcaption>
+</p>
+</figure><br><figure> 
+<p align="center" width="100%">
+<img src="assets/P2_non_lineaire.png" alt="non linéaire" style="width:30%">
+<figcaption><h6 align="center">Relation non linéaire Montant remboursé/Nombre de boîtes délivrées</h6></figcaption>
+</p>
 </figure>  
 
-## Tendance globale
-
-* Ce rapport présente les éléments clés et les KPIs généraux qui seront déclinés dans les autres rapports sous les
-axes de prescription, remboursement et familles d'antibiotiques.
-
+</li>
+</ul>
+<h2 id="tendance-globale">Tendance globale</h2>
+<ul>
+<li>Ce rapport présente les éléments clés et les KPIs généraux qui seront déclinés dans les autres rapports sous les
+axes de prescription, remboursement et familles d&#39;antibiotiques.</li>
+</ul>
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_global.png" alt="non linéaire" style="width:100%">
@@ -338,23 +350,27 @@ axes de prescription, remboursement et familles d'antibiotiques.
   </p>
 </figure> 
 
-#### Variations
-
-* L'année 2020, avec le Covid,est marqué par une baisse du nombre de boîtes consommées comme pour les
-montants remboursés. Suit une hausse progressive de 2021 à 2022 puis une légère inflexion en 2023.
-
-* Si sur l'ensemble de la période étudiée la tendance globale est à la baisse pour le nombre de boîtes
+<h4 id="variations">Variations</h4>
+<ul>
+<li><p>L&#39;année 2020, avec le Covid,est marqué par une baisse du nombre de boîtes consommées comme pour les
+montants remboursés. Suit une hausse progressive de 2021 à 2022 puis une légère inflexion en 2023.</p>
+</li>
+<li><p>Si sur l&#39;ensemble de la période étudiée la tendance globale est à la baisse pour le nombre de boîtes
 consommées comme pour les montants remboursés, la tendance est à la hausse sur ces 2 indicateurs pour la
-dernière année.
-
-> La mise en place en 2022 de la stratégie nationale de prévention des infections et de l'antibiorésistance
-a porté ses fruits au démarrage mais les effets peinent à perdurer sur ces indicateurs.
-
-* On remarque que seuls les non-génériques affichent une réelle baisse sur 2019-2024 avec une nette baisse
-entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.
-
-> Les nouvelles règles relatives au remboursement des non-génériques (indexation sur le prix du générique équivalent, souvent inférieur, sauf si non substituable) entrées en vigueur au 01/01/2021 semblent se traduire par une baisse de consommation des antibiotiques non-génériques.
-
+dernière année.</p>
+</li>
+</ul>
+<blockquote>
+<p>La mise en place en 2022 de la stratégie nationale de prévention des infections et de l&#39;antibiorésistance
+a porté ses fruits au démarrage mais les effets peinent à perdurer sur ces indicateurs.</p>
+</blockquote>
+<ul>
+<li>On remarque que seuls les non-génériques affichent une réelle baisse sur 2019-2024 avec une nette baisse
+entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.</li>
+</ul>
+<blockquote>
+<p>Les nouvelles règles relatives au remboursement des non-génériques (indexation sur le prix du générique équivalent, souvent inférieur, sauf si non substituable) entrées en vigueur au 01/01/2021 semblent se traduire par une baisse de consommation des antibiotiques non-génériques.</p>
+</blockquote>
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_global_non_gen.png" alt="PBI_global" style="width:100%">
@@ -362,17 +378,18 @@ entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.
   </p>
 </figure> 
 
-#### Disparités régionales
-
-* Si l'Île-de-France est en tête des montants remboursés en valeur sur la période étudiée, c'est globalement les regions PACA-Corse qui remboursent le plus pour 1000 habitants.
-
-
-## Prescripteurs
-
-* Ce rapport aborde les indicateurs selon l'axe de la prescription et met en évidence :
-  - la dominance, tant sur le nombre de boîtes délivrées que sur les montants remboursés, de 3 types de prescripteurs avec largement en tête les médecins généralistes libéraux.
-  - des diparités régionales et par tranche d'âge
-
+<h4 id="disparit-s-r-gionales">Disparités régionales</h4>
+<ul>
+<li>Si l&#39;Île-de-France est en tête des montants remboursés en valeur sur la période étudiée, c&#39;est globalement les regions PACA-Corse qui remboursent le plus pour 1000 habitants.</li>
+</ul>
+<h2 id="prescripteurs">Prescripteurs</h2>
+<ul>
+<li>Ce rapport aborde les indicateurs selon l&#39;axe de la prescription et met en évidence :<ul>
+<li>la dominance, tant sur le nombre de boîtes délivrées que sur les montants remboursés, de 3 types de prescripteurs avec largement en tête les médecins généralistes libéraux.</li>
+<li>des diparités régionales et par tranche d&#39;âge</li>
+</ul>
+</li>
+</ul>
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_prescripteurs.png" alt="PBI_prescripteurs" style="width:100%">
@@ -380,14 +397,15 @@ entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.
   </p>
 </figure> 
 
-#### Type de prescripteur et répartition des montants
-
-* Le top 3 des prescripteurs représente plus de 90% des prescriptions, en montant remboursé comme en nombre
-de boîtes délivrées.
-
-* Au sein de ce top 3, les médecins généralistes libéraux dominent largement, quels que soient le critère, la région
-ou l'année. De même le 2ème rang est toujours occupé par les prescripteurs salariés (établissements de santé/hôpitaux) et le 3ème par la chirurgie dentaire (1 exception pour les 0-19 ans avec la Pédiatrie libérale en 3ème position).
-
+<h4 id="type-de-prescripteur-et-r-partition-des-montants">Type de prescripteur et répartition des montants</h4>
+<ul>
+<li><p>Le top 3 des prescripteurs représente plus de 90% des prescriptions, en montant remboursé comme en nombre
+de boîtes délivrées.</p>
+</li>
+<li><p>Au sein de ce top 3, les médecins généralistes libéraux dominent largement, quels que soient le critère, la région
+ou l&#39;année. De même le 2ème rang est toujours occupé par les prescripteurs salariés (établissements de santé/hôpitaux) et le 3ème par la chirurgie dentaire (1 exception pour les 0-19 ans avec la Pédiatrie libérale en 3ème position).</p>
+</li>
+</ul>
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_prescripteur_tooltip_age.png" alt="PBI_prescripteurs_tooltip_age" style="width:40%">
@@ -395,10 +413,10 @@ ou l'année. De même le 2ème rang est toujours occupé par les prescripteurs s
   </p>
 </figure> 
 
-#### Disparités régionales
-
-* On observe que la répartition sur le territoire en nombre de boîtes pour 1000 habitants varie fortement selon la spécialité du prescripteur, notamment ceux du top 3.
-
+<h4 id="disparit-s-r-gionales">Disparités régionales</h4>
+<ul>
+<li>On observe que la répartition sur le territoire en nombre de boîtes pour 1000 habitants varie fortement selon la spécialité du prescripteur, notamment ceux du top 3.</li>
+</ul>
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_prescripteurs_MG.png" alt="PBI_prescripteurs" style="width:100%">
@@ -418,11 +436,11 @@ ou l'année. De même le 2ème rang est toujours occupé par les prescripteurs s
   </p>
 </figure> 
 
-## Remboursements et prix des antibiotiques
-
-* Ce rapport aborde l'axe de la charge financière représentée par les remboursements.
-Il introduit la notion de prix du médicament avec l'indicateur du Montant moyen remboursé par boîte et la valeur moyenne par type de médicament de la base de remboursement.
-
+<h2 id="remboursements-et-prix-des-antibiotiques">Remboursements et prix des antibiotiques</h2>
+<ul>
+<li>Ce rapport aborde l&#39;axe de la charge financière représentée par les remboursements.
+Il introduit la notion de prix du médicament avec l&#39;indicateur du Montant moyen remboursé par boîte et la valeur moyenne par type de médicament de la base de remboursement.</li>
+</ul>
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_remboursements.png" alt="PBI_remboursements" style="width:100%">
@@ -430,22 +448,26 @@ Il introduit la notion de prix du médicament avec l'indicateur du Montant moyen
   </p>
 </figure> 
 
-#### Impact du type de médicament
-
-* La base de remboursement est toujours plus élevée pour les non-génériques et référents que pour les génériques, comme le montant remboursé moyen (valable sur toute la période comme sur la dernière année 2024).
-
-* La part des médicaments génériques dans les montants remboursés a augmenté sur la période étudiée dans
-son ensemble ainsi que sur la dernière année :
-  - Part génériques 2019 : 56,49%
-  - Part génériques 2023 : 65,51%
-  - Part génériques 2024 : 67,2%
-
-#### Disparités régionales
-
-* Les régions PACA-Corse et d'Outre-mer ont les montants moyens remboursés par boîte les plus élevés, avec cependant une tendance à la baisse (tous types de médicaments confondus) . La région Centre-Val de Loire a le montant le plus bas.
-
-> Pour les non-génériques seuls, la tendance est à la hausse
-
+<h4 id="impact-du-type-de-m-dicament">Impact du type de médicament</h4>
+<ul>
+<li><p>La base de remboursement est toujours plus élevée pour les non-génériques et référents que pour les génériques, comme le montant remboursé moyen (valable sur toute la période comme sur la dernière année 2024).</p>
+</li>
+<li><p>La part des médicaments génériques dans les montants remboursés a augmenté sur la période étudiée dans
+son ensemble ainsi que sur la dernière année :</p>
+<ul>
+<li>Part génériques 2019 : 56,49%</li>
+<li>Part génériques 2023 : 65,51%</li>
+<li>Part génériques 2024 : 67,2%</li>
+</ul>
+</li>
+</ul>
+<h4 id="disparit-s-r-gionales">Disparités régionales</h4>
+<ul>
+<li>Les régions PACA-Corse et d&#39;Outre-mer ont les montants moyens remboursés par boîte les plus élevés, avec cependant une tendance à la baisse (tous types de médicaments confondus) . La région Centre-Val de Loire a le montant le plus bas.</li>
+</ul>
+<blockquote>
+<p>Pour les non-génériques seuls, la tendance est à la hausse</p>
+</blockquote>
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_remboursements_non_gen2024.png" alt="PBI_remboursements_ng2024" style="width:100%">
@@ -453,20 +475,22 @@ son ensemble ainsi que sur la dernière année :
   </p>
 </figure> 
 
-* Les régions PACA-Corse et Hauts-de-France sont celles où le montant remboursé par habitant est le plus élevé. A l'opposé on trouve les régions Auvergne-Rhône-Alpes et Centre-Val de loire.
-
-#### Répartition prescripteurs
-
-* On observe une répartition similaire à celle du nombre de boîtes pour le top 3 prescripteurs, avec le même type d'évolution :
-  - Dominance de la médecine générale libérale sur les prescripteurs salariés et les chirurgiens dentistes (pédiatrie libérale pour les 0-19 ans)
-  - Progression dans le temps de la part des prescripteurs salariés dans le top 3
-
-NB : Les Prescripteurs de ville en 2019 incluent les dentistes, qui en sont isolés à partir de 2020. Leur part est donc relativement stable.
-
-### Sexe bénéficiaire
-
-* Les montants remboursés sont globalement plus élévés par habitant pour le sexe féminin mais de façon plus équilibrée sur les 0-19 ans.
-
+<ul>
+<li>Les régions PACA-Corse et Hauts-de-France sont celles où le montant remboursé par habitant est le plus élevé. A l&#39;opposé on trouve les régions Auvergne-Rhône-Alpes et Centre-Val de loire.</li>
+</ul>
+<h4 id="r-partition-prescripteurs">Répartition prescripteurs</h4>
+<ul>
+<li>On observe une répartition similaire à celle du nombre de boîtes pour le top 3 prescripteurs, avec le même type d&#39;évolution :<ul>
+<li>Dominance de la médecine générale libérale sur les prescripteurs salariés et les chirurgiens dentistes (pédiatrie libérale pour les 0-19 ans)</li>
+<li>Progression dans le temps de la part des prescripteurs salariés dans le top 3</li>
+</ul>
+</li>
+</ul>
+<p>NB : Les Prescripteurs de ville en 2019 incluent les dentistes, qui en sont isolés à partir de 2020. Leur part est donc relativement stable.</p>
+<h3 id="sexe-b-n-ficiaire">Sexe bénéficiaire</h3>
+<ul>
+<li>Les montants remboursés sont globalement plus élévés par habitant pour le sexe féminin mais de façon plus équilibrée sur les 0-19 ans.</li>
+</ul>
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_remboursements_0-19.png" alt="PBI_remboursements_0-19-2024" style="width:100%">
@@ -474,10 +498,10 @@ NB : Les Prescripteurs de ville en 2019 incluent les dentistes, qui en sont isol
   </p>
 </figure> 
 
-## Familles consommées et part des substances surveillées
-
-* Ce rapport aborde les indicateurs selon l'axe des sous-groupes pharmacologiques (famille d'antibiotiques).
-
+<h2 id="familles-consomm-es-et-part-des-substances-surveill-es">Familles consommées et part des substances surveillées</h2>
+<ul>
+<li>Ce rapport aborde les indicateurs selon l&#39;axe des sous-groupes pharmacologiques (famille d&#39;antibiotiques).</li>
+</ul>
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_familles.png" alt="PBI_familles_antibio" style="width:100%">
@@ -485,20 +509,21 @@ NB : Les Prescripteurs de ville en 2019 incluent les dentistes, qui en sont isol
   </p>
 </figure> 
 
-#### Familles dominantes
-
-* Le top 3 est dominé tous critères confondus par les Bêtalactamines-Pénicillines, Macrolides et Autres
-bêtalactamines ( ex : céphalosporines), en nombre de boîtes comme en montant remboursé.
-* L'ordre entre les 2 premières familles varie selon les critères ci-après mais la 3ème place ne change pas.
-
-#### Impact de la tanche d'âge du bénéficiaire
-
-* Pour la tranche d'âge des 60 ans et +, la famille des macrolides devance les bêtalactamines en montant
-remboursé. (thérapies plus ciblées)
-
-* Pour la tranche d'âge des 0-19 ans, le top 3 des familles atteint plus de 80% des montants remboursés pour 75 à
-76% sur les autres tranches d'âge.
-
+<h4 id="familles-dominantes">Familles dominantes</h4>
+<ul>
+<li>Le top 3 est dominé tous critères confondus par les Bêtalactamines-Pénicillines, Macrolides et Autres
+bêtalactamines ( ex : céphalosporines), en nombre de boîtes comme en montant remboursé.</li>
+<li>L&#39;ordre entre les 2 premières familles varie selon les critères ci-après mais la 3ème place ne change pas.</li>
+</ul>
+<h4 id="impact-de-la-tanche-d-ge-du-b-n-ficiaire">Impact de la tanche d&#39;âge du bénéficiaire</h4>
+<ul>
+<li><p>Pour la tranche d&#39;âge des 60 ans et +, la famille des macrolides devance les bêtalactamines en montant
+remboursé. (thérapies plus ciblées)</p>
+</li>
+<li><p>Pour la tranche d&#39;âge des 0-19 ans, le top 3 des familles atteint plus de 80% des montants remboursés pour 75 à
+76% sur les autres tranches d&#39;âge.</p>
+</li>
+</ul>
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_familles_0-19_2024.png" alt="PBI_familles_antibio 0-19 2024" style="width:100%">
@@ -506,11 +531,11 @@ remboursé. (thérapies plus ciblées)
   </p>
 </figure> 
 
-#### Spécificités régionales
-
-* Pour les régions PACA-Corse et Grand-Est, la famille des macrolides est en tête du top 3 au global en montant
-remboursé (toujours 2ème pour le nombre de boites délivrées), pas seulement pour les plus de 60 ans.
-
+<h4 id="sp-cificit-s-r-gionales">Spécificités régionales</h4>
+<ul>
+<li>Pour les régions PACA-Corse et Grand-Est, la famille des macrolides est en tête du top 3 au global en montant
+remboursé (toujours 2ème pour le nombre de boites délivrées), pas seulement pour les plus de 60 ans.</li>
+</ul>
 <figure> 
   <p align="center" width="100%">
   <img src="assets/P2_familles_PACA.png" alt="PBI_familles_antibio PACA-Corse" style="width:100%">
@@ -518,19 +543,23 @@ remboursé (toujours 2ème pour le nombre de boites délivrées), pas seulement 
   </p>
 </figure> 
 
-#### Impact du type de médicament et prix moyen par famille
+<h4 id="impact-du-type-de-m-dicament-et-prix-moyen-par-famille">Impact du type de médicament et prix moyen par famille</h4>
+<ul>
+<li>La base de remboursement moyenne par boîte est toujours plus élevée (environ x3,5) pour la famille des
+macrolides que pour la famille des bêtalactamines-pénicillines.</li>
+</ul>
+<blockquote>
+<p>C&#39;est un facteur d&#39;explication du fait que l&#39;écart en montant des remboursements entre les bêtalactaminespénicillines
+et macrolides est beaucoup moins grand que l&#39;écart en nombre de boîtes délivrées pour les 2
+familles (visibles sur les barres de top 3).</p>
+</blockquote>
+<h4 id="substances-surveill-es-pour-l-antibior-sistance">Substances surveillées pour l&#39;antibiorésistance</h4>
+<ul>
+<li><p>L&#39;amoxicilline représente environ <strong>75%</strong> des boîtes délivrées sur l&#39;ensemble de la période (proportion équivalente pour 2024), atteignant plus de <strong>90%</strong> pour les 0-19 ans en 2024.</p>
+</li>
+<li><p>Les substances surveillées sont majoritaires (en nombre de boîtes délivrées).</p>
+</li>
+</ul>
 
-* La base de remboursement moyenne par boîte est toujours plus élevée (environ x3,5) pour la famille des
-macrolides que pour la famille des bêtalactamines-pénicillines.
-
-> C'est un facteur d'explication du fait que l'écart en montant des remboursements entre les bêtalactaminespénicillines
-et macrolides est beaucoup moins grand que l'écart en nombre de boîtes délivrées pour les 2
-familles (visibles sur les barres de top 3).
-
-#### Substances surveillées pour l'antibiorésistance
-
-* L'amoxicilline représente environ __75%__ des boîtes délivrées sur l'ensemble de la période (proportion équivalente pour 2024), atteignant plus de __90%__ pour les 0-19 ans en 2024.
-  
-* Les substances surveillées sont majoritaires (en nombre de boîtes délivrées).
-  
-</details>
+</div>
+</div>
