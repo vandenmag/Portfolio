@@ -227,7 +227,7 @@ Python, PowerBI
 <li>Contrôle de la proportion de lignes concernées : on conserve les lignes qui seront filtrées au besoin pour les visualisations</li>
 </ul>
 </li>
-
+<br>
 <figure> 
   <p align="center" width="50%">
   <img src="assets/P2_inconnues.png" alt="Valeurs inconnues" style="width:60%">
@@ -385,8 +385,8 @@ entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.</li>
 <h2 id="prescripteurs">Prescripteurs</h2>
 <ul>
 <li>Ce rapport aborde les indicateurs selon l&#39;axe de la prescription et met en évidence :<ul>
-<li>la dominance, tant sur le nombre de boîtes délivrées que sur les montants remboursés, de 3 types de prescripteurs avec largement en tête les médecins généralistes libéraux.</li>
-<li>des diparités régionales et par tranche d&#39;âge</li>
+<li>La dominance, tant sur le nombre de boîtes délivrées que sur les montants remboursés, de 3 types de prescripteurs avec largement en tête les médecins généralistes libéraux.</li>
+<li>Des diparités régionales et par tranche d&#39;âge</li>
 </ul>
 </li>
 </ul>
