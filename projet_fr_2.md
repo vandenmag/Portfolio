@@ -356,21 +356,20 @@ axes de prescription, remboursement et familles d&#39;antibiotiques.</li>
 <li><p>L&#39;année 2020, avec le Covid, est marquée par une baisse du nombre de boîtes consommées comme des
 montants remboursés. Suit une hausse progressive de 2021 à 2022 puis une légère inflexion en 2023.</p>
 </li>
-<li><p>Si sur l&#39;ensemble de la période étudiée la tendance globale est à la baisse pour le nombre de boîtes
+<li><p>Si, sur l&#39;ensemble de la période étudiée, la tendance globale est à la baisse pour le nombre de boîtes
 consommées comme pour les montants remboursés, la tendance est à la hausse sur ces 2 indicateurs pour la
 dernière année.</p>
 </li>
 </ul>
 <blockquote>
-<p>La mise en place en 2022 de la stratégie nationale de prévention des infections et de l&#39;antibiorésistance
-a porté ses fruits au démarrage mais les effets peinent à perdurer sur ces indicateurs.</p>
+<p>La mise en place, en 2022, de la stratégie nationale de prévention des infections et de l&#39;antibiorésistance peut expliquer l&#39;inflexion observée en 2023 ; toutefois, ses effets ne semblent pas se maintenir dans le temps au regard de ces indicateurs.</p>
 </blockquote>
 <ul>
-<li>On remarque que seuls les non-génériques affichent une réelle baisse sur 2019-2024 avec une nette baisse
+<li>On remarque que seuls les médicaments non-génériques affichent une réelle baisse sur 2019-2024 avec une nette baisse
 entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.</li>
 </ul>
 <blockquote>
-<p>Les nouvelles règles relatives au remboursement des non-génériques (indexation sur le prix du générique équivalent, souvent inférieur, sauf si non substituable) entrées en vigueur au 01/01/2021 semblent se traduire par une baisse de consommation des antibiotiques non-génériques.</p>
+<p>Les nouvelles règles relatives au remboursement des médicaments non-génériques (indexation sur le prix du générique équivalent, souvent inférieur, sauf si non substituable) entrées en vigueur au 01/01/2021 semblent se traduire par une baisse de consommation des antibiotiques non-génériques.</p>
 </blockquote>
 <figure> 
   <p align="center" width="100%">
@@ -381,7 +380,7 @@ entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.</li>
 
 <h4 id="disparit-s-r-gionales">Disparités régionales</h4>
 <ul>
-<li>Si l&#39;Île-de-France est en tête des montants remboursés en valeur sur la période étudiée, c&#39;est globalement les regions PACA-Corse qui remboursent le plus pour 1000 habitants.</li>
+<li>Si l&#39;Île-de-France est en tête des montants remboursés en valeur sur la période étudiée, ce sont globalement les regions PACA-Corse qui remboursent le plus (montant pour 1000 habitants).</li>
 </ul>
 <h2 id="prescripteurs">Prescripteurs</h2>
 <ul>
@@ -404,7 +403,7 @@ entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.</li>
 de boîtes délivrées.</p>
 </li>
 <li><p>Au sein de ce top 3, les médecins généralistes libéraux dominent largement, quels que soient le critère, la région
-ou l&#39;année. De même le 2ème rang est toujours occupé par les prescripteurs salariés (établissements de santé/hôpitaux) et le 3ème par la chirurgie dentaire (1 exception pour les 0-19 ans avec la Pédiatrie libérale en 3ème position).</p>
+ou l&#39;année. De même le 2ème rang est toujours occupé par les prescripteurs salariés (établissements de santé/hôpitaux) et le 3ème par la chirurgie dentaire (1 exception cependant pour les 0-19 ans avec la Pédiatrie libérale en 3ème position).</p>
 </li>
 </ul>
 <figure> 
@@ -440,7 +439,7 @@ ou l&#39;année. De même le 2ème rang est toujours occupé par les prescripteu
 <h2 id="remboursements-et-prix-des-antibiotiques">Remboursements et prix des antibiotiques</h2>
 <ul>
 <li>Ce rapport aborde l&#39;axe de la charge financière représentée par les remboursements.
-Il introduit la notion de prix du médicament avec l&#39;indicateur du Montant moyen remboursé par boîte et la valeur moyenne par type de médicament de la base de remboursement.</li>
+Il introduit la notion de prix du médicament avec l&#39;indicateur du <em>Montant moyen remboursé par boîte </em> et la <em>aleur moyenne par type de médicament de la base de remboursement</em>v.</li>
 </ul>
 <figure> 
   <p align="center" width="100%">
@@ -453,7 +452,7 @@ Il introduit la notion de prix du médicament avec l&#39;indicateur du Montant m
 <ul>
 <li><p>La base de remboursement est toujours plus élevée pour les non-génériques et référents que pour les génériques, comme le montant remboursé moyen (valable sur toute la période comme sur la dernière année 2024).</p>
 </li>
-<li><p>La part des médicaments génériques dans les montants remboursés a augmenté sur la période étudiée dans
+<li><p>La part des médicaments génériques, moins chers, dans les montants remboursés a augmenté sur la période étudiée dans
 son ensemble ainsi que sur la dernière année :</p>
 <ul>
 <li>Part génériques 2019 : 56,49%</li>
@@ -467,7 +466,7 @@ son ensemble ainsi que sur la dernière année :</p>
 <li>Les régions PACA-Corse et d&#39;Outre-mer ont les montants moyens remboursés par boîte les plus élevés, avec cependant une tendance à la baisse (tous types de médicaments confondus) . La région Centre-Val de Loire a le montant le plus bas.</li>
 </ul>
 <blockquote>
-<p>Pour les non-génériques seuls, la tendance est à la hausse</p>
+<p>Pour les non-génériques seuls, la tendance est à la hausse sur cet indicateur.</p>
 </blockquote>
 <figure> 
   <p align="center" width="100%">
