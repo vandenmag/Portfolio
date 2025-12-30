@@ -24,7 +24,11 @@ Ainsi la surveillance et la compréhension de la prescription et et délivrance 
   </p>
 </figure>
 
-[(Source image)](https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf)
+<a href="https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf" target="_blank" rel="noopener noreferrer">(Source image)</a>
+<br>
+<p>N&#39;hésitez pas à consulter <a href="project_FR_2_glossaire.html" target="_blank" rel="noopener noreferrer">le glossaire</a>.</p>
+
+
 
 ### Stack
 Python, PowerBI
