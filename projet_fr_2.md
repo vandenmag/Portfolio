@@ -7,7 +7,6 @@ permalink : /projet_data_antibotiques
 # Analyse ad-hoc : <br> Consommation des antibiotiques en France 2019-2024
 
 <div class="note">
-  <p class="admonition-title"></p>
   (Projet de groupe retravaillé)
 </div>
 
@@ -126,7 +125,7 @@ Python, PowerBI
 </li>
 </ul>
 </li>
-<li>Filtrage<ul>
+<li><p>Filtrage</p><ul>
 <li>Filtrage du dataframe sur ATC2=&#39;J01&#39; de façon à ne conserver que le périmètre des antibiotiques</li>
 <li>Contrôle des volumétries et valeurs manquantes<figure> <br>
 <p align="center" width="100%">
@@ -295,6 +294,7 @@ Python, PowerBI
 <div class="toggle-block">
 <button class="accordion"> :gear: Modélisation Power BI</button>
 <div class="panel">
+<p>On met en place un modèle en constellation (2 étoiles aux dimensions communes) :</p>
 <br>
   <figure> 
   <p align="center" width="100%">
@@ -302,7 +302,7 @@ Python, PowerBI
   <figcaption><h6 align="center">Modèle Power BI</h6></figcaption>
   </p>
 </figure> 
-<p>On met en place un modèle en constellation (2 étoiles aux dimensions communes) :</p>
+
 <ul>
 <li>Table des remboursements : Table de faits</li>
 <li>Tables de dimension : Age, sexe, région bénéficiare, Prescripteur, Année, Antibiotique</li>
