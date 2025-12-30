@@ -1,3 +1,7 @@
+---
+permalink : /home
+---
+
 # Bienvenue!
 
 Vous trouverez ici quelques exemples de problématiques et traitements par la donnée issus de mon parcours.
