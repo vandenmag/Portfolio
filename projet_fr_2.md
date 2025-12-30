@@ -14,8 +14,8 @@ permalink : /projet_data_antibotiques
 
 ## Contexte 
 _« L’utilisation répétée et inadaptée des antibiotiques a favorisé l’apparition de bactéries résistantes à ces
-médicaments. Résultat : certaines infections deviennent de plus en plus difficiles à soigner. »_ <p> <a href="https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/lantibioresistance" target="_blank" rel="noopener noreferrer">Source</a></p>
-<p>Ainsi la surveillance et la compréhension de la prescription et et délivrance des antibiotiques en France est un des moyens de contribuer à des actions de prévention et d' appuyer les politiques de santé publique sur l'usage raisonné des antibiotiques.</p>
+médicaments. Résultat : certaines infections deviennent de plus en plus difficiles à soigner. »_  <a href="https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/lantibioresistance" target="_blank" rel="noopener noreferrer">Source</a>
+<p>Ainsi la surveillance et la compréhension de la prescription et et délivrance des antibiotiques en France est un des moyens de contribuer à des actions de prévention et d&#39;appuyer les politiques de santé publique sur l'usage raisonné des antibiotiques.</p>
 <figure>
 <p align="center" width="100%">
   <img src="assets/P2_stratégie_nationale.png" alt="Visuel bon usage des antibiotiques" style="width:70%">
@@ -23,7 +23,7 @@ médicaments. Résultat : certaines infections deviennent de plus en plus diffic
   </p>
 </figure>
 
-<a href="https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf" target="_blank" rel="noopener noreferrer">(Source image)</a>
+<h5><a href="https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf" target="_blank" rel="noopener noreferrer">(Source image)</a></h5>
 <br>
 <p>N&#39;hésitez pas à consulter <a href="https://vandenmag.github.io/Portfolio//projet_data_antibio_glossaire" target="_blank" rel="noopener noreferrer">le glossaire</a>.</p>
 
@@ -48,9 +48,9 @@ Python, PowerBI
 </ul>
 <div class="note">
   <p class="admonition-title">Note</p>
- <p>  &quot;<em>Ces données de remboursement [données SNDS] sont utilisées comme proxy de la consommation française, faisant l’hypothèse d’une part que toutes les prescriptions donnent lieu à remboursement, et d’autre part que l’ensemble des médicaments remboursés par l’Assurance maladie ont été consommés par les patients concernés.</em>&quot; <a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/la-consommation-d-antibiotiques-en-secteur-de-ville-en-france-2009-2019.-synthese-preliminaire-des-indicateurs-disponibles-sous-geodes">Synthèse préliminaire des indicateurs disponibles sous Géodes (11-2020)</a></p>
+ <p>  &quot;<em>Ces données de remboursement [données SNDS] sont utilisées comme proxy de la consommation française, faisant l’hypothèse d’une part que toutes les prescriptions donnent lieu à remboursement, et d’autre part que l’ensemble des médicaments remboursés par l’Assurance maladie ont été consommés par les patients concernés.</em>&quot; <a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/la-consommation-d-antibiotiques-en-secteur-de-ville-en-france-2009-2019.-synthese-preliminaire-des-indicateurs-disponibles-sous-geodes" target="_blank" rel="noopener noreferrer">Synthèse préliminaire des indicateurs disponibles sous Géodes (11-2020)</a></p>
 
-<p>&#9654; Pour une approche alignée en unités avec les objectifs posés dans la <a href="https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf">stratégie nationale 2022-2025 de prévention des infections et de l&#39;antibioresistance</a>, exprimés en doses définies journalières (DDJ) pour 1 000 habitants et par jour et en prescriptions pour 1 000 habitants et par an, voir le <a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/consommation-d-antibiotiques-en-secteur-de-ville-en-france-2014-2024">Rapport de Santé publique France (11-2025)</a>.</p>
+<p>&#9654; Pour une approche alignée en unités avec les objectifs posés dans la <a href="https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf" target="_blank" rel="noopener noreferrer">stratégie nationale 2022-2025 de prévention des infections et de l&#39;antibioresistance</a>, exprimés en doses définies journalières (DDJ) pour 1 000 habitants et par jour, et en prescriptions pour 1 000 habitants et par an, voir le <a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/consommation-d-antibiotiques-en-secteur-de-ville-en-france-2014-2024" target="_blank" rel="noopener noreferrer">Rapport de Santé publique France (11-2025)</a>.</p>
 
 <p>&#9654; La notion de proxy implique que les principales tendances sont perceptibles dès une première analyse des données de remboursement, même si ces données ne suffisent pas à elles seules pour mener une analyse approfondie et exhaustive.</p>
 
@@ -62,9 +62,9 @@ Python, PowerBI
 <button class="accordion">:file_cabinet: Sources de données utilisées</button>
 <div class="panel">
 
-<h4 id="principale">Principale</h4>
+<h4 id="principale">Source principale</h4>
 <ul>
-<li>Base Open Medic (données SNDS) mis à disposition librement par l’État sur la plate-forme <a href="https://www.data.gouv.fr/datasets/open-medic-base-complete-sur-les-depenses-de-medicaments-interregimes" target="_blank" rel="noopener noreferrer">data.gouv.fr</a><ul>
+<li>Base Open Medic (données SNDS) mise à disposition librement par l’État sur la plate-forme <a href="https://www.data.gouv.fr/datasets/open-medic-base-complete-sur-les-depenses-de-medicaments-interregimes" target="_blank" rel="noopener noreferrer">data.gouv.fr</a><ul>
 <li>Dépenses de médicaments/remboursements délivrés en pharmacies de ville, selon des groupes d’éléments descriptifs bénéficiaires (tranche d&#39;âge, sexe, région de résidence), spécialité prescripteur, type de médicament, par année.</li>
 <li>Structuré selon la classification hiérarchique ATC (Anatomique, Thérapeutique et Chimique) des médicaments</li>
 <li>Mise à disposition annuelle</li>
@@ -80,7 +80,7 @@ Python, PowerBI
   </p>
 </figure>
 
-<h4 id="compl-mentaires-contexte">Complémentaires/Contexte</h4>
+<h4 id="compl-mentaires-contexte">Sources complémentaires/Contexte</h4>
 <ul>
 <li><p>Fichier INSEE (Institut national de la statistique et des études économiques)</p>
 <ul>
@@ -316,7 +316,6 @@ Python, PowerBI
 <div class="toggle-block">
 <button class="accordion"> :dart: Principaux résultats et visualisations 📊</button>
 <div class="panel">
-<br>
 <h2 id="exploration-pr-alable-python-exemples">Exploration préalable (Python) - exemples</h2>
 <ul>
 <li><p>Le montant remboursé et la base de remboursement ont une relation linéaire (coefficient taux de remboursement).</p>
