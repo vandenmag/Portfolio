@@ -64,7 +64,7 @@ Python, PowerBI
 
 <h4 id="principale">Principale</h4>
 <ul>
-<li>Base Open Medic (données SNDS) mis à disposition librement par l’État sur la plate-forme <a href="https://www.data.gouv.fr/datasets/open-medic-base-complete-sur-les-depenses-de-medicaments-interregimes">data.gouv.fr</a><ul>
+<li>Base Open Medic (données SNDS) mis à disposition librement par l’État sur la plate-forme <a href="https://www.data.gouv.fr/datasets/open-medic-base-complete-sur-les-depenses-de-medicaments-interregimes" target="_blank" rel="noopener noreferrer">data.gouv.fr</a><ul>
 <li>Dépenses de médicaments/remboursements délivrés en pharmacies de ville, selon des groupes d’éléments descriptifs bénéficiaires (tranche d&#39;âge, sexe, région de résidence), spécialité prescripteur, type de médicament, par année.</li>
 <li>Structuré selon la classification hiérarchique ATC (Anatomique, Thérapeutique et Chimique) des médicaments</li>
 <li>Mise à disposition annuelle</li>
@@ -84,12 +84,12 @@ Python, PowerBI
 <ul>
 <li><p>Fichier INSEE (Institut national de la statistique et des études économiques)</p>
 <ul>
-<li>Population par région de France, sexe et grandes classes d&#39;âge (1975-2025) (INSEE via <a href="https://www.ined.fr/fichier/s_rubrique/159/estim.pop.nreg.sexe.gca.1975.2025.fr.xlsx">INED - Institut national des études démographiques</a></li>
+<li>Population par région de France, sexe et grandes classes d&#39;âge (1975-2025) (INSEE via <a href="https://www.ined.fr/fichier/s_rubrique/159/estim.pop.nreg.sexe.gca.1975.2025.fr.xlsx" target="_blank" rel="noopener noreferrer">INED - Institut national des études démographiques</a></li>
 </ul>
 </li>
 <li><p>Liste PRIMO </p>
 <ul>
-<li>Liste des substances antibiotiques surveillées en France dans le cadre de la <a href="https://medqualville.antibioresistance.fr/resistances/synthese">mission PRIMO</a> sur l&#39;antibiorésistance</li>
+<li>Liste des substances antibiotiques surveillées en France dans le cadre de la <a href="https://medqualville.antibioresistance.fr/resistances/synthese" target="_blank" rel="noopener noreferrer">mission PRIMO</a> sur l&#39;antibiorésistance</li>
 </ul>
 </li>
 </ul>
