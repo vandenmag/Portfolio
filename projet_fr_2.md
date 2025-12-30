@@ -7,16 +7,15 @@ permalink : /projet_data_antibotiques
 # Analyse ad-hoc : <br> Consommation des antibiotiques en France 2019-2024
 
 <div class="note">
-  <p class="admonition-title"><strong>NB</strong></p>
+  <p class="admonition-title"></p>
   (Projet de groupe retravaillé)
 </div>
 
 
 ## Contexte 
 _« L’utilisation répétée et inadaptée des antibiotiques a favorisé l’apparition de bactéries résistantes à ces
-médicaments. Résultat : certaines infections deviennent de plus en plus difficiles à soigner. »_ [Source](https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/lantibioresistance)
-
-Ainsi la surveillance et la compréhension de la prescription et et délivrance des antibiotiques en France est un des moyens de contribuer à des actions de prévention et d' appuyer les politiques de santé publique sur l'usage raisonné des antibiotiques.
+médicaments. Résultat : certaines infections deviennent de plus en plus difficiles à soigner. »_ <p> <a href="https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/lantibioresistance" target="_blank" rel="noopener noreferrer">Source</a></p>
+<p>Ainsi la surveillance et la compréhension de la prescription et et délivrance des antibiotiques en France est un des moyens de contribuer à des actions de prévention et d' appuyer les politiques de santé publique sur l'usage raisonné des antibiotiques.</p>
 <figure>
 <p align="center" width="100%">
   <img src="assets/P2_stratégie_nationale.png" alt="Visuel bon usage des antibiotiques" style="width:70%">
@@ -24,7 +23,11 @@ Ainsi la surveillance et la compréhension de la prescription et et délivrance 
   </p>
 </figure>
 
-[(Source image)](https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf)
+<a href="https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf" target="_blank" rel="noopener noreferrer">(Source image)</a>
+<br>
+<p>N&#39;hésitez pas à consulter <a href="project_FR_2_glossaire.html" target="_blank" rel="noopener noreferrer">le glossaire</a>.</p>
+
+
 
 ### Stack
 Python, PowerBI
@@ -38,19 +41,20 @@ Python, PowerBI
 <p>En étudiant les données de remboursement (montants remboursés, nombre de boîtes délivrées) selon les axes prescripteur, bénéficiaire, sous-groupe pharmacologique, on cherche à répondre aux questions suivantes : </p>
 
 <ul>
-<li>Quelles sont les tendances sur la période étudiée, selon les régions, les tranche d&#39;âge, le sexe des bénéficiaires, les types de prescripteurs, les familles prescrites?</li>
-<li>Quels critères, situations ou territoires présentent une tendance de consommation remarquable?</li>
-<li>Quelles sont les relations entre les différents critères?</li>
-<li>Que représentent les substances surveillées dans le cadre de l&#39;antibiorésistance par rapport à l&#39;ensemble des antibiotiques délivrés en pharmacies de ville?</li>
+<li>Quelles sont les tendances de consommation sur la période étudiée selon les caractéristiques démographiques, territoriales et les familles d'antibiotiques ?</li>
+<li>Quels critères ou territoires présentent des dynamiques de consommation atypiques ou remarquables ?</li>
+<li>Quelles interactions existent entre les différents facteurs analysés ?</li>
+<li>Quelle est la part des substances surveillées pour l’antibiorésistance parmi l’ensemble des antibiotiques délivrés en ville ?</li>
 </ul>
 <div class="note">
   <p class="admonition-title">Note</p>
- <p>  &quot;<em>Ces données de remboursement [données SNDS] sont utilisées comme proxy de la consommation française, faisant l’hypothèse d’une part que toutes les prescriptions donnent lieu à remboursement, et d’autre part que l’ensemble des médicaments remboursés par l’Assurance maladie ont été consommés par les patients concernés.</em>&quot;<a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/la-consommation-d-antibiotiques-en-secteur-de-ville-en-france-2009-2019.-synthese-preliminaire-des-indicateurs-disponibles-sous-geodes">Synthèse préliminaire des indicateurs disponibles sous Géodes (11-2020)</a></p>
+ <p>  &quot;<em>Ces données de remboursement [données SNDS] sont utilisées comme proxy de la consommation française, faisant l’hypothèse d’une part que toutes les prescriptions donnent lieu à remboursement, et d’autre part que l’ensemble des médicaments remboursés par l’Assurance maladie ont été consommés par les patients concernés.</em>&quot; <a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/la-consommation-d-antibiotiques-en-secteur-de-ville-en-france-2009-2019.-synthese-preliminaire-des-indicateurs-disponibles-sous-geodes">Synthèse préliminaire des indicateurs disponibles sous Géodes (11-2020)</a></p>
 
-<p>&#9654; Pour une approche alignée en unités avec les objectifs posés dans la <a href="https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf">stratégie nationale 2022-2025 de prévention des infections et de l&#39;antibioresistance</a>, exprimés en doses définies journalières (DDJ) pour 1 000 habitants et par jour et en prescriptions pour 1 000 habitants et par an, voir le <a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/consommation-d-antibiotiques-en-secteur-de-ville-en-france-2014-2024">Rapport de Santé publique France (11-2025)</a></p>
-<p>&#9654; La notion de proxy induit qu&#39;on devrait pouvoir observer les grandes tendances dès un premier niveau d&#39;étude des données de remboursements, sans pouvoir toutefois s&#39;y limiter pour une analyse appronfondie et complète.</p>
+<p>&#9654; Pour une approche alignée en unités avec les objectifs posés dans la <a href="https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf">stratégie nationale 2022-2025 de prévention des infections et de l&#39;antibioresistance</a>, exprimés en doses définies journalières (DDJ) pour 1 000 habitants et par jour et en prescriptions pour 1 000 habitants et par an, voir le <a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/consommation-d-antibiotiques-en-secteur-de-ville-en-france-2014-2024">Rapport de Santé publique France (11-2025)</a>.</p>
 
-<p>&#9654; Dans le cadre du projet, conduit en temps limité, c'est ce premier niveau qui est travaillé pour faire ressortir les tendances et offrir des indicateurs complémentaires à ceux exprimés en DDJ et prescriptions, par exemple relatifs au type et au prix du médicament.</p>
+<p>&#9654; La notion de proxy implique que les principales tendances sont perceptibles dès une première analyse des données de remboursement, même si ces données ne suffisent pas à elles seules pour mener une analyse approfondie et exhaustive.</p>
+
+<p>&#9654;  Compte tenu des contraintes de temps du projet, <strong>l&#39;étude concerne uniquement l'analyse des données de remboursement Open Medic</strong>, visant à <strong>identifier les tendances majeures</strong> et à <strong>proposer des indicateurs complémentaires</strong> aux DDJ et aux prescriptions, en particulier sur la <strong>nature</strong> et le <strong>prix des médicaments</strong>.</p>
 </div>
 </div>
 
@@ -60,13 +64,12 @@ Python, PowerBI
 
 <h4 id="principale">Principale</h4>
 <ul>
-<li>Base Open Medic (données SNDS) mis à disposition librement par l’État sur la plate-forme <a href="https://www.data.gouv.fr/datasets/open-medic-base-complete-sur-les-depenses-de-medicaments-interregimes">data.gouv.fr</a><ul>
+<li>Base Open Medic (données SNDS) mis à disposition librement par l’État sur la plate-forme <a href="https://www.data.gouv.fr/datasets/open-medic-base-complete-sur-les-depenses-de-medicaments-interregimes" target="_blank" rel="noopener noreferrer">data.gouv.fr</a><ul>
 <li>Dépenses de médicaments/remboursements délivrés en pharmacies de ville, selon des groupes d’éléments descriptifs bénéficiaires (tranche d&#39;âge, sexe, région de résidence), spécialité prescripteur, type de médicament, par année.</li>
 <li>Structuré selon la classification hiérarchique ATC (Anatomique, Thérapeutique et Chimique) des médicaments</li>
 <li>Mise à disposition annuelle</li>
 <li>Utilisation de la base principale pour les années 2019 à 2024 : 6 fichiers open_medic_AAAA.csv</li>
 <li>Antibiotiques identifiés par le code ATC2 : J01-ANTIBACTERIENS A USAGE SYSTEMIQUE</li>
-<li>Documentation des variables.</li>
 </ul>
 </li>
 </ul>
@@ -81,12 +84,12 @@ Python, PowerBI
 <ul>
 <li><p>Fichier INSEE (Institut national de la statistique et des études économiques)</p>
 <ul>
-<li>Population par région de France, sexe et grandes classes d&#39;âge (1975-2025) (INSEE via <a href="https://www.ined.fr/fichier/s_rubrique/159/estim.pop.nreg.sexe.gca.1975.2025.fr.xlsx">INED - Institut national des études démographiques</a></li>
+<li>Population par région de France, sexe et grandes classes d&#39;âge (1975-2025) (INSEE via <a href="https://www.ined.fr/fichier/s_rubrique/159/estim.pop.nreg.sexe.gca.1975.2025.fr.xlsx" target="_blank" rel="noopener noreferrer">INED - Institut national des études démographiques</a></li>
 </ul>
 </li>
 <li><p>Liste PRIMO </p>
 <ul>
-<li>Liste des substances antibiotiques surveillées en France dans le cadre de la <a href="https://medqualville.antibioresistance.fr/resistances/synthese">mission PRIMO</a> sur l&#39;antibiorésistance</li>
+<li>Liste des substances antibiotiques surveillées en France dans le cadre de la <a href="https://medqualville.antibioresistance.fr/resistances/synthese" target="_blank" rel="noopener noreferrer">mission PRIMO</a> sur l&#39;antibiorésistance</li>
 </ul>
 </li>
 </ul>
@@ -143,7 +146,7 @@ Python, PowerBI
 <li>Renommage plus explicite des variables</li>
 <li>Ajout de variables libellés en vue de la gestion des visualisations d&#39;exploration</li>
 <li>Transcodage de valeurs catégorielles<ul>
-<li>Exemple cas particulier du top générique, dont la codifiaction a changé au cours de la période étudiée<figure> 
+<li>Exemple cas particulier du top générique, dont la codification a changé au cours de la période étudiée<figure> 
 <p align="center" width="100%">
 <img src="assets/P2_topgen_1.png" alt="Codage Top Générique issu de la documentation du jeu de données" style="width:60%">
 <figcaption><h6 align="center">Codage Top Générique issu de la documentation du jeu de données</h6></figcaption>
@@ -183,7 +186,7 @@ Python, PowerBI
 </li>
 <li><p>Gestion des valeurs négatives</p>
 <ul>
-<li><p>Identifiées via describe et documentées sur la discussion Open Medic (il s&#39;agit de régularisations de remboursements)</p>
+<li><p>Identifiées via la méthode <em>describe (min)</em> et documentées sur la discussion Open Medic (il s&#39;agit de régularisations de remboursements)</p>
 <figure> 
 <p align="center" width="100%">
 <img src="assets/P2_describe.png" alt="describe" style="width:50%">
@@ -203,7 +206,7 @@ Python, PowerBI
 </p>
 </figure>
 </li>
-<li><p>Supprimées car proportion très petite et non pertinentes pour nos visualisations</p>
+<li><p>Supprimées car en proportion très petite et non pertinentes pour les visualisations</p>
 </li>
 </ul>
 </li>
@@ -211,7 +214,7 @@ Python, PowerBI
 <ul>
 <li>On constate une grande dispersion à droite des données quantitatives : on étudie les outliers et la proportion qu&#39;ils représentent. Ce ne sont pas des valeurs aberrantes; ils doivent être conservés.<figure> 
 <p align="center" width="100%">
-<img src="assets/P2_outliers.png" alt="outliers" style="width:80%">
+<img src="assets/P2_outliers.png" alt="outliers" style="width:90%">
 <figcaption><h6 align="center">Etude des outliers</h6></figcaption>
 </p>
 </figure>
@@ -240,11 +243,9 @@ Python, PowerBI
 <li><p>Résultats du traitement</p>
 </li>
 </ol>
-
-
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_infos_post_traitements.png" alt="Informations du jeu de données après traitements" style="width:90%">
+  <img src="assets/P2_infos_post_traitements.png" alt="Informations du jeu de données après traitements" style="width:70%">
   <figcaption><h6 align="center">Informations du jeu de données après traitements</h6></figcaption>
   </p>
 </figure>   
@@ -258,11 +259,13 @@ Python, PowerBI
 <ul>
 <li>Fichier INSEE<ul>
 <li>Regroupement chiffres régions PACA et Corse pour aligner sur la répartition Open Medic</li>
-<li>Regroupement chiffres pour aligner sur la répartition par tranches d&#39;âge Open Medic</li>
+<li>Regroupement chiffres tranches d&#39;âge pour aligner sur la répartition Open Medic</li>
 <li>Concaténation des 6 onglets (1 par année) en un seul avec ajout de la colonne année</li>
-<li>Normalisation des valeurs Régions, sexe et tranche d&#39;âge<figure> 
+<li>Normalisation des valeurs Régions, sexe et tranche d&#39;âge (iso Open Medic)
+
+<figure> 
 <p align="center" width="100%">
-<img src="assets/P2_INSEE_avant.png" alt="Aperçu des données INSEE brutes" style="width:90%">
+<img src="assets/P2_INSEE_avant.png" alt="Aperçu des données INSEE brutes" style="width:95%">
 <figcaption><h6 align="center">Aperçu des données INSEE brutes (exemple année 2024)</h6></figcaption>
 </p>
 </figure>
@@ -274,15 +277,15 @@ Python, PowerBI
 <p><br>   </p>
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_INSEE_après.png" alt="Aperçu des données INSEE après traitement" style="width:50%">
+  <img src="assets/P2_INSEE_après.png" alt="Aperçu des données INSEE après traitement" style="width:70%">
   <figcaption><h6 align="center">Aperçu des données INSEE après traitement</h6></figcaption>
   </p>
 </figure>   
 
 <ul>
 <li>Liste PRIMO<ul>
-<li>Récupération des codes ATC5 pour les ATC3 J01</li>
-<li>Valorisation d&#39;un booléen à True si la substance ATC5 est surveillée (voir ci-dessus étape 5 traitement fichier Open medic)</li>
+<li>Récupération des codes ATC5 pour les substances de code ATC3 égal à J01 (antibiotiques)</li>
+<li>Valorisation d&#39;un booléen à True si la substance ATC5 est surveillée (voir ci-dessus étape 5 traitement fichier Open Medic)</li>
 </ul>
 </li>
 </ul>
@@ -299,10 +302,11 @@ Python, PowerBI
   <figcaption><h6 align="center">Modèle Power BI</h6></figcaption>
   </p>
 </figure> 
+<p>On met en place un modèle en constellation (2 étoiles aux dimensions communes) :</p>
 <ul>
-<li>Table des remboursement : Table de faits</li>
+<li>Table des remboursements : Table de faits</li>
 <li>Tables de dimension : Age, sexe, région bénéficiare, Prescripteur, Année, Antibiotique</li>
-<li>Table Insee : Traitée comme une table de faits pour appliquer les dimensions région, année, age, sexe.</li>
+<li>Table Insee : Traitée comme une table de faits pour appliquer les dimensions région, année, age, sexe et exploiter les chiffres de population segmentée.</li>
 <li>Table de mesures DAX</li>
 </ul>
  <br>   
@@ -352,24 +356,23 @@ axes de prescription, remboursement et familles d&#39;antibiotiques.</li>
 
 <h4 id="variations">Variations</h4>
 <ul>
-<li><p>L&#39;année 2020, avec le Covid,est marqué par une baisse du nombre de boîtes consommées comme pour les
+<li><p>L&#39;année 2020, avec le Covid, est marquée par une baisse du nombre de boîtes consommées comme des
 montants remboursés. Suit une hausse progressive de 2021 à 2022 puis une légère inflexion en 2023.</p>
 </li>
-<li><p>Si sur l&#39;ensemble de la période étudiée la tendance globale est à la baisse pour le nombre de boîtes
+<li><p>Si, sur l&#39;ensemble de la période étudiée, la tendance globale est à la baisse pour le nombre de boîtes
 consommées comme pour les montants remboursés, la tendance est à la hausse sur ces 2 indicateurs pour la
 dernière année.</p>
 </li>
 </ul>
 <blockquote>
-<p>La mise en place en 2022 de la stratégie nationale de prévention des infections et de l&#39;antibiorésistance
-a porté ses fruits au démarrage mais les effets peinent à perdurer sur ces indicateurs.</p>
+<p>La mise en place, en 2022, de la stratégie nationale de prévention des infections et de l&#39;antibiorésistance peut expliquer l&#39;inflexion observée en 2023 ; toutefois, ses effets ne semblent pas se maintenir dans le temps au regard de ces indicateurs.</p>
 </blockquote>
 <ul>
-<li>On remarque que seuls les non-génériques affichent une réelle baisse sur 2019-2024 avec une nette baisse
+<li>On remarque que seuls les médicaments non-génériques affichent une réelle baisse sur 2019-2024 avec une nette baisse
 entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.</li>
 </ul>
 <blockquote>
-<p>Les nouvelles règles relatives au remboursement des non-génériques (indexation sur le prix du générique équivalent, souvent inférieur, sauf si non substituable) entrées en vigueur au 01/01/2021 semblent se traduire par une baisse de consommation des antibiotiques non-génériques.</p>
+<p>Les nouvelles règles relatives au remboursement des médicaments non-génériques (indexation sur le prix du générique équivalent, souvent inférieur, sauf si non substituable) entrées en vigueur au 01/01/2021 semblent se traduire par une baisse de consommation des antibiotiques non-génériques.</p>
 </blockquote>
 <figure> 
   <p align="center" width="100%">
@@ -380,7 +383,7 @@ entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.</li>
 
 <h4 id="disparit-s-r-gionales">Disparités régionales</h4>
 <ul>
-<li>Si l&#39;Île-de-France est en tête des montants remboursés en valeur sur la période étudiée, c&#39;est globalement les regions PACA-Corse qui remboursent le plus pour 1000 habitants.</li>
+<li>Si l&#39;Île-de-France est en tête des montants remboursés en valeur sur la période étudiée, ce sont globalement les regions PACA-Corse qui remboursent le plus (montant pour 1000 habitants).</li>
 </ul>
 <h2 id="prescripteurs">Prescripteurs</h2>
 <ul>
@@ -403,7 +406,7 @@ entre 2021 et 2022 et une tendance plutôt stable sur 2023-2024.</li>
 de boîtes délivrées.</p>
 </li>
 <li><p>Au sein de ce top 3, les médecins généralistes libéraux dominent largement, quels que soient le critère, la région
-ou l&#39;année. De même le 2ème rang est toujours occupé par les prescripteurs salariés (établissements de santé/hôpitaux) et le 3ème par la chirurgie dentaire (1 exception pour les 0-19 ans avec la Pédiatrie libérale en 3ème position).</p>
+ou l&#39;année. De même le 2ème rang est toujours occupé par les prescripteurs salariés (établissements de santé/hôpitaux) et le 3ème par la chirurgie dentaire (1 exception cependant pour les 0-19 ans avec la Pédiatrie libérale en 3ème position).</p>
 </li>
 </ul>
 <figure> 
@@ -439,7 +442,7 @@ ou l&#39;année. De même le 2ème rang est toujours occupé par les prescripteu
 <h2 id="remboursements-et-prix-des-antibiotiques">Remboursements et prix des antibiotiques</h2>
 <ul>
 <li>Ce rapport aborde l&#39;axe de la charge financière représentée par les remboursements.
-Il introduit la notion de prix du médicament avec l&#39;indicateur du Montant moyen remboursé par boîte et la valeur moyenne par type de médicament de la base de remboursement.</li>
+Il introduit la notion de prix du médicament avec l&#39;indicateur du <em>Montant moyen remboursé par boîte </em> et la <em>aleur moyenne par type de médicament de la base de remboursement</em>v.</li>
 </ul>
 <figure> 
   <p align="center" width="100%">
@@ -452,7 +455,7 @@ Il introduit la notion de prix du médicament avec l&#39;indicateur du Montant m
 <ul>
 <li><p>La base de remboursement est toujours plus élevée pour les non-génériques et référents que pour les génériques, comme le montant remboursé moyen (valable sur toute la période comme sur la dernière année 2024).</p>
 </li>
-<li><p>La part des médicaments génériques dans les montants remboursés a augmenté sur la période étudiée dans
+<li><p>La part des médicaments génériques, moins chers, dans les montants remboursés a augmenté sur la période étudiée dans
 son ensemble ainsi que sur la dernière année :</p>
 <ul>
 <li>Part génériques 2019 : 56,49%</li>
@@ -466,7 +469,7 @@ son ensemble ainsi que sur la dernière année :</p>
 <li>Les régions PACA-Corse et d&#39;Outre-mer ont les montants moyens remboursés par boîte les plus élevés, avec cependant une tendance à la baisse (tous types de médicaments confondus) . La région Centre-Val de Loire a le montant le plus bas.</li>
 </ul>
 <blockquote>
-<p>Pour les non-génériques seuls, la tendance est à la hausse</p>
+<p>Pour les non-génériques seuls, la tendance est à la hausse sur cet indicateur.</p>
 </blockquote>
 <figure> 
   <p align="center" width="100%">
