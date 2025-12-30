@@ -34,6 +34,13 @@
   margin: 0.5em 0;       /* espace avant et après la liste */
 }
 
+/* Listes non ordonnées (ul) */
+.panel ul {
+  list-style-type: disc; /* puces classiques */
+  padding-left: 2em;     /* indentation style Markdown */
+  margin: 0.5em 0;       /* espace avant et après la liste */
+}
+
 /* Listes ordonnées (ol) */
 .panel ol {
   list-style-type: decimal; /* chiffres */
@@ -41,10 +48,13 @@
   margin: 0.5em 0;          /* espace avant et après */
 }
 
-/* Items de liste */
-.panel li {
-  list-style-type: circle;
-  margin: 0.25em 0; /* espace entre les items */
+/* Items de liste imbriqués */
+.panel ul li ul,
+.panel ol li ul,
+.panel ul li ol,
+.panel ol li ol {
+  list-style-type: circle; /* cercles pour les sous-listes */
+  margin: 0.25em 0;        /* espace entre les items */
 }
 // gestion admonitions
 .note { border-left: 4px solid #007acc; background: #e7f3ff; padding: 1em; margin: 1em 0; }
