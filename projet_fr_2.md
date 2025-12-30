@@ -51,7 +51,7 @@ Python, PowerBI
 
 <p>&#9654; La notion de proxy implique que les principales tendances sont perceptibles dès une première analyse des données de remboursement, même si ces données ne suffisent pas à elles seules pour mener une analyse approfondie et exhaustive.</p>
 
-<p>&#9654;  Compte tenu des contraintes de temps du projet, <strong>l&apos;étude concerne uniquement l'analyse des données de remboursement Open medic</strong>, visant à <strong>identifier les tendances majeures</strong> et à <strong>proposer des indicateurs complémentaires</strong> aux DDJ et aux prescriptions, en particulier sur la <strong>nature</strong> et le <strong>prix des médicaments</strong>.</p>
+<p>&#9654;  Compte tenu des contraintes de temps du projet, <strong>l&#39;étude concerne uniquement l'analyse des données de remboursement Open Medic</strong>, visant à <strong>identifier les tendances majeures</strong> et à <strong>proposer des indicateurs complémentaires</strong> aux DDJ et aux prescriptions, en particulier sur la <strong>nature</strong> et le <strong>prix des médicaments</strong>.</p>
 </div>
 </div>
 
@@ -143,7 +143,7 @@ Python, PowerBI
 <li>Renommage plus explicite des variables</li>
 <li>Ajout de variables libellés en vue de la gestion des visualisations d&#39;exploration</li>
 <li>Transcodage de valeurs catégorielles<ul>
-<li>Exemple cas particulier du top générique, dont la codifiaction a changé au cours de la période étudiée<figure> 
+<li>Exemple cas particulier du top générique, dont la codification a changé au cours de la période étudiée<figure> 
 <p align="center" width="100%">
 <img src="assets/P2_topgen_1.png" alt="Codage Top Générique issu de la documentation du jeu de données" style="width:60%">
 <figcaption><h6 align="center">Codage Top Générique issu de la documentation du jeu de données</h6></figcaption>
@@ -240,11 +240,9 @@ Python, PowerBI
 <li><p>Résultats du traitement</p>
 </li>
 </ol>
-
-
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_infos_post_traitements.png" alt="Informations du jeu de données après traitements" style="width:90%">
+  <img src="assets/P2_infos_post_traitements.png" alt="Informations du jeu de données après traitements" style="width:70%">
   <figcaption><h6 align="center">Informations du jeu de données après traitements</h6></figcaption>
   </p>
 </figure>   
@@ -258,11 +256,13 @@ Python, PowerBI
 <ul>
 <li>Fichier INSEE<ul>
 <li>Regroupement chiffres régions PACA et Corse pour aligner sur la répartition Open Medic</li>
-<li>Regroupement chiffres pour aligner sur la répartition par tranches d&#39;âge Open Medic</li>
+<li>Regroupement chiffres tranches d&#39;âge pour aligner sur la répartition Open Medic</li>
 <li>Concaténation des 6 onglets (1 par année) en un seul avec ajout de la colonne année</li>
-<li>Normalisation des valeurs Régions, sexe et tranche d&#39;âge<figure> 
+<li>Normalisation des valeurs Régions, sexe et tranche d&#39;âge (iso Open Medic)
+
+<figure> 
 <p align="center" width="100%">
-<img src="assets/P2_INSEE_avant.png" alt="Aperçu des données INSEE brutes" style="width:90%">
+<img src="assets/P2_INSEE_avant.png" alt="Aperçu des données INSEE brutes" style="width:95%">
 <figcaption><h6 align="center">Aperçu des données INSEE brutes (exemple année 2024)</h6></figcaption>
 </p>
 </figure>
@@ -274,15 +274,15 @@ Python, PowerBI
 <p><br>   </p>
 <figure> 
   <p align="center" width="100%">
-  <img src="assets/P2_INSEE_après.png" alt="Aperçu des données INSEE après traitement" style="width:50%">
+  <img src="assets/P2_INSEE_après.png" alt="Aperçu des données INSEE après traitement" style="width:70%">
   <figcaption><h6 align="center">Aperçu des données INSEE après traitement</h6></figcaption>
   </p>
 </figure>   
 
 <ul>
 <li>Liste PRIMO<ul>
-<li>Récupération des codes ATC5 pour les ATC3 J01</li>
-<li>Valorisation d&#39;un booléen à True si la substance ATC5 est surveillée (voir ci-dessus étape 5 traitement fichier Open medic)</li>
+<li>Récupération des codes ATC5 pour les substances de code ATC3 égal à J01 (antibiotiques)</li>
+<li>Valorisation d&#39;un booléen à True si la substance ATC5 est surveillée (voir ci-dessus étape 5 traitement fichier Open Medic)</li>
 </ul>
 </li>
 </ul>
@@ -299,10 +299,11 @@ Python, PowerBI
   <figcaption><h6 align="center">Modèle Power BI</h6></figcaption>
   </p>
 </figure> 
+<p>On met en place un modèle en constellation (2 étoiles aux dimensions communes) :</p>
 <ul>
-<li>Table des remboursement : Table de faits</li>
+<li>Table des remboursements : Table de faits</li>
 <li>Tables de dimension : Age, sexe, région bénéficiare, Prescripteur, Année, Antibiotique</li>
-<li>Table Insee : Traitée comme une table de faits pour appliquer les dimensions région, année, age, sexe.</li>
+<li>Table Insee : Traitée comme une table de faits pour appliquer les dimensions région, année, age, sexe et exploiter les chiffres de population segmentée.</li>
 <li>Table de mesures DAX</li>
 </ul>
  <br>   
@@ -352,7 +353,7 @@ axes de prescription, remboursement et familles d&#39;antibiotiques.</li>
 
 <h4 id="variations">Variations</h4>
 <ul>
-<li><p>L&#39;année 2020, avec le Covid,est marqué par une baisse du nombre de boîtes consommées comme pour les
+<li><p>L&#39;année 2020, avec le Covid, est marquée par une baisse du nombre de boîtes consommées comme des
 montants remboursés. Suit une hausse progressive de 2021 à 2022 puis une légère inflexion en 2023.</p>
 </li>
 <li><p>Si sur l&#39;ensemble de la période étudiée la tendance globale est à la baisse pour le nombre de boîtes
