@@ -7,7 +7,7 @@ permalink : /projet_data_antibotiques
 # Analyse ad-hoc : <br> Consommation des antibiotiques en France 2019-2024
 
 <div class="note">
-  <p class="admonition-title"><strong>NB</strong></p>
+  <p class="admonition-title"></p>
   (Projet de groupe retravaillé)
 </div>
 
@@ -38,19 +38,20 @@ Python, PowerBI
 <p>En étudiant les données de remboursement (montants remboursés, nombre de boîtes délivrées) selon les axes prescripteur, bénéficiaire, sous-groupe pharmacologique, on cherche à répondre aux questions suivantes : </p>
 
 <ul>
-<li>Quelles sont les tendances sur la période étudiée, selon les régions, les tranche d&#39;âge, le sexe des bénéficiaires, les types de prescripteurs, les familles prescrites?</li>
-<li>Quels critères, situations ou territoires présentent une tendance de consommation remarquable?</li>
-<li>Quelles sont les relations entre les différents critères?</li>
-<li>Que représentent les substances surveillées dans le cadre de l&#39;antibiorésistance par rapport à l&#39;ensemble des antibiotiques délivrés en pharmacies de ville?</li>
+<li>Quelles sont les tendances de consommation sur la période étudiée selon les caractéristiques démographiques, territoriales et les familles d'antibiotiques ?</li>
+<li>Quels critères ou territoires présentent des dynamiques de consommation atypiques ou remarquables ?</li>
+<li>Quelles interactions existent entre les différents facteurs analysés ?</li>
+<li>Quelle est la part des substances surveillées pour l’antibiorésistance parmi l’ensemble des antibiotiques délivrés en ville ?</li>
 </ul>
 <div class="note">
   <p class="admonition-title">Note</p>
  <p>  &quot;<em>Ces données de remboursement [données SNDS] sont utilisées comme proxy de la consommation française, faisant l’hypothèse d’une part que toutes les prescriptions donnent lieu à remboursement, et d’autre part que l’ensemble des médicaments remboursés par l’Assurance maladie ont été consommés par les patients concernés.</em>&quot;<a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/la-consommation-d-antibiotiques-en-secteur-de-ville-en-france-2009-2019.-synthese-preliminaire-des-indicateurs-disponibles-sous-geodes">Synthèse préliminaire des indicateurs disponibles sous Géodes (11-2020)</a></p>
 
 <p>&#9654; Pour une approche alignée en unités avec les objectifs posés dans la <a href="https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf">stratégie nationale 2022-2025 de prévention des infections et de l&#39;antibioresistance</a>, exprimés en doses définies journalières (DDJ) pour 1 000 habitants et par jour et en prescriptions pour 1 000 habitants et par an, voir le <a href="https://www.santepubliquefrance.fr/maladies-et-traumatismes/infections-associees-aux-soins-et-resistance-aux-antibiotiques/resistance-aux-antibiotiques/documents/rapport-synthese/consommation-d-antibiotiques-en-secteur-de-ville-en-france-2014-2024">Rapport de Santé publique France (11-2025)</a></p>
-<p>&#9654; La notion de proxy induit qu&#39;on devrait pouvoir observer les grandes tendances dès un premier niveau d&#39;étude des données de remboursements, sans pouvoir toutefois s&#39;y limiter pour une analyse appronfondie et complète.</p>
 
-<p>&#9654; Dans le cadre du projet, conduit en temps limité, c'est ce premier niveau qui est travaillé pour faire ressortir les tendances et offrir des indicateurs complémentaires à ceux exprimés en DDJ et prescriptions, par exemple relatifs au type et au prix du médicament.</p>
+<p>&#9654; La notion de proxy implique que les principales tendances sont perceptibles dès une première analyse des données de remboursement, même si ces données ne suffisent pas à elles seules pour mener une analyse approfondie et exhaustive.</p>
+
+<p>&#9654;  Compte tenu des contraintes de temps du projet, <strong>l&apos;étude concerne uniquement l'analyse des données de remboursement Open medic</strong>, visant à <strong>identifier les tendances majeures</strong> et à <strong>proposer des indicateurs complémentaires</strong> aux DDJ et aux prescriptions, en particulier sur la <strong>nature</strong> et le <strong>prix des médicaments</strong>.</p>
 </div>
 </div>
 
@@ -66,7 +67,6 @@ Python, PowerBI
 <li>Mise à disposition annuelle</li>
 <li>Utilisation de la base principale pour les années 2019 à 2024 : 6 fichiers open_medic_AAAA.csv</li>
 <li>Antibiotiques identifiés par le code ATC2 : J01-ANTIBACTERIENS A USAGE SYSTEMIQUE</li>
-<li>Documentation des variables.</li>
 </ul>
 </li>
 </ul>
@@ -183,7 +183,7 @@ Python, PowerBI
 </li>
 <li><p>Gestion des valeurs négatives</p>
 <ul>
-<li><p>Identifiées via describe et documentées sur la discussion Open Medic (il s&#39;agit de régularisations de remboursements)</p>
+<li><p>Identifiées via la méthode <em>describe (min)</em> et documentées sur la discussion Open Medic (il s&#39;agit de régularisations de remboursements)</p>
 <figure> 
 <p align="center" width="100%">
 <img src="assets/P2_describe.png" alt="describe" style="width:50%">
@@ -203,7 +203,7 @@ Python, PowerBI
 </p>
 </figure>
 </li>
-<li><p>Supprimées car proportion très petite et non pertinentes pour nos visualisations</p>
+<li><p>Supprimées car en proportion très petite et non pertinentes pour les visualisations</p>
 </li>
 </ul>
 </li>
@@ -211,7 +211,7 @@ Python, PowerBI
 <ul>
 <li>On constate une grande dispersion à droite des données quantitatives : on étudie les outliers et la proportion qu&#39;ils représentent. Ce ne sont pas des valeurs aberrantes; ils doivent être conservés.<figure> 
 <p align="center" width="100%">
-<img src="assets/P2_outliers.png" alt="outliers" style="width:80%">
+<img src="assets/P2_outliers.png" alt="outliers" style="width:90%">
 <figcaption><h6 align="center">Etude des outliers</h6></figcaption>
 </p>
 </figure>
