@@ -7,7 +7,6 @@ permalink : /projet_data_antibotiques
 # Analyse ad-hoc : <br> Consommation des antibiotiques en France 2019-2024
 
 <div class="note">
-  <p class="admonition-title"></p>
   (Projet de groupe retravaillé)
 </div>
 
