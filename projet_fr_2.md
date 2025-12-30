@@ -25,7 +25,7 @@ médicaments. Résultat : certaines infections deviennent de plus en plus diffic
 
 <a href="https://sante.gouv.fr/IMG/pdf/strategie_nationale_2022-2025_prevention_des_infections_et_de_l_antibioresistance.pdf" target="_blank" rel="noopener noreferrer">(Source image)</a>
 <br>
-<p>N&#39;hésitez pas à consulter <a href="project_FR_2_glossaire.html" target="_blank" rel="noopener noreferrer">le glossaire</a>.</p>
+<p>N&#39;hésitez pas à consulter <a href="https://vandenmag.github.io/Portfolio//projet_data_antibio_glossaire" target="_blank" rel="noopener noreferrer">le glossaire</a>.</p>
 
 
 
