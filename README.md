@@ -13,4 +13,4 @@ Bonne visite.
 <ul>Tableaux de bord et alertes automatisées &#9654; requêtes SQL (SQL Server), traitements C#,  visualisations Hyland OnBase Reporting Dashboards</ul><br><br> 
 <p><a href="assets/CV_Data_Analyse_Quality_MVDP.pdf" target="_blank" rel="noopener noreferrer">(Re)voir mon CV</a></p>
 
-##### Last update : 30/12/2025
+##### Last update : 28/01/2026
