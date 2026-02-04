@@ -135,7 +135,7 @@ Documents importés et indexés par batch et par mois (enveloppes exclues)</li>
 <li><strong>User activity</strong> :
 Connexions par utilisateur et groupe d&#39;utilisateurs par jour</li>
 <li><strong>Disk Group report</strong> : 
-Espace disque utilisé par chaque service/type sur le srveur de fichiers (NAS).</li>
+Espace disque utilisé par chaque service/type sur le serveur de fichiers (NAS).</li>
 <li><strong>TAX-PAS push AR auto</strong> : 
 Nombre et ID des documents AR exportés automatiquement en PDF </li>
 <li><strong>PDF auto Email stats</strong> : 
