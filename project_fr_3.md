@@ -14,13 +14,6 @@ permalink : /projet_call_center
 ## Contexte 
 Mettre en place un tableau de bord pour une entreprise qui propose des services externalisés de centre d'appels (facturation aux clients de services d'appel qui comprennent l'assistance technique, la facturation et les ventes).
 
-### Axes d'analyses
-<ul>
-<li>Vision globale du service client et évolution sur la priode étudiée (2018-2021)</li>
-<li>Analyse des revenus</li>
-<li>Analyse des performances managers et équipes</li>
-</ul>
-
 <!--
 :incoming_envelope: &#9654; scan :page_facing_up: &#9654; import :open_file_folder: &#9654; indexation :desktop_computer: &#9654; traitement business :briefcase: &#9654; export pour archivage :file_cabinet:
 -->
@@ -101,21 +94,17 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 </div>
 
 <div class="toggle-block">
-<button class="accordion">📊Focus besoin de monitoring</button>
+<button class="accordion">📊Axes d'analyses et principaux KPI mis en place</button>
 <div class="panel">
 
-<br>
-<p>Au sein de la solution même,</p>
+<h4 id="liste"></h4>
 <ul>
-<li><p>Mettre à disposition le monitoring de la solution, du point de vue de l&#39;éxécution automatique (imports de documents, workflows de traitements, exports)
-mais aussi des actions utlisateurs au sein des workflows fontionnels.</p>
-</li>
-<li><p>Monitorer la mise à jour automatisée quotidienne des données utiles issues de 3 référentiels client</p>
-</li>
-<li><p>Notifier les erreurs aux administrateurs pour action corrective </p>
-</li>
+<li>Vision globale du service client et évolution sur la période étudiée (2018-2021) &#9654 scores SLA, volumes et durées d'appels selon les types d'appels et les bureaux de traitement</li>
+<li>Analyse des revenus &#9654 valeurs, moyennes et progressions par bureau, par type d'appel, par manager</li>
+<li>Analyse des performances managers et équipes &#9654 nombre d'appels reçus, décrochés, durées d'appel et d'attente moyennes, score SLA par ville, manager, employé</li>
 </ul>
-</div>
+<br>
+
 </div>
 
 <div class="toggle-block">
