@@ -23,7 +23,7 @@ csv -xlsx <br>
 Power Query-Power BI <br>
 
 <div class="toggle-block">
-<button class="accordion">🔍Données</button>
+<button class="accordion">:file_cabinet: Données</button>
 <div class="panel">
 <br>  
 <p>(données réelles anonymisées)</p>
@@ -97,7 +97,7 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 -->
 
 <div class="toggle-block">
-<button class="accordion">📊Axes d'analyses et principaux KPI mis en place</button>
+<button class="accordion">📊Axes d'analyse et principaux KPI mis en place</button>
 <div class="panel">
 
 <h4 id="liste"></h4>
@@ -114,84 +114,130 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 </div>
 
 <div class="toggle-block">
-<button class="accordion">:hammer_and_wrench: Actions mises en place</button>
+<button class="accordion">:hammer_and_wrench: Traitement des données</button>
 <div class="panel">
 
-<h4 id="monitoring-de-la-solution">Monitoring de la solution</h4>
+<h4 id="liste-traitements-init">Traitements et ajouts initiaux</h4>
 <ul>
-<li>Utilisation du module Reporting Dashboards du progiciel utilisé OnBase (Hyland)</li>
-<li>Accès via client lourd ou via le client web directement par URL, déjà exploités par les utilisateurs métier pour les workflows fonctionnels comme services et techniques pour les worflows de traitement.</li>
-<li>Droits d&#39;accès aux dashboards selon les groupes utilisateurs et rôles associés</li>
+<li>Import dans Power Query</li>
+<li>Gestion des formats (Dates, Décimaux)</li>
+<li>Merge des fichiers de données Appels des 4 années</li>
+<li>Création colonnes State et City (séparation depuis la colonne Site qui est ensuite supprimée</li>
+<li>Création colonne SLA Compliance (booléen, conditionnel)</li>
+<li>Création colonne Call Revenue (selon type d'appel et année)</li>
 </ul>
-<h4 id="monitoring-de-la-mise-jour-automatis-e-quotidienne-des-donn-es-utiles-issues-de-3-r-f-rentiels-client">Monitoring de la mise à jour automatisée quotidienne des données utiles issues de 3 référentiels client</h4>
-<ul>
-<li>Logs spécifiques créés directement via le script d&#39;import en C#.</li>
-<li>Ces logs sont ensuite exploités comme des objets de la solution et consultables dans une vue dédiée aux administrateurs.</li>
-</ul>
-<h4 id="notifications">Notifications</h4>
-<ul>
-<li>Selon la nature de l&#39;erreur et sa source, un email de notification est envoyé en temps réel avec toutes les informations de tracking et la description de l&#39;erreur au groupe d&#39;utiliateurs administrateurs concernés</li>
-</ul>
-<br>
-<h4 id="liste-des-rapports-dynamiques-mis-en-place">Liste des rapports dynamiques mis en place</h4>
-<br>
-<ul>
-<li><p><strong>Actions stats</strong> :
-Statistiques par action utilisateur une fois le document validé (e.g. : Paper version request, PDF export, etc.), par utilisateur et groupe d&#39;utilisateurs</p>
+<h4 id="liste-traitements-modele">Modèlisation</h4>
 <figure>
 <p align="center" width="100%">
-<img src="assets/P1_action_stats.png" alt="Exemple web Actions stats" style="width:80%">
-<figcaption><h6 align="center">Exemple reporting web &#39;Action stats&#39;</h6></figcaption>
+<img src="assets/P3_StarModel.png" alt="Modèle en étoile" style="width:80%">
+<figcaption><h6 align="center">Modèle en étoile</h6></figcaption>
 </p>
 </figure>
+<ul>
+<li>Table des faits : appels (Call center Calls)</li>
+<li>Tables de dimensions : employés (Employees), types et taxes d'appels (Call Types and Charges)</li>
+<li>Table Calendrier (Calendar)</li>
+<li>Table des mesures (mesures DAX)- Mesure table</li>
 <figure>
 <p align="center" width="100%">
-<img src="assets/P1_action_stats_parameters.png" alt="Exemple web Actions stats-date picker" style="width:60%">
-<figcaption><h6 align="center">Exemple date picker web &#39;Action stats&#39;</h6></figcaption>
+<img src="assets/P3_PQ_call_revenueDax.png" alt="Exemple de mesure DAX" style="width:80%">
+<figcaption><h6 align="center">Exemple mesure DAX Call Revenue</h6></figcaption>
 </p>
 </figure>
-</li>
-<li><p><strong>Control stats</strong> :
-Statistiques par action utilisateur en phase de contrôle du document (Qualify and Send, or Forward back to mailroom, and reason for forwarding back), by user and user group
-Détail raisons de refus/renvoi du document après numérisation</p>
-<figure>
-<p align="center" width="100%">
-<img src="assets/P1_back2mr.png" alt="Exemple Nombre de renvois par motif de refus" style="width:80%">
-<figcaption><h6 align="center">Exemple Nombre de renvois par motif de refus</h6></figcaption>
-</p>
-</figure></li>
-<li><strong>Import stats - month details</strong> : 
-Imports de documents par Service et par mois (importés via scanners tiers)</li>
-<li><strong>Indexing stats - month details</strong> : 
-Indexation des documents par service, par mois et temps moyen d&#39;indexation</li>
-<li><strong>Mailroom global stats - day</strong> : 
-Documents importés et indexés par batch et par jour (enveloppes exclues)</li>
-<li><strong>Mailroom global stats - month</strong> : 
-Documents importés et indexés par batch et par mois (enveloppes exclues)</li>
-<li><strong>User activity</strong> :
-Connexions par utilisateur et groupe d&#39;utilisateurs par jour</li>
-<li><strong>Disk Group report</strong> : 
-Espace disque utilisé par chaque service/type sur le serveur de fichiers (NAS).</li>
-<li><strong>TAX-PAS push AR auto</strong> : 
-Nombre et ID des documents AR exportés automatiquement en PDF </li>
-<li><strong>PDF auto Email stats</strong> : 
-Nombre et statut des emails en envoi automatique avec PDF attaché (seulement pour les services éligibles)</li>
-<li><strong>License usage monitoring</strong> : 
-License pic usage monitoring- par année, mois, jour, utilisateurs uniques</li>
 </ul>
-</div>
+
+<br>
+
 </div>
 
 <div class="toggle-block">
-<button class="accordion">:dart: Exemples d'améliorations identifiées grâce à ces rapports, et de résolutions d'incidents auxquelles ils ont contribué</button>
+<button class="accordion">:dart: Rapports et principaux insights</button>
 <div class="panel">
 <br>
+<h4 id="liste-traitements-modele">Vision globale du service</h4>
+
+
 <ul>
-<li>Ajustement de la résolution des scanners pour équilibrer volumes de fichiers et confort d&#39;exploitation du document numérisé par l&#39;utilisateur</li>
-<li>Ajustement des volumes de licences et prévisions d&#39;accroissement au fil du déploiement</li>
-<li>Identification, analyse et résolution d&#39;une sauvergarde tierce de DB qui interrompait certains jobs</li>
-<li><p>Réactivité et reprise en cas d&#39;incident réseau quand les envois auto d&#39;emails ou les dépôts de pdf par la solution étaient affectés</p>
-<p>Etc. etc.</p>
+<li>Période globale
+<figure>
+<p align="center" width="100%">
+<img src="assets/P3_RPT_customer_service_all.png" alt="Vision globale du service" style="width:80%">
+<figcaption><h6 align="center">Aperçu du rapport</h6></figcaption>
+</p>
+</figure>
+  <ul>
+  <li>Jacksonville est en tête du classement en nombre d'appels (47k) mais le taux de qualité est légèrement meilleur à Aurora sur l'ensemble de la période (88,38% dans le SLA, légèment supérieur à la moyenne globale de 88,17%)</li>
+  <li>Les appels au support technique représentent au global environ la moitié du volume d'appels</li>
+  <li>Entre 2020 et 2021, la durée moyenne des appels a augmenté (de 746s en 2018 à 767s en 2021) mais leur nombre a diminué (de 33 057 à 32 846).</li>
+  <li>Le taux d'appels non décrochés est très faible (0,07%) pour un temps d'attente moyen de 27s.</li>
+  <li>Plus de 87% des appels durent plus de 3min.</li>
+  </ul>
+</li>
+<li>Exemple de filtre : En 2020 pour la ville d'Aurora
+<figure>
+<p align="center" width="100%">
+<img src="assets/P3_RPT_customer_service_aurora2020.png" alt="Vision globale du service filtre Aurora 2020" style="width:80%">
+<figcaption><h6 align="center">Aperçu du rapport filtré</h6></figcaption>
+</p>
+</figure>
+</li>
+</ul>
+<br>
+<h4 id="liste-traitements-modele">Analyse des revenus générés</h4>
+
+
+<ul>
+<li>Toutes villes ensembles
+<figure>
+<p align="center" width="100%">
+<img src="assets/P3_RPT_revenue_analysis_all.png" alt="Revenus générés global" style="width:80%">
+<figcaption><h6 align="center">Aperçu du rapport</h6></figcaption>
+</p>
+</figure>
+  <ul>
+  <li>xxx</li>
+  <li>xxx</li>
+  <li>xxx</li>
+  <li>xxx</li>
+  <li>xxx</li>
+  </ul>
+</li>
+<li>Exemple de filtre : En 2020 pour Jacksonville et le manager Ducharme
+<figure>
+<p align="center" width="100%">
+<img src="assets/P3_RPT_revenue_analysis_Jacksonville_Ducharme.png" alt="Aperçu du rapport filtré" style="width:80%">
+<figcaption><h6 align="center">Aperçu du rapport filtré</h6></figcaption>
+</p>
+</figure>
+</li>
+</ul>
+<br>
+<h4 id="liste-traitements-modele">Analyse des performances managers et équipes</h4>
+
+
+<ul>
+<li>Toutes villes ensembles
+<figure>
+<p align="center" width="100%">
+<img src="assets/P3_RPT_staff-perf_analysis_all.png" alt="Performance équipes global" style="width:80%">
+<figcaption><h6 align="center">Aperçu du rapport</h6></figcaption>
+</p>
+</figure>
+  <ul>
+  <li>xxx</li>
+  <li>xxx</li>
+  <li>xxx</li>
+  <li>xxx</li>
+  <li>xxx</li>
+  </ul>
+</li>
+<li>Exemple de filtre : En 2021 pour Jacksonville et le manager Ducharme
+<figure>
+<p align="center" width="100%">
+<img src="assets/P3_RPT_staff-perf_analysis_Jacksonville_ducharme_2021.png" alt="Aperçu du rapport filtré" style="width:80%">
+<figcaption><h6 align="center">Aperçu du rapport filtré</h6></figcaption>
+</p>
+</figure>
 </li>
 </ul>
 </div>
