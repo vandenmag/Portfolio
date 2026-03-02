@@ -125,6 +125,12 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 <li>Création colonnes State et City (séparation depuis la colonne Site qui est ensuite supprimée</li>
 <li>Création colonne SLA Compliance (booléen, conditionnel)</li>
 <li>Création colonne Call Revenue (selon type d'appel et année)</li>
+<figure>
+<p align="center" width="100%">
+<img src="assets/P3_PQ_call_revenueDax.png" alt="Mesure Dax Call revenue" style="width:80%">
+<figcaption><h6 align="center">Mesure Dax Call revenue</h6></figcaption>
+</p>
+</figure>
 </ul>
 <h4 id="liste-traitements-modele">Modèlisation</h4>
 <figure>
