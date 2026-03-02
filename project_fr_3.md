@@ -23,7 +23,7 @@ csv -xlsx <br>
 Power Query-Power BI <br>
 
 <div class="toggle-block">
-<button class="accordion">🔍Les données</button>
+<button class="accordion">🔍Données</button>
 <div class="panel">
 <br>  
 <p>(données réelles anonymisées)</p>
@@ -66,6 +66,8 @@ Power Query-Power BI <br>
 <br>   
 
 </ul>
+
+<!--
 <p>qu&#39;il faut :</p>
 <ul>
 <li>identifier</li>
@@ -78,11 +80,11 @@ Power Query-Power BI <br>
 </ul>
 
 
-<!--
+
 Source - https://stackoverflow.com/a
 Posted by bim, modified by community. See post 'Timeline' for change history
 Retrieved 2025-12-19, License - CC BY-SA 4.0
--->
+
 
 <figure>
 <p align="center" width="100%">
@@ -92,6 +94,7 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 </figure>
 </div>
 </div>
+-->
 
 <div class="toggle-block">
 <button class="accordion">📊Axes d'analyses et principaux KPI mis en place</button>
@@ -99,9 +102,12 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 
 <h4 id="liste"></h4>
 <ul>
-<li>Vision globale du service client et évolution sur la période étudiée (2018-2021) &#9654 scores SLA, volumes et durées d'appels selon les types d'appels et les bureaux de traitement</li>
-<li>Analyse des revenus &#9654 valeurs, moyennes et progressions par bureau, par type d'appel, par manager</li>
-<li>Analyse des performances managers et équipes &#9654 nombre d'appels reçus, décrochés, durées d'appel et d'attente moyennes, score SLA par ville, manager, employé</li>
+<li>Vision globale du service client et évolution sur la période étudiée (2018-2021)
+  <br>&#9654 Scores SLA, volumes et durées d'appels selon les types d'appels et les bureaux de traitement</li> <br>
+<li>Analyse des revenus 
+  <br>&#9654 Valeurs, moyennes et progressions par bureau, par type d'appel, par manager</li> <br>
+<li>Analyse des performances managers et équipes 
+  <br>&#9654 Nombre d'appels reçus, décrochés, durées d'appel et d'attente moyennes, score SLA par ville, manager, employé</li> <br>
 </ul>
 <br>
 
