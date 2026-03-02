@@ -36,21 +36,41 @@ Power Query-Power BI <br>
 <p>(données réelles anonymisées)</p>
 <ul>
 <li>Appels (131 821 entrées au total, 7 variables- 4 fichiers sources)</li>
+<br> 
 <figure>
 <p align="center" width="100%">
-  <img src="assets/P3_donnees_brutes_calls.png" alt="Aperçu données brutes calls P3" style="width:80%">
+  <img src="assets/P3_donnees_brutes_calls.png" alt="Aperçu données brutes calls P3" style="width:50%">
   <figcaption><h6 align="center">Aperçu des données brutes Appels</h6></figcaption>
   </p>
 </figure>
-  
-<li>Taxes d'appel (selon l'année - 1 fichier source)</li>
-
-
-<li>Types d'appels (1 onglet source)</li>
-
-
+<br>   
+<li>Taxes d&#39;appel (selon l'année - 1 fichier source)</li>
+<br>
+<figure>
+<p align="center" width="100%">
+  <img src="assets/P3_donnees_brutes_call-charges.png" alt="Aperçu données brutes call charges P3" style="width:70%">
+  <figcaption><h6 align="center">Aperçu des données brutes Taxes d&#39;appel</h6></figcaption>
+  </p>
+</figure>
+<br>   
+<li>Types d&#39;appels (1 onglet source)</li>
+<br> 
+<figure>
+<p align="center" width="100%">
+  <img src="assets/P3_donnees_brutes_call-types.png" alt="Aperçu données brutes Types d'appel P3" style="width:50%">
+  <figcaption><h6 align="center">Aperçu des données brutes Types d&#39;appel</h6></figcaption>
+  </p>
+</figure>
+<br>   
 <li>Employés (64 entrées, 1 onglet source)</li>
-
+<br> 
+<figure>
+<p align="center" width="100%">
+  <img src="assets/P3_donnees_brutes_employees.png" alt="Aperçu données brutes employés P3" style="width:50%">
+  <figcaption><h6 align="center">Aperçu des données brutes Employés</h6></figcaption>
+  </p>
+</figure>
+<br>   
 
 </ul>
 <p>qu&#39;il faut :</p>
