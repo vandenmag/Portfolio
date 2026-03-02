@@ -234,7 +234,7 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 <li>Exemple de filtre : En 2021 pour Jacksonville et le manager Ducharme
 <figure>
 <p align="center" width="100%">
-<img src="assets/P3_RPT_staff-perf_analysis_Jacksonville_ducharme_2021.png" alt="Aperçu du rapport filtré" style="width:80%">
+<img src="assets/P3_RPT_staff-perf_analysis_jacksonville_ducharme_2021.png" alt="Aperçu du rapport filtré" style="width:80%">
 <figcaption><h6 align="center">Aperçu du rapport filtré</h6></figcaption>
 </p>
 </figure>
