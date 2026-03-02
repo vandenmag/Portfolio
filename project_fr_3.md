@@ -17,7 +17,7 @@ Mettre en place un tableau de bord pour une entreprise qui propose des services 
 ### Axes d'analyses
 <ul>
 <li>Vision globale du service client et évolution sur la priode étudiée (2018-2021)</li>
-<li>Analyse des revenus par appel</li>
+<li>Analyse des revenus</li>
 <li>Analyse des performances managers et équipes</li>
 </ul>
 
@@ -35,10 +35,23 @@ Power Query-Power BI <br>
 <br>  
 <p>(données réelles anonymisées)</p>
 <ul>
-<li>Appels (131 821 entrées, 7 variables)</li>
-<li>Taxes d'appel (selon l'année)</li>
-<li>Types d'appels </li>
-<li>Employés (64)</li>
+<li>Appels (131 821 entrées au total, 7 variables- 4 fichiers sources)</li>
+<figure>
+<p align="center" width="100%">
+  <img src="assets/P3_donnees_brutes_calls.png" alt="Aperçu données brutes calls P3" style="width:80%">
+  <figcaption><h6 align="center">Aperçu des données brutes Appels</h6></figcaption>
+  </p>
+</figure>
+  
+<li>Taxes d'appel (selon l'année - 1 fichier source)</li>
+
+
+<li>Types d'appels (1 onglet source)</li>
+
+
+<li>Employés (64 entrées, 1 onglet source)</li>
+
+
 </ul>
 <p>qu&#39;il faut :</p>
 <ul>
