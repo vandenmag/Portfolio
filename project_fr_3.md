@@ -5,32 +5,40 @@ permalink : /projet_call_center
 ---
 
 
-# Tableaux de bord : <br> Dématérialisation de courrier entrant  - Monitoring des opérations
+# Tableaux de bord : <br> Activités, revenus et performance des équipes d'un service de centre d'appels
 
 <div class="note">
-  Visuels indicatifs de développement, à titre d'illustration.
+  Projet individuel académique
 </div>
 
 ## Contexte 
-Projet de mise en place d'une solution de dématéralisation de courrier entrant pour un cabinet d'audit et de conseil, puis maintenance de la solution.
+Mettre en place un tableau de bord pour une entreprise qui propose des services externalisés de centre d'appels (facturation aux clients de services d'appel qui comprennent l'assistance technique, la facturation et les ventes).
 
-### Le process en ultra-bref
+### Axes d'analyses
+<ul>
+<li>Vision globale du service client et évolution sur la priode étudiée (2018-2021)</li>
+<li>Analyse des revenus par appel</li>
+<li>Analyse des performances managers et équipes</li>
+</ul>
 
+<!--
 :incoming_envelope: &#9654; scan :page_facing_up: &#9654; import :open_file_folder: &#9654; indexation :desktop_computer: &#9654; traitement business :briefcase: &#9654; export pour archivage :file_cabinet:
+-->
 
 ### Stack
-Windows server-IIS | SQL Server | MS Azure | O365 <br>
-Hyland OnBase - C# et SQL
+csv -xlsx <br>
+Power Query-Power BI <br>
 
 <div class="toggle-block">
-<button class="accordion">🔍Cherchez la data</button>
+<button class="accordion">🔍Les données</button>
 <div class="panel">
 <br>  
-<p>La data est partout et capitale dans ce type de projet qui semble centré sur le document mais repose surtout sur une base de données structurée, des workflows bien calibrés, des classes bien organisées :</p>
+<p>(données réelles anonymisées)</p>
 <ul>
-<li>Données métier (décrivant pour un objet courrier : le client, la mission, le type de document, d&#39;affranchissement, les destinataires, le courrier en lui-même, etc.)</li>
-<li>Données techniques (identifiants de batch, de machines, horadatage, statuts de workflows, de jobs, données de paramétrage, etc.)</li>
-<li>Données issues de référentiels (ici utilisateurs, clients, missions)</li>
+<li>Appels (131 821 entrées, 7 variables)</li>
+<li>Taxes d'appel (selon l'année)</li>
+<li>Types d'appels </li>
+<li>Employés (64)</li>
 </ul>
 <p>qu&#39;il faut :</p>
 <ul>
