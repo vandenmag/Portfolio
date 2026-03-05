@@ -19,8 +19,8 @@ Mettre en place un tableau de bord pour une entreprise qui propose des services 
 -->
 
 ### Stack
-csv -xlsx <br>
-Power Query-Power BI <br>
+Fichiers de données  : csv -xlsx <br>
+Traitements et visualisations : Power Query-Power BI <br>
 
 <div class="toggle-block">
 <button class="accordion">:file_cabinet: Données</button>
@@ -66,7 +66,8 @@ Power Query-Power BI <br>
 <br>   
 
 </ul>
-
+</div>
+</div>
 <div class="toggle-block">
 <button class="accordion">📊Axes d'analyse et principaux KPI mis en place</button>
 <div class="panel">
@@ -83,7 +84,7 @@ Power Query-Power BI <br>
 <br>
 
 </div>
-
+</div>
 <div class="toggle-block">
 <button class="accordion">:hammer_and_wrench: Traitement des données</button>
 <div class="panel">
@@ -127,7 +128,7 @@ Power Query-Power BI <br>
 <br>
 
 </div>
-
+</div>
 <div class="toggle-block">
 <button class="accordion">:dart: Rapports et principaux insights</button>
 <div class="panel">
