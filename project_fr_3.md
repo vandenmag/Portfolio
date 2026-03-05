@@ -75,11 +75,11 @@ Traitements et visualisations : Power Query-Power BI <br>
 <h4 id="liste"></h4>
 <ul>
 <li>Vision globale du service client et évolution sur la période étudiée (2018-2021)
-  <br>&#9654 Scores SLA, volumes et durées d'appels selon les types d'appels et les bureaux de traitement</li> <br>
+  <br>&#9654; Scores SLA, volumes et durées d'appels selon les types d'appels et les bureaux de traitement</li> <br>
 <li>Analyse des revenus 
-  <br>&#9654 Valeurs, moyennes et progressions par bureau, par type d'appel, par manager</li> <br>
+  <br>&#9654; Valeurs, moyennes et progressions par bureau, par type d'appel, par manager</li> <br>
 <li>Analyse des performances managers et équipes 
-  <br>&#9654 Nombre d'appels reçus, décrochés, durées d'appel et d'attente moyennes, score SLA par ville, manager, employé</li> <br>
+  <br>&#9654; Nombre d'appels reçus, décrochés, durées d'appel et d'attente moyennes, score SLA par ville, manager, employé</li> <br>
 </ul>
 <br>
 
@@ -132,7 +132,6 @@ Traitements et visualisations : Power Query-Power BI <br>
 <div class="toggle-block">
 <button class="accordion">:dart: Rapports et principaux insights</button>
 <div class="panel">
-<br>
 <h4 id="liste-traitements-modele">Vision globale du service</h4>
 
 
