@@ -19,4 +19,4 @@ Bonne visite.
 <br><br> 
 <p><a href="assets/CV_Data_Analyse_Quality_MVDP.pdf" target="_blank" rel="noopener noreferrer">(Re)voir mon CV</a></p>
 
-##### Last update : 02/03/2026
+##### Last update : 05/03/2026
