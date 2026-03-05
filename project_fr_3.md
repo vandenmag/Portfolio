@@ -151,6 +151,7 @@ Traitements et visualisations : Power Query-Power BI <br>
   <li>Le taux d'appels non décrochés est très faible (0,07%) pour un temps d'attente moyen de 27s.</li>
   <li>Plus de 87% des appels durent plus de 3min.</li>
   </ul>
+  <br>
 </li>
 <li>Exemple de filtre : En 2020 pour la ville d'Aurora
 <br>
@@ -194,7 +195,7 @@ Traitements et visualisations : Power Query-Power BI <br>
   </figure></li>
   <li>Le CA moyen par appel est passé de $62,71 en 2018 à 104,61$ en 2021.</li>
   <li>L'évolution du CA au fil des années est plus forte pour les appels de type support que pour les appels commerce et facturation.</li>
-  </ul>
+  </ul>  <br>
 </li>
 <li>Exemple de filtre : En 2020 pour Jacksonville et le manager Ducharme
 <br>
@@ -222,7 +223,7 @@ Traitements et visualisations : Power Query-Power BI <br>
   <ul>
   <li>L'utilisateur peut sélectionner le bureau et le manager, ainsi qu'une année, pour visualiser les performances par employé, le nombre d'employés dans l'équipe et le score de SLA.</li>
   <li>Le détail d'un employé est visible en sélectionnant sa barre.</li>
-  </ul>
+  </ul>  <br>
 </li>
 <li>Exemple de filtres : En 2021 pour Jacksonville et le manager Ducharme
 <br>
