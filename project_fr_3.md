@@ -67,35 +67,6 @@ Power Query-Power BI <br>
 
 </ul>
 
-<!--
-<p>qu&#39;il faut :</p>
-<ul>
-<li>identifier</li>
-<li>formater</li>
-<li>contrôler</li>
-<li>organiser dans un modèle de données </li>
-<li>faire fonctionner</li>
-<li>documenter</li>
-<li>maintenir</li>
-</ul>
-
-
-
-Source - https://stackoverflow.com/a
-Posted by bim, modified by community. See post 'Timeline' for change history
-Retrieved 2025-12-19, License - CC BY-SA 4.0
-
-
-<figure>
-<p align="center" width="100%">
-  <img src="assets/P1_data_model.png" alt="Version de travail Modèle de données P1" style="width:80%">
-  <figcaption><h6 align="center">Version de travail du modèle de données</h6></figcaption>
-  </p>
-</figure>
-</div>
-</div>
--->
-
 <div class="toggle-block">
 <button class="accordion">📊Axes d'analyse et principaux KPI mis en place</button>
 <div class="panel">
@@ -120,9 +91,10 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 <h4 id="liste-traitements-init">Traitements et ajouts initiaux</h4>
 <ul>
 <li>Import dans Power Query</li>
+<li>Vérification de la complétude des données</li>
 <li>Gestion des formats (Dates, Décimaux)</li>
 <li>Merge des fichiers de données Appels des 4 années</li>
-<li>Création colonnes State et City (séparation depuis la colonne Site qui est ensuite supprimée</li>
+<li>Création colonnes State et City (séparation depuis la colonne Site qui est ensuite supprimée)</li>
 <li>Création colonne SLA Compliance (booléen, conditionnel)</li>
 <li>Création colonne Call Revenue (selon type d'appel et année)</li>
 <figure>
@@ -164,7 +136,7 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 
 
 <ul>
-<li>Période globale
+<li>Vue globale
 <figure>
 <p align="center" width="100%">
 <img src="assets/P3_RPT_customer_service_all.png" alt="Vision globale du service" style="width:80%">
@@ -172,7 +144,7 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 </p>
 </figure>
   <ul>
-  <li>Jacksonville est en tête du classement en nombre d'appels (47k) mais le taux de qualité est légèrement meilleur à Aurora sur l'ensemble de la période (88,38% dans le SLA, légèment supérieur à la moyenne globale de 88,17%)</li>
+  <li>Jacksonville est en tête du classement en nombre d'appels (47,48k) mais le taux de qualité est légèrement meilleur à Aurora sur l'ensemble de la période (88,38% dans le SLA, légèment supérieur à la moyenne globale de 88,17%)</li>
   <li>Les appels au support technique représentent au global environ la moitié du volume d'appels</li>
   <li>Entre 2020 et 2021, la durée moyenne des appels a augmenté (de 746s en 2018 à 767s en 2021) mais leur nombre a diminué (de 33 057 à 32 846).</li>
   <li>Le taux d'appels non décrochés est très faible (0,07%) pour un temps d'attente moyen de 27s.</li>
@@ -201,11 +173,24 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 </p>
 </figure>
   <ul>
-  <li>xxx</li>
-  <li>xxx</li>
-  <li>xxx</li>
-  <li>xxx</li>
-  <li>xxx</li>
+  <li>Le bureau de Jacksonville présente la plus grande croissance de chiffre d'affaire avec une augmentation de 68,78% sur la période étudiée.</li>
+  <li>Les appels au support technique génèrent au global un peu moins de la moitié du chiffre d'affaire total (47,57%)- les indicateurs et graphiques pour un type d'appel sont visibles en sélectionnant la part de camembert.
+  <figure>
+  <p align="center" width="100%">
+  <img src="assets/P3_RPT_revenue_analysis_all_type_support.png" alt="Aperçu du rapport filtré type support" style="width:80%">
+  <figcaption><h6 align="center">Aperçu - détail appels de type support</h6></figcaption>
+  </p>
+  </figure>
+  </li>
+  <li>Le chiffre d'affaire est en augmentation constante de 2018 à 2021 ($3,4M en 2021) - les indicateurs et graphiques pour une année sont visibles en sélectionnant la barre de l'année.
+    <figure>
+  <p align="center" width="100%">
+  <img src="assets/P3_RPT_revenue_analysis_all_2021.png" alt="Aperçu du rapport filtré année 2021" style="width:80%">
+  <figcaption><h6 align="center">Aperçu - détail appels année 2021</h6></figcaption>
+  </p>
+  </figure></li>
+  <li>Le CA moyen par appel est passé de $62,71 en 2018 à 104,61$ en 2021.</li>
+  <li>L'évolution du CA au fil des années est plus forte pour les appels de type support que pour les appels commerce et facturation.</li>
   </ul>
 </li>
 <li>Exemple de filtre : En 2020 pour Jacksonville et le manager Ducharme
@@ -230,18 +215,21 @@ Retrieved 2025-12-19, License - CC BY-SA 4.0
 </p>
 </figure>
   <ul>
-  <li>xxx</li>
-  <li>xxx</li>
-  <li>xxx</li>
-  <li>xxx</li>
-  <li>xxx</li>
+  <li>L'utilisateur peut sélectionner le bureau et le manager, ainsi qu'une année, pour visualiser les performances par employé, le nombre d'employés dans l'équipe et le score de SLA.</li>
+  <li>Le détail d'un employé est visible en sélectionnant sa barre.</li>
   </ul>
 </li>
-<li>Exemple de filtre : En 2021 pour Jacksonville et le manager Ducharme
+<li>Exemple de filtres : En 2021 pour Jacksonville et le manager Ducharme
 <figure>
 <p align="center" width="100%">
 <img src="assets/P3_RPT_staff-perf_analysis_jacksonville_ducharme_2021.png" alt="Aperçu du rapport filtré" style="width:80%">
 <figcaption><h6 align="center">Aperçu du rapport filtré</h6></figcaption>
+</p>
+</figure>
+<figure>
+<p align="center" width="100%">
+<img src="assets/P3_RPT_staff-perf_analysis_jacksonville_ducharme_2021_brittany.png" alt="Aperçu du rapport filtré employé" style="width:80%">
+<figcaption><h6 align="center">Détail employé</h6></figcaption>
 </p>
 </figure>
 </li>
