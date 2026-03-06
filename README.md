@@ -14,9 +14,9 @@ Bonne visite.
 <ul>11 tableaux de bord avec alertes automatisées, 6 lignes métier, 1000 collaborateurs, 100 à 600 courriers/jour selon l’activité <br> &#9654; Requêtes SQL (SQL Server), traitements C#,  visualisations Hyland OnBase Reporting Dashboards</ul><br>
 
 <p>:telephone_receiver: <a href="https://vandenmag.github.io/Portfolio/projet_call_center" target="_blank" rel="noopener noreferrer"><strong>Tableau de bord pour une entreprise qui propose des services externalisés de centre d'appels </strong></a></p>
-<ul>1 tableaux de bord avec 3 rapports complémentaires, 6 lignes métier, 1000 collaborateurs, 100 à 600 courriers/jour selon l’activité <br>&#9654; Power Query, Power BI</ul>
+<ul>1 tableaux de bord avec 3 rapports complémentaires, 3 sites, 64 collaborateurs, env. 32000 appels par an <br>&#9654; Power Query, Power BI</ul>
 
 <br><br> 
 <p><a href="assets/CV_CP_Data_MVDP.pdf" target="_blank" rel="noopener noreferrer">(Re)voir mon CV</a></p>
 
-##### Last update : 02/03/2026
+##### Last update : 05/03/2026
