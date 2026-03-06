@@ -17,6 +17,6 @@ Bonne visite.
 <ul>1 tableaux de bord avec 3 rapports complémentaires, 6 lignes métier, 1000 collaborateurs, 100 à 600 courriers/jour selon l’activité <br>&#9654; Power Query, Power BI</ul>
 
 <br><br> 
-<p><a href="assets/CV_Data_Analyse_Quality_MVDP.pdf" target="_blank" rel="noopener noreferrer">(Re)voir mon CV</a></p>
+<p><a href="assets/CV_CP_Data_MVDP.pdf" target="_blank" rel="noopener noreferrer">(Re)voir mon CV</a></p>
 
 ##### Last update : 02/03/2026
