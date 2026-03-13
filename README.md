@@ -17,6 +17,6 @@ Bonne visite.
 <ul>1 tableaux de bord avec 3 rapports complémentaires, 3 sites, 64 collaborateurs, env. 32000 appels par an <br>&#9654; Power Query, Power BI</ul>
 
 <br><br> 
-<p><a href="assets/CV_CP_Data_MVDP.pdf" target="_blank" rel="noopener noreferrer">(Re)voir mon CV</a></p>
+<p><a href="assets/CV_Data_Analyse_Quality_MVDP.pdf" target="_blank" rel="noopener noreferrer">(Re)voir mon CV</a></p>
 
 ##### Last update : 05/03/2026
