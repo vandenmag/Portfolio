@@ -14,7 +14,7 @@ permalink : /projet_data_antibotiques
 ## Contexte 
 _« L’utilisation répétée et inadaptée des antibiotiques a favorisé l’apparition de bactéries résistantes à ces
 médicaments. Résultat : certaines infections deviennent de plus en plus difficiles à soigner. »_  <a href="https://www.sante.fr/antibiomalin-pour-savoir-comment-bien-utiliser-les-antibiotiques/lantibioresistance" target="_blank" rel="noopener noreferrer">Source</a>
-<p>Ainsi la surveillance et la compréhension de la prescription et et délivrance des antibiotiques en France est un des moyens de contribuer à des actions de prévention et d&#39;appuyer les politiques de santé publique sur l'usage raisonné des antibiotiques.</p>
+<p>Ainsi la surveillance et la compréhension de la prescription et délivrance des antibiotiques en France est un des moyens de contribuer à des actions de prévention et d&#39;appuyer les politiques de santé publique sur l'usage raisonné des antibiotiques.</p>
 <figure>
 <p align="center" width="100%">
   <img src="assets/P2_stratégie_nationale.png" alt="Visuel bon usage des antibiotiques" style="width:70%">
