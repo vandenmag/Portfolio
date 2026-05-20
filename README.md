@@ -7,7 +7,7 @@ Bonne visite.
   
 <br> 
 <p>:hourglass: <i>En cours, coming soon...</i><br></p>
-<ul><strong>Loi Egalim : Analyse de la conformité des cantines d’écoles publiques en Hauts-de-France pour les taux de bio, 2024 et 2025</strong></a></ul>
+<ul><strong>Loi Egalim : Analyse de la conformité des cantines d’écoles publiques en Hauts-de-France pour les taux de bio, 2024 et 2025</strong></ul>
 <ul>Analyse ad-hoc et cartographie<br> &#9654; OpenData MaCantine - traitements Python - Folium-  env. 3800 communes et 5500 cantines analysées et représentées sur cartes html interactives</ul><br>
 <br> 
 <p>🚀 <i>Réalisés</i><br></p>
