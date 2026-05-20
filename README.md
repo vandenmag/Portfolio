@@ -6,7 +6,11 @@ Vous trouverez ici quelques exemples de problématiques et traitements par la do
 Bonne visite.  
   
 <br> 
-
+<p>:hourglass: <i>En cours, coming soon...</i><br></p>
+<ul><strong>Loi Egalim : Analyse de la conformité des cantines d’écoles publiques en Hauts-de-France pour les taux de bio, 2024 et 2025</strong></a></ul>
+<ul>Analyse ad-hoc et cartographie<br> &#9654; OpenData MaCantine - traitements Python - Folium-  env. 3800 communes et 5500 cantines analysées et représentées sur cartes html interactives</ul><br>
+<br> 
+<p>🚀 <i>Réalisés</i><br></p>
 <p>💊 <a href="https://vandenmag.github.io/Portfolio//projet_data_antibotiques" target="_blank" rel="noopener noreferrer"><strong>Consommation des antibiotiques en france 2019-2024 (Open Medic)</strong></a></p>
 <ul>Analyse ad-hoc<br> &#9654; Traitement des données en Python, visualisations PowerBi - env. 11M lignes, visualisations PowerBi-4 rapports complémentaires</ul><br>
 
@@ -19,4 +23,4 @@ Bonne visite.
 <br><br> 
 <p><a href="assets/CV_Data_Analyse_Quality_MVDP.pdf" target="_blank" rel="noopener noreferrer">(Re)voir mon CV</a></p>
 
-##### Last update : 05/03/2026
+##### Last update : 20/05/2026
